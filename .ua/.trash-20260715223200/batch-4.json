@@ -1,0 +1,2716 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/api/claude.py",
+      "type": "file",
+      "name": "claude.py",
+      "filePath": "cc/api/claude.py",
+      "summary": "Anthropic API 客户端：流式调用、客户端管理、token 统计。核心函数：stream_response。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/api/claude.py:stream_response",
+      "type": "function",
+      "name": "stream_response",
+      "filePath": "cc/api/claude.py",
+      "lineRange": [
+        72,
+        289
+      ],
+      "summary": "Anthropic API 客户端 中的核心函数 stream_response，实现关键业务逻辑（217 行）。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:cc/api/token_estimation.py",
+      "type": "file",
+      "name": "token_estimation.py",
+      "filePath": "cc/api/token_estimation.py",
+      "summary": "Anthropic API 客户端：流式调用、客户端管理、token 统计。核心函数：estimate_tokens、count_tokens_api、estimate_messages_tokens。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/api/token_estimation.py:estimate_tokens",
+      "type": "function",
+      "name": "estimate_tokens",
+      "filePath": "cc/api/token_estimation.py",
+      "lineRange": [
+        35,
+        52
+      ],
+      "summary": "Anthropic API 客户端 中的 estimate_tokens 函数，处理 text、bytes_per_token。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/api/token_estimation.py:count_tokens_api",
+      "type": "function",
+      "name": "count_tokens_api",
+      "filePath": "cc/api/token_estimation.py",
+      "lineRange": [
+        55,
+        77
+      ],
+      "summary": "Anthropic API 客户端 中的 count_tokens_api 函数，处理 client、messages、model。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/api/token_estimation.py:estimate_messages_tokens",
+      "type": "function",
+      "name": "estimate_messages_tokens",
+      "filePath": "cc/api/token_estimation.py",
+      "lineRange": [
+        80,
+        103
+      ],
+      "summary": "Anthropic API 客户端 中的 estimate_messages_tokens 函数，处理 messages。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/compact/compact.py",
+      "type": "file",
+      "name": "compact.py",
+      "filePath": "cc/compact/compact.py",
+      "summary": "上下文压缩：token 预算监控、摘要生成。核心函数：compact_messages、should_auto_compact、_messages_to_text。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/compact/compact.py:compact_messages",
+      "type": "function",
+      "name": "compact_messages",
+      "filePath": "cc/compact/compact.py",
+      "lineRange": [
+        52,
+        124
+      ],
+      "summary": "上下文压缩 中的 compact_messages 函数，处理 messages、call_model。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/compact/compact.py:should_auto_compact",
+      "type": "function",
+      "name": "should_auto_compact",
+      "filePath": "cc/compact/compact.py",
+      "lineRange": [
+        127,
+        149
+      ],
+      "summary": "上下文压缩 中的 should_auto_compact 函数，处理 estimated_tokens、context_window、consecutive_failures。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/compact/compact.py:_messages_to_text",
+      "type": "function",
+      "name": "_messages_to_text",
+      "filePath": "cc/compact/compact.py",
+      "lineRange": [
+        152,
+        196
+      ],
+      "summary": "上下文压缩 中的 _messages_to_text 函数，处理 messages。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/core/events.py",
+      "type": "file",
+      "name": "events.py",
+      "filePath": "cc/core/events.py",
+      "summary": "核心运行时：QueryEngine 统一入口、query_loop 状态机、事件流。核心类：TextDelta、ThinkingDelta、ToolUseStart、ToolResultReady、CompactOccurred、TurnComplete、ErrorEvent。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/core/events.py:TextDelta",
+      "type": "class",
+      "name": "TextDelta",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        43,
+        50
+      ],
+      "summary": "核心运行时 中的 TextDelta 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/events.py:ThinkingDelta",
+      "type": "class",
+      "name": "ThinkingDelta",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        54,
+        61
+      ],
+      "summary": "核心运行时 中的 ThinkingDelta 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/events.py:ToolUseStart",
+      "type": "class",
+      "name": "ToolUseStart",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        67,
+        77
+      ],
+      "summary": "核心运行时 中的 ToolUseStart 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/events.py:ToolResultReady",
+      "type": "class",
+      "name": "ToolResultReady",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        81,
+        90
+      ],
+      "summary": "核心运行时 中的 ToolResultReady 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/events.py:CompactOccurred",
+      "type": "class",
+      "name": "CompactOccurred",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        96,
+        103
+      ],
+      "summary": "核心运行时 中的 CompactOccurred 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/events.py:TurnComplete",
+      "type": "class",
+      "name": "TurnComplete",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        107,
+        118
+      ],
+      "summary": "核心运行时 中的 TurnComplete 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/events.py:ErrorEvent",
+      "type": "class",
+      "name": "ErrorEvent",
+      "filePath": "cc/core/events.py",
+      "lineRange": [
+        122,
+        130
+      ],
+      "summary": "核心运行时 中的 ErrorEvent 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/core/query_engine.py",
+      "type": "file",
+      "name": "query_engine.py",
+      "filePath": "cc/core/query_engine.py",
+      "summary": "核心运行时：QueryEngine 统一入口、query_loop 状态机、事件流。核心类：CallModelFn、QueryEngine。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:cc/core/query_engine.py:CallModelFn",
+      "type": "class",
+      "name": "CallModelFn",
+      "filePath": "cc/core/query_engine.py",
+      "lineRange": [
+        63,
+        71
+      ],
+      "summary": "核心运行时 中的 CallModelFn 类，包含 __call__ 方法。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/core/query_engine.py:QueryEngine",
+      "type": "class",
+      "name": "QueryEngine",
+      "filePath": "cc/core/query_engine.py",
+      "lineRange": [
+        74,
+        316
+      ],
+      "summary": "核心运行时 中的 QueryEngine 类，提供 16 个方法：__init__、messages、model、model、system_prompt 等。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:cc/core/query_loop.py",
+      "type": "file",
+      "name": "query_loop.py",
+      "filePath": "cc/core/query_loop.py",
+      "summary": "核心运行时：QueryEngine 统一入口、query_loop 状态机、事件流。核心函数：query_loop。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/core/query_loop.py:query_loop",
+      "type": "function",
+      "name": "query_loop",
+      "filePath": "cc/core/query_loop.py",
+      "lineRange": [
+        95,
+        351
+      ],
+      "summary": "核心运行时 中的核心函数 query_loop，实现关键业务逻辑（256 行）。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/integration/test_query_loop.py",
+      "type": "file",
+      "name": "test_query_loop.py",
+      "filePath": "tests/integration/test_query_loop.py",
+      "summary": "单元测试文件，测试 query_loop 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/integration/test_query_loop.py:get_api_key",
+      "type": "function",
+      "name": "get_api_key",
+      "filePath": "tests/integration/test_query_loop.py",
+      "lineRange": [
+        36,
+        46
+      ],
+      "summary": " 中的 get_api_key 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/integration/test_query_loop.py:_check_for_connection_error",
+      "type": "function",
+      "name": "_check_for_connection_error",
+      "filePath": "tests/integration/test_query_loop.py",
+      "lineRange": [
+        53,
+        64
+      ],
+      "summary": " 中的 _check_for_connection_error 函数，处理 events。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/integration/test_query_loop.py:TestQueryLoopRealAPI",
+      "type": "class",
+      "name": "TestQueryLoopRealAPI",
+      "filePath": "tests/integration/test_query_loop.py",
+      "lineRange": [
+        68,
+        160
+      ],
+      "summary": " 中的 TestQueryLoopRealAPI 类，包含 test_simple_text_response、test_tool_use_loop 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/api/test_claude.py",
+      "type": "file",
+      "name": "test_claude.py",
+      "filePath": "tests/unit/api/test_claude.py",
+      "summary": "单元测试文件，测试 claude 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/api/test_claude.py:make_text_stream_events",
+      "type": "function",
+      "name": "make_text_stream_events",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        60,
+        73
+      ],
+      "summary": " 中的 make_text_stream_events 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/api/test_claude.py:make_tool_use_stream_events",
+      "type": "function",
+      "name": "make_tool_use_stream_events",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        76,
+        106
+      ],
+      "summary": " 中的 make_tool_use_stream_events 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:MockContentBlock",
+      "type": "class",
+      "name": "MockContentBlock",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        20,
+        25
+      ],
+      "summary": " 中的 MockContentBlock 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:MockDelta",
+      "type": "class",
+      "name": "MockDelta",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        29,
+        34
+      ],
+      "summary": " 中的 MockDelta 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:MockUsage",
+      "type": "class",
+      "name": "MockUsage",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        38,
+        42
+      ],
+      "summary": " 中的 MockUsage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:MockMessage",
+      "type": "class",
+      "name": "MockMessage",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        46,
+        47
+      ],
+      "summary": " 中的 MockMessage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:MockEvent",
+      "type": "class",
+      "name": "MockEvent",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        51,
+        57
+      ],
+      "summary": " 中的 MockEvent 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:MockStream",
+      "type": "class",
+      "name": "MockStream",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        109,
+        126
+      ],
+      "summary": " 中的 MockStream 类，包含 __init__、__aenter__、__aexit__、__aiter__、_iterate 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:TestStreamResponseTextOnly",
+      "type": "class",
+      "name": "TestStreamResponseTextOnly",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        129,
+        149
+      ],
+      "summary": " 中的 TestStreamResponseTextOnly 类，包含 test_text_deltas_yielded 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_claude.py:TestStreamResponseToolUse",
+      "type": "class",
+      "name": "TestStreamResponseToolUse",
+      "filePath": "tests/unit/api/test_claude.py",
+      "lineRange": [
+        152,
+        191
+      ],
+      "summary": " 中的 TestStreamResponseToolUse 类，包含 test_tool_use_detected、test_partial_json_accumulated 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/api/test_stop_reason.py",
+      "type": "file",
+      "name": "test_stop_reason.py",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "summary": "单元测试文件，测试 stop_reason 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/api/test_stop_reason.py:_make_events_with_stop_reason",
+      "type": "function",
+      "name": "_make_events_with_stop_reason",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        83,
+        95
+      ],
+      "summary": " 中的 _make_events_with_stop_reason 函数，处理 stop_reason。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/api/test_stop_reason.py:_make_client",
+      "type": "function",
+      "name": "_make_client",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        98,
+        101
+      ],
+      "summary": " 中的 _make_client 函数，处理 events。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:MockContentBlock",
+      "type": "class",
+      "name": "MockContentBlock",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": " 中的 MockContentBlock 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:MockDelta",
+      "type": "class",
+      "name": "MockDelta",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        35,
+        39
+      ],
+      "summary": " 中的 MockDelta 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:MockUsage",
+      "type": "class",
+      "name": "MockUsage",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        43,
+        47
+      ],
+      "summary": " 中的 MockUsage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:MockMessage",
+      "type": "class",
+      "name": "MockMessage",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        51,
+        52
+      ],
+      "summary": " 中的 MockMessage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:MockEvent",
+      "type": "class",
+      "name": "MockEvent",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        56,
+        62
+      ],
+      "summary": " 中的 MockEvent 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:MockStream",
+      "type": "class",
+      "name": "MockStream",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        65,
+        80
+      ],
+      "summary": " 中的 MockStream 类，包含 __init__、__aenter__、__aexit__、__aiter__、_iterate 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:TestStopReasonNotMasked",
+      "type": "class",
+      "name": "TestStopReasonNotMasked",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        104,
+        179
+      ],
+      "summary": " 中的 TestStopReasonNotMasked 类，提供 6 个方法：test_tool_use_stop_reason_preserved、test_max_tokens_stop_reason_preserved、test_end_turn_stop_reason_preserved、test_none_stop_reason_defaults_to_end_turn、test_stop_sequence_stop_reason_preserved 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/api/test_stop_reason.py:TestStopReasonNoMessageDeltaAttr",
+      "type": "class",
+      "name": "TestStopReasonNoMessageDeltaAttr",
+      "filePath": "tests/unit/api/test_stop_reason.py",
+      "lineRange": [
+        182,
+        212
+      ],
+      "summary": " 中的 TestStopReasonNoMessageDeltaAttr 类，包含 test_delta_without_stop_reason_attr 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/api/test_token_estimation.py",
+      "type": "file",
+      "name": "test_token_estimation.py",
+      "filePath": "tests/unit/api/test_token_estimation.py",
+      "summary": "单元测试文件，测试 token_estimation 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_token_estimation.py:TestEstimateTokens",
+      "type": "class",
+      "name": "TestEstimateTokens",
+      "filePath": "tests/unit/api/test_token_estimation.py",
+      "lineRange": [
+        9,
+        30
+      ],
+      "summary": " 中的 TestEstimateTokens 类，包含 test_hello_world、test_empty_string、test_thousand_chars、test_unicode、test_json_ratio 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_token_estimation.py:TestEstimateMessagesTokens",
+      "type": "class",
+      "name": "TestEstimateMessagesTokens",
+      "filePath": "tests/unit/api/test_token_estimation.py",
+      "lineRange": [
+        33,
+        54
+      ],
+      "summary": " 中的 TestEstimateMessagesTokens 类，包含 test_string_content、test_list_content、test_multiple_messages 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/api/test_tool_input_parse.py",
+      "type": "file",
+      "name": "test_tool_input_parse.py",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "summary": "单元测试文件，测试 tool_input_parse 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:MockContentBlock",
+      "type": "class",
+      "name": "MockContentBlock",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        23,
+        26
+      ],
+      "summary": " 中的 MockContentBlock 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:MockDelta",
+      "type": "class",
+      "name": "MockDelta",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        30,
+        34
+      ],
+      "summary": " 中的 MockDelta 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:MockUsage",
+      "type": "class",
+      "name": "MockUsage",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        38,
+        42
+      ],
+      "summary": " 中的 MockUsage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:MockMessage",
+      "type": "class",
+      "name": "MockMessage",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        46,
+        47
+      ],
+      "summary": " 中的 MockMessage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:MockEvent",
+      "type": "class",
+      "name": "MockEvent",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        51,
+        57
+      ],
+      "summary": " 中的 MockEvent 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:MockStream",
+      "type": "class",
+      "name": "MockStream",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        60,
+        75
+      ],
+      "summary": " 中的 MockStream 类，包含 __init__、__aenter__、__aexit__、__aiter__、_iterate 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_tool_input_parse.py:TestToolInputJsonParseFallback",
+      "type": "class",
+      "name": "TestToolInputJsonParseFallback",
+      "filePath": "tests/unit/api/test_tool_input_parse.py",
+      "lineRange": [
+        78,
+        166
+      ],
+      "summary": " 中的 TestToolInputJsonParseFallback 类，包含 test_malformed_json_falls_back_to_empty_dict、test_empty_json_string_gives_empty_dict、test_valid_json_parses_correctly 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/api/test_unknown_block_type.py",
+      "type": "file",
+      "name": "test_unknown_block_type.py",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "summary": "单元测试文件，测试 unknown_block_type 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:MockContentBlock",
+      "type": "class",
+      "name": "MockContentBlock",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        20,
+        23
+      ],
+      "summary": " 中的 MockContentBlock 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:MockDelta",
+      "type": "class",
+      "name": "MockDelta",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        27,
+        30
+      ],
+      "summary": " 中的 MockDelta 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:MockUsage",
+      "type": "class",
+      "name": "MockUsage",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        34,
+        38
+      ],
+      "summary": " 中的 MockUsage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:MockMessage",
+      "type": "class",
+      "name": "MockMessage",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        42,
+        43
+      ],
+      "summary": " 中的 MockMessage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:MockEvent",
+      "type": "class",
+      "name": "MockEvent",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        47,
+        53
+      ],
+      "summary": " 中的 MockEvent 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:MockStream",
+      "type": "class",
+      "name": "MockStream",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        56,
+        71
+      ],
+      "summary": " 中的 MockStream 类，包含 __init__、__aenter__、__aexit__、__aiter__、_iterate 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_unknown_block_type.py:TestUnknownBlockTypeWarning",
+      "type": "class",
+      "name": "TestUnknownBlockTypeWarning",
+      "filePath": "tests/unit/api/test_unknown_block_type.py",
+      "lineRange": [
+        74,
+        129
+      ],
+      "summary": " 中的 TestUnknownBlockTypeWarning 类，包含 test_unknown_block_type_logs_warning、test_known_types_no_warning 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/api/test_usage_tracking.py",
+      "type": "file",
+      "name": "test_usage_tracking.py",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "summary": "单元测试文件，测试 usage_tracking 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockContentBlock",
+      "type": "class",
+      "name": "MockContentBlock",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        23,
+        24
+      ],
+      "summary": " 中的 MockContentBlock 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockDelta",
+      "type": "class",
+      "name": "MockDelta",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": " 中的 MockDelta 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockStartUsage",
+      "type": "class",
+      "name": "MockStartUsage",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        35,
+        39
+      ],
+      "summary": " 中的 MockStartUsage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockDeltaUsage",
+      "type": "class",
+      "name": "MockDeltaUsage",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        43,
+        45
+      ],
+      "summary": " 中的 MockDeltaUsage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockMessage",
+      "type": "class",
+      "name": "MockMessage",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        49,
+        50
+      ],
+      "summary": " 中的 MockMessage 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockEvent",
+      "type": "class",
+      "name": "MockEvent",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        54,
+        60
+      ],
+      "summary": " 中的 MockEvent 类。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:MockStream",
+      "type": "class",
+      "name": "MockStream",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        63,
+        78
+      ],
+      "summary": " 中的 MockStream 类，包含 __init__、__aenter__、__aexit__、__aiter__、_iterate 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_usage_tracking.py:TestUsageTracking",
+      "type": "class",
+      "name": "TestUsageTracking",
+      "filePath": "tests/unit/api/test_usage_tracking.py",
+      "lineRange": [
+        81,
+        113
+      ],
+      "summary": " 中的 TestUsageTracking 类，包含 test_full_usage_from_both_events 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/compact/test_compact.py",
+      "type": "file",
+      "name": "test_compact.py",
+      "filePath": "tests/unit/compact/test_compact.py",
+      "summary": "单元测试文件，测试 compact 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/compact/test_compact.py:TestShouldAutoCompact",
+      "type": "class",
+      "name": "TestShouldAutoCompact",
+      "filePath": "tests/unit/compact/test_compact.py",
+      "lineRange": [
+        9,
+        25
+      ],
+      "summary": " 中的 TestShouldAutoCompact 类，包含 test_below_threshold、test_above_threshold、test_exactly_at_threshold、test_circuit_breaker_stops_after_3_failures、test_circuit_breaker_at_max 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/core/test_query_engine.py",
+      "type": "file",
+      "name": "test_query_engine.py",
+      "filePath": "tests/unit/core/test_query_engine.py",
+      "summary": "单元测试文件，测试 query_engine 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/core/test_query_engine.py:_make_mock_client",
+      "type": "function",
+      "name": "_make_mock_client",
+      "filePath": "tests/unit/core/test_query_engine.py",
+      "lineRange": [
+        20,
+        22
+      ],
+      "summary": " 中的 _make_mock_client 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_engine.py:TestQueryEngineInit",
+      "type": "class",
+      "name": "TestQueryEngineInit",
+      "filePath": "tests/unit/core/test_query_engine.py",
+      "lineRange": [
+        25,
+        58
+      ],
+      "summary": " 中的 TestQueryEngineInit 类，包含 test_creates_with_required_args、test_permission_ctx_optional、test_model_setter 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_engine.py:TestQueryEngineMakeCallModel",
+      "type": "class",
+      "name": "TestQueryEngineMakeCallModel",
+      "filePath": "tests/unit/core/test_query_engine.py",
+      "lineRange": [
+        61,
+        81
+      ],
+      "summary": " 中的 TestQueryEngineMakeCallModel 类，包含 test_make_call_model_returns_callable、test_make_call_model_with_override 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_engine.py:TestQueryEngineFactory",
+      "type": "class",
+      "name": "TestQueryEngineFactory",
+      "filePath": "tests/unit/core/test_query_engine.py",
+      "lineRange": [
+        84,
+        97
+      ],
+      "summary": " 中的 TestQueryEngineFactory 类，包含 test_make_call_model_factory 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_engine.py:TestQueryEngineSubmit",
+      "type": "class",
+      "name": "TestQueryEngineSubmit",
+      "filePath": "tests/unit/core/test_query_engine.py",
+      "lineRange": [
+        100,
+        158
+      ],
+      "summary": " 中的 TestQueryEngineSubmit 类，包含 test_submit_adds_user_message、test_submit_messages_does_not_wrap 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/core/test_query_loop.py",
+      "type": "file",
+      "name": "test_query_loop.py",
+      "filePath": "tests/unit/core/test_query_loop.py",
+      "summary": "单元测试文件，测试 query_loop 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_loop.py:TestQueryLoopTextOnly",
+      "type": "class",
+      "name": "TestQueryLoopTextOnly",
+      "filePath": "tests/unit/core/test_query_loop.py",
+      "lineRange": [
+        14,
+        44
+      ],
+      "summary": " 中的 TestQueryLoopTextOnly 类，包含 test_simple_text_response 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_loop.py:TestQueryLoopMaxTokensRecovery",
+      "type": "class",
+      "name": "TestQueryLoopMaxTokensRecovery",
+      "filePath": "tests/unit/core/test_query_loop.py",
+      "lineRange": [
+        47,
+        106
+      ],
+      "summary": " 中的 TestQueryLoopMaxTokensRecovery 类，包含 test_max_tokens_escalate、test_max_tokens_gives_up_after_3 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_loop.py:TestQueryLoopRecoverableError",
+      "type": "class",
+      "name": "TestQueryLoopRecoverableError",
+      "filePath": "tests/unit/core/test_query_loop.py",
+      "lineRange": [
+        109,
+        230
+      ],
+      "summary": " 中的 TestQueryLoopRecoverableError 类，包含 test_recoverable_error_retries、test_non_recoverable_error_stops、test_recoverable_error_does_not_consume_turns、test_tool_follow_up_uses_blocks_not_just_stop_reason 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/api/claude.py",
+      "target": "function:cc/api/claude.py:stream_response",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/api/claude.py",
+      "target": "function:cc/api/claude.py:stream_response",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "function:cc/api/token_estimation.py:estimate_tokens",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "function:cc/api/token_estimation.py:estimate_tokens",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "function:cc/api/token_estimation.py:count_tokens_api",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "function:cc/api/token_estimation.py:count_tokens_api",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "function:cc/api/token_estimation.py:estimate_messages_tokens",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "function:cc/api/token_estimation.py:estimate_messages_tokens",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "function:cc/compact/compact.py:compact_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "function:cc/compact/compact.py:compact_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "function:cc/compact/compact.py:should_auto_compact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "function:cc/compact/compact.py:should_auto_compact",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "function:cc/compact/compact.py:_messages_to_text",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "function:cc/compact/compact.py:_messages_to_text",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:TextDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:TextDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ThinkingDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ThinkingDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ToolUseStart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ToolUseStart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ToolResultReady",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ToolResultReady",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:CompactOccurred",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:CompactOccurred",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:TurnComplete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:TurnComplete",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ErrorEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "class:cc/core/events.py:ErrorEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "class:cc/core/query_engine.py:CallModelFn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "class:cc/core/query_engine.py:CallModelFn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "class:cc/core/query_engine.py:QueryEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "class:cc/core/query_engine.py:QueryEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "function:cc/core/query_loop.py:query_loop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "function:cc/core/query_loop.py:query_loop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "function:tests/integration/test_query_loop.py:get_api_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "function:tests/integration/test_query_loop.py:get_api_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "function:tests/integration/test_query_loop.py:_check_for_connection_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "function:tests/integration/test_query_loop.py:_check_for_connection_error",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "class:tests/integration/test_query_loop.py:TestQueryLoopRealAPI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "class:tests/integration/test_query_loop.py:TestQueryLoopRealAPI",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "function:tests/unit/api/test_claude.py:make_text_stream_events",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "function:tests/unit/api/test_claude.py:make_text_stream_events",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "function:tests/unit/api/test_claude.py:make_tool_use_stream_events",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "function:tests/unit/api/test_claude.py:make_tool_use_stream_events",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockContentBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockContentBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:MockStream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:TestStreamResponseTextOnly",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:TestStreamResponseTextOnly",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:TestStreamResponseToolUse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "class:tests/unit/api/test_claude.py:TestStreamResponseToolUse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "function:tests/unit/api/test_stop_reason.py:_make_events_with_stop_reason",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "function:tests/unit/api/test_stop_reason.py:_make_events_with_stop_reason",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "function:tests/unit/api/test_stop_reason.py:_make_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "function:tests/unit/api/test_stop_reason.py:_make_client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockContentBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockContentBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:MockStream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:TestStopReasonNotMasked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:TestStopReasonNotMasked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:TestStopReasonNoMessageDeltaAttr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "class:tests/unit/api/test_stop_reason.py:TestStopReasonNoMessageDeltaAttr",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_token_estimation.py",
+      "target": "class:tests/unit/api/test_token_estimation.py:TestEstimateTokens",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_token_estimation.py",
+      "target": "class:tests/unit/api/test_token_estimation.py:TestEstimateTokens",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_token_estimation.py",
+      "target": "class:tests/unit/api/test_token_estimation.py:TestEstimateMessagesTokens",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_token_estimation.py",
+      "target": "class:tests/unit/api/test_token_estimation.py:TestEstimateMessagesTokens",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockContentBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockContentBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:MockStream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:TestToolInputJsonParseFallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "class:tests/unit/api/test_tool_input_parse.py:TestToolInputJsonParseFallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockContentBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockContentBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:MockStream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:TestUnknownBlockTypeWarning",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "class:tests/unit/api/test_unknown_block_type.py:TestUnknownBlockTypeWarning",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockContentBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockContentBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockDelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockDelta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockStartUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockStartUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockDeltaUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockDeltaUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:MockStream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:TestUsageTracking",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "class:tests/unit/api/test_usage_tracking.py:TestUsageTracking",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/compact/test_compact.py",
+      "target": "class:tests/unit/compact/test_compact.py:TestShouldAutoCompact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/compact/test_compact.py",
+      "target": "class:tests/unit/compact/test_compact.py:TestShouldAutoCompact",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "function:tests/unit/core/test_query_engine.py:_make_mock_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "function:tests/unit/core/test_query_engine.py:_make_mock_client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineInit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineInit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineMakeCallModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineMakeCallModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineSubmit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "class:tests/unit/core/test_query_engine.py:TestQueryEngineSubmit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "class:tests/unit/core/test_query_loop.py:TestQueryLoopTextOnly",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "class:tests/unit/core/test_query_loop.py:TestQueryLoopTextOnly",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "class:tests/unit/core/test_query_loop.py:TestQueryLoopMaxTokensRecovery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "class:tests/unit/core/test_query_loop.py:TestQueryLoopMaxTokensRecovery",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "class:tests/unit/core/test_query_loop.py:TestQueryLoopRecoverableError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "class:tests/unit/core/test_query_loop.py:TestQueryLoopRecoverableError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/api/claude.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/api/claude.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/api/claude.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "file:cc/core/query_loop.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "file:cc/api/token_estimation.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "file:cc/compact/compact.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/core/query_loop.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/prompts/builder.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/integration/test_query_loop.py",
+      "target": "file:cc/tools/bash/bash_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_claude.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_stop_reason.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_token_estimation.py",
+      "target": "file:cc/api/token_estimation.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_tool_input_parse.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_unknown_block_type.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_usage_tracking.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/compact/test_compact.py",
+      "target": "file:cc/compact/compact.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "file:cc/core/query_engine.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "file:cc/core/query_loop.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_loop.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/core/events.py",
+      "target": "file:tests/unit/core/test_events.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/api/claude.py",
+      "target": "file:tests/unit/api/test_claude.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/api/token_estimation.py",
+      "target": "file:tests/unit/api/test_token_estimation.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/compact/compact.py",
+      "target": "file:tests/unit/compact/test_compact.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/core/query_engine.py",
+      "target": "file:tests/unit/core/test_query_engine.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/core/query_loop.py",
+      "target": "file:tests/unit/core/test_query_loop.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/tools/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/agent/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/agent/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/agent 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/agent/worktree.py",
+      "type": "file",
+      "name": "worktree.py",
+      "filePath": "cc/tools/agent/worktree.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心函数：create_agent_worktree、cleanup_agent_worktree。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/tools/agent/worktree.py:create_agent_worktree",
+      "type": "function",
+      "name": "create_agent_worktree",
+      "filePath": "cc/tools/agent/worktree.py",
+      "lineRange": [
+        31,
+        70
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 create_agent_worktree 函数，处理 cwd、agent_id。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/tools/agent/worktree.py:cleanup_agent_worktree",
+      "type": "function",
+      "name": "cleanup_agent_worktree",
+      "filePath": "cc/tools/agent/worktree.py",
+      "lineRange": [
+        73,
+        123
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 cleanup_agent_worktree 函数，处理 worktree_path、cwd。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/ask_user/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/ask_user/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/ask_user 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/bash/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/bash/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/bash 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/brief/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/brief/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/brief 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/file_edit/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/file_edit/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/file_edit 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/file_read/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/file_read/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/file_read 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/file_write/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/file_write/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/file_write 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/glob_tool/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/glob_tool/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/glob_tool 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/grep_tool/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/grep_tool/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/grep_tool 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/lsp/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/lsp/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/lsp 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/mcp_tool/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/mcp_tool/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/mcp_tool 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/notebook/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/notebook/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/notebook 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/plan_mode/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/plan_mode/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/plan_mode 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/send_message/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/send_message/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/send_message 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/skill/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/skill/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/skill 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/task_tools/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/task_tools/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/task_tools 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/team/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/team/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/team 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/todo/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/todo/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/todo 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/tool_search/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/tool_search/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/tool_search 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/web_fetch/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/web_fetch/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/web_fetch 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/web_search/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/tools/web_search/__init__.py",
+      "summary": "Python 包文件，标记 cc/tools/web_search 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "tool"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/ui/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/ui/__init__.py",
+      "summary": "Python 包文件，标记 cc/ui 为 Python 包。",
+      "tags": [
+        "barrel",
+        "component",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/utils/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/utils/__init__.py",
+      "summary": "Python 包文件，标记 cc/utils 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/tools/agent/worktree.py",
+      "target": "function:cc/tools/agent/worktree.py:create_agent_worktree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/agent/worktree.py",
+      "target": "function:cc/tools/agent/worktree.py:create_agent_worktree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/agent/worktree.py",
+      "target": "function:cc/tools/agent/worktree.py:cleanup_agent_worktree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/agent/worktree.py",
+      "target": "function:cc/tools/agent/worktree.py:cleanup_agent_worktree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/agent/worktree.py",
+      "target": "file:tests/unit/tools/agent/test_worktree.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

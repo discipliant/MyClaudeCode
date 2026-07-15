@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "service:Makefile",
+      "type": "service",
+      "name": "Makefile",
+      "filePath": "Makefile",
+      "summary": "Make 构建脚本，定义项目的常用命令（测试、检查等）。",
+      "tags": [
+        "infrastructure",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "项目说明文档，介绍 Zero — 用纯 Python 还原 Claude Code CLI 的核心 Agent Runtime，包含架构说明、快速开始指南和能力清单。",
+      "tags": [
+        "documentation",
+        "entry-point"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml",
+      "filePath": "pyproject.toml",
+      "summary": "Python 项目配置，定义依赖（anthropic、pydantic、click、rich）、构建系统（hatchling）和工具链（ruff、mypy、pytest）。",
+      "tags": [
+        "configuration",
+        "code"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "service:Makefile",
+      "target": "file:cc/main.py",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:cc/main.py",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:cc/__init__.py",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:pyproject.toml",
+      "target": "file:cc/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

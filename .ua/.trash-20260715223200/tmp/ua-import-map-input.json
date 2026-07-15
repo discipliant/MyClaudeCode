@@ -1,0 +1,980 @@
+{
+    "projectRoot":  "D:\\program\\AiLearning\\MyClaudeCode",
+    "files":  [
+                  {
+                      "fileCategory":  "code",
+                      "path":  ".DS_Store",
+                      "language":  "unknown"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  ".ua/.understandignore",
+                      "language":  "unknown"
+                  },
+                  {
+                      "fileCategory":  "config",
+                      "path":  ".ua/config.json",
+                      "language":  "json"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/__main__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/api/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/api/claude.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/api/client.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/api/token_estimation.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/commands/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/commands/registry.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/compact/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/compact/compact.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/core/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/core/events.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/core/query_engine.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/core/query_loop.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/hooks/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/hooks/hook_runner.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/main.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/mcp/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/mcp/client.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/mcp/config.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/memory/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/memory/extractor.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/memory/session_memory.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/models/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/models/content_blocks.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/models/messages.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/models/state.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/permissions/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/permissions/gate.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/permissions/rules.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/prompts/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/prompts/builder.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/prompts/claudemd.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/prompts/coordinator_prompt.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/prompts/sections.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/prompts/teammate_prompt.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/session/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/session/history.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/session/recovery.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/session/storage.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/session/task_registry.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/skills/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/skills/bundled/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/skills/loader.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/coordinator.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/identity.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/in_process_runner.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/mailbox.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/spawn.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/team_context.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/swarm/team_file.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/agent/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/agent/agent_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/agent/background.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/agent/worktree.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/ask_user/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/ask_user/ask_user_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/base.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/bash/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/bash/bash_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/brief/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/brief/brief_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/file_edit/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/file_edit/file_edit_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/file_read/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/file_read/file_read_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/file_write/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/file_write/file_write_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/glob_tool/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/glob_tool/glob_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/grep_tool/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/grep_tool/grep_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/lsp/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/lsp/lsp_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/mcp_tool/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/notebook/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/notebook/notebook_edit_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/orchestration.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/plan_mode/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/plan_mode/plan_mode_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/send_message/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/send_message/send_message_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/skill/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/skill/skill_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/streaming_executor.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/task_tools/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/task_tools/task_tools.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/team/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/team/team_create_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/team/team_delete_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/todo/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/todo/todo_write_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/tool_search/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/tool_search/tool_search_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/web_fetch/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/web_fetch/web_fetch_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/web_search/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/tools/web_search/web_search_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/ui/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/ui/renderer.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/utils/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "cc/utils/errors.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "infra",
+                      "path":  "Makefile",
+                      "language":  "makefile"
+                  },
+                  {
+                      "fileCategory":  "config",
+                      "path":  "pyproject.toml",
+                      "language":  "toml"
+                  },
+                  {
+                      "fileCategory":  "docs",
+                      "path":  "README.md",
+                      "language":  "markdown"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/e2e/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/e2e/test_cli.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/integration/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/integration/test_query_loop.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_claude.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_client.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_stop_reason.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_token_estimation.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_tool_input_parse.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_unknown_block_type.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/api/test_usage_tracking.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/compact/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/compact/test_compact.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/core/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/core/test_events.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/core/test_multiline.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/core/test_query_engine_unified.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/core/test_query_engine.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/core/test_query_loop.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/mcp/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/memory/test_extraction_coalescing.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/memory/test_memory_index_update.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/models/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/models/test_content_blocks.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/models/test_message_normalization.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/models/test_messages.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/models/test_tool_result_serialization.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/permissions/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/permissions/test_gate.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/permissions/test_non_interactive.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/permissions/test_rules.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/prompts/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/prompts/test_builder.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/prompts/test_claudemd.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/prompts/test_sections.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/prompts/test_teammate_prompt.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/session/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/session/test_history.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/session/test_recovery.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/session/test_storage.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/session/test_task_persistence.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/session/test_task_registry.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/test_coordinator.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/test_identity.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/test_in_process_runner.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/test_mailbox.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/test_spawn.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/swarm/test_team_file.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/agent/__init__.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/agent/test_agent_permission_wiring.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/agent/test_background_agent.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/agent/test_worktree.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_agent_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_ask_user.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_base.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_bash_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_brief_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_extractor.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_file_tools.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_glob_grep.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_hooks.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_lsp.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_mcp_config.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_memory.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_notebook_edit.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_orchestration.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_plan_mode_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_send_message.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_skill_tool.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_skills.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_streaming_executor_enhanced.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_streaming_executor.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_task_stop.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_task_tools.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_team_create.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_team_delete.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_todo_write.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_tool_search.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_web_fetch.py",
+                      "language":  "python"
+                  },
+                  {
+                      "fileCategory":  "code",
+                      "path":  "tests/unit/tools/test_web_search.py",
+                      "language":  "python"
+                  }
+              ]
+}

@@ -1,0 +1,2466 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/swarm/identity.py",
+      "type": "file",
+      "name": "identity.py",
+      "filePath": "cc/swarm/identity.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。定义了 AgentRoute 等类和 parse_agent_id、format_agent_id、sanitize_name 等函数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/swarm/identity.py:parse_agent_id",
+      "type": "function",
+      "name": "parse_agent_id",
+      "filePath": "cc/swarm/identity.py",
+      "lineRange": [
+        33,
+        52
+      ],
+      "summary": "Agent Teams 中的 parse_agent_id 函数，处理 agent_id。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/identity.py:format_agent_id",
+      "type": "function",
+      "name": "format_agent_id",
+      "filePath": "cc/swarm/identity.py",
+      "lineRange": [
+        55,
+        61
+      ],
+      "summary": "Agent Teams 中的 format_agent_id 函数，处理 name、team。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/identity.py:sanitize_name",
+      "type": "function",
+      "name": "sanitize_name",
+      "filePath": "cc/swarm/identity.py",
+      "lineRange": [
+        64,
+        73
+      ],
+      "summary": "Agent Teams 中的 sanitize_name 函数，处理 name。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/swarm/identity.py:AgentRoute",
+      "type": "class",
+      "name": "AgentRoute",
+      "filePath": "cc/swarm/identity.py",
+      "lineRange": [
+        21,
+        30
+      ],
+      "summary": "Agent Teams 中的 AgentRoute 类。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/swarm/in_process_runner.py",
+      "type": "file",
+      "name": "in_process_runner.py",
+      "filePath": "cc/swarm/in_process_runner.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。定义了 InProcessTeammate 等类和 get_current_teammate_id、get_current_team_name、is_in_process_teammate 等函数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/swarm/in_process_runner.py:get_current_teammate_id",
+      "type": "function",
+      "name": "get_current_teammate_id",
+      "filePath": "cc/swarm/in_process_runner.py",
+      "lineRange": [
+        38,
+        40
+      ],
+      "summary": "Agent Teams 中的 get_current_teammate_id 函数，处理 相关参数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/in_process_runner.py:get_current_team_name",
+      "type": "function",
+      "name": "get_current_team_name",
+      "filePath": "cc/swarm/in_process_runner.py",
+      "lineRange": [
+        43,
+        45
+      ],
+      "summary": "Agent Teams 中的 get_current_team_name 函数，处理 相关参数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/in_process_runner.py:is_in_process_teammate",
+      "type": "function",
+      "name": "is_in_process_teammate",
+      "filePath": "cc/swarm/in_process_runner.py",
+      "lineRange": [
+        48,
+        51
+      ],
+      "summary": "Agent Teams 中的 is_in_process_teammate 函数，处理 相关参数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/swarm/in_process_runner.py:InProcessTeammate",
+      "type": "class",
+      "name": "InProcessTeammate",
+      "filePath": "cc/swarm/in_process_runner.py",
+      "lineRange": [
+        54,
+        239
+      ],
+      "summary": "Agent Teams 中的 InProcessTeammate 类，包含 __init__、run、_execute_with_query_loop、check_inbox、is_completed 方法。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/swarm/mailbox.py",
+      "type": "file",
+      "name": "mailbox.py",
+      "filePath": "cc/swarm/mailbox.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。核心类：TeammateMessage、TeammateMailbox。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/swarm/mailbox.py:TeammateMessage",
+      "type": "class",
+      "name": "TeammateMessage",
+      "filePath": "cc/swarm/mailbox.py",
+      "lineRange": [
+        30,
+        70
+      ],
+      "summary": "Agent Teams 中的 TeammateMessage 类，包含 to_dict、from_dict 方法。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/swarm/mailbox.py:TeammateMailbox",
+      "type": "class",
+      "name": "TeammateMailbox",
+      "filePath": "cc/swarm/mailbox.py",
+      "lineRange": [
+        73,
+        180
+      ],
+      "summary": "Agent Teams 中的 TeammateMailbox 类，提供 9 个方法：__init__、_inbox_path、_ensure_inbox_dir、_read_inbox、_write_inbox 等。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/swarm/spawn.py",
+      "type": "file",
+      "name": "spawn.py",
+      "filePath": "cc/swarm/spawn.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。核心函数：spawn_teammate、get_running_tasks。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/swarm/spawn.py:spawn_teammate",
+      "type": "function",
+      "name": "spawn_teammate",
+      "filePath": "cc/swarm/spawn.py",
+      "lineRange": [
+        35,
+        125
+      ],
+      "summary": "Agent Teams 中的 spawn_teammate 函数，处理 team_name、agent_name、prompt、call_model_factory、parent_registry、claude_dir、task_registry。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/swarm/spawn.py:get_running_tasks",
+      "type": "function",
+      "name": "get_running_tasks",
+      "filePath": "cc/swarm/spawn.py",
+      "lineRange": [
+        128,
+        130
+      ],
+      "summary": "Agent Teams 中的 get_running_tasks 函数，处理 相关参数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/swarm/team_file.py",
+      "type": "file",
+      "name": "team_file.py",
+      "filePath": "cc/swarm/team_file.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。定义了 TeamMember、TeamFile 等类和 _get_team_dir、_get_team_file_path、load_team_file 等函数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/swarm/team_file.py:_get_team_dir",
+      "type": "function",
+      "name": "_get_team_dir",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        136,
+        140
+      ],
+      "summary": "Agent Teams 中的 _get_team_dir 函数，处理 team_name、claude_dir。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/team_file.py:_get_team_file_path",
+      "type": "function",
+      "name": "_get_team_file_path",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        143,
+        148
+      ],
+      "summary": "Agent Teams 中的 _get_team_file_path 函数，处理 team_name、claude_dir。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/team_file.py:load_team_file",
+      "type": "function",
+      "name": "load_team_file",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        151,
+        168
+      ],
+      "summary": "Agent Teams 中的 load_team_file 函数，处理 team_name、claude_dir。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/team_file.py:save_team_file",
+      "type": "function",
+      "name": "save_team_file",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        171,
+        186
+      ],
+      "summary": "Agent Teams 中的 save_team_file 函数，处理 team、claude_dir。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/team_file.py:add_member",
+      "type": "function",
+      "name": "add_member",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        189,
+        209
+      ],
+      "summary": "Agent Teams 中的 add_member 函数，处理 team_name、member、claude_dir。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/team_file.py:remove_member",
+      "type": "function",
+      "name": "remove_member",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        212,
+        232
+      ],
+      "summary": "Agent Teams 中的 remove_member 函数，处理 team_name、agent_name、claude_dir。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/swarm/team_file.py:TeamMember",
+      "type": "class",
+      "name": "TeamMember",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        30,
+        80
+      ],
+      "summary": "Agent Teams 中的 TeamMember 类，包含 to_dict、from_dict 方法。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/swarm/team_file.py:TeamFile",
+      "type": "class",
+      "name": "TeamFile",
+      "filePath": "cc/swarm/team_file.py",
+      "lineRange": [
+        84,
+        133
+      ],
+      "summary": "Agent Teams 中的 TeamFile 类，包含 to_dict、from_dict 方法。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/send_message/send_message_tool.py",
+      "type": "file",
+      "name": "send_message_tool.py",
+      "filePath": "cc/tools/send_message/send_message_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：SendMessageTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/send_message/send_message_tool.py:SendMessageTool",
+      "type": "class",
+      "name": "SendMessageTool",
+      "filePath": "cc/tools/send_message/send_message_tool.py",
+      "lineRange": [
+        24,
+        182
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 SendMessageTool 类，提供 6 个方法：__init__、get_name、get_schema、execute、_send_to 等。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/team/team_create_tool.py",
+      "type": "file",
+      "name": "team_create_tool.py",
+      "filePath": "cc/tools/team/team_create_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：TeamCreateTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/team/team_create_tool.py:TeamCreateTool",
+      "type": "class",
+      "name": "TeamCreateTool",
+      "filePath": "cc/tools/team/team_create_tool.py",
+      "lineRange": [
+        25,
+        114
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TeamCreateTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/team/team_delete_tool.py",
+      "type": "file",
+      "name": "team_delete_tool.py",
+      "filePath": "cc/tools/team/team_delete_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：TeamDeleteTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/team/team_delete_tool.py:TeamDeleteTool",
+      "type": "class",
+      "name": "TeamDeleteTool",
+      "filePath": "cc/tools/team/team_delete_tool.py",
+      "lineRange": [
+        23,
+        106
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TeamDeleteTool 类，包含 get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/swarm/test_identity.py",
+      "type": "file",
+      "name": "test_identity.py",
+      "filePath": "tests/unit/swarm/test_identity.py",
+      "summary": "单元测试文件，测试 identity 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_identity.py:TestFormatAgentId",
+      "type": "class",
+      "name": "TestFormatAgentId",
+      "filePath": "tests/unit/swarm/test_identity.py",
+      "lineRange": [
+        16,
+        21
+      ],
+      "summary": " 中的 TestFormatAgentId 类，包含 test_basic、test_team_lead 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_identity.py:TestParseAgentId",
+      "type": "class",
+      "name": "TestParseAgentId",
+      "filePath": "tests/unit/swarm/test_identity.py",
+      "lineRange": [
+        24,
+        50
+      ],
+      "summary": " 中的 TestParseAgentId 类，提供 6 个方法：test_basic、test_team_lead、test_no_at_raises、test_empty_name_raises、test_empty_team_raises 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_identity.py:TestSanitizeName",
+      "type": "class",
+      "name": "TestSanitizeName",
+      "filePath": "tests/unit/swarm/test_identity.py",
+      "lineRange": [
+        53,
+        61
+      ],
+      "summary": " 中的 TestSanitizeName 类，包含 test_basic、test_special_chars、test_already_clean 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/swarm/test_in_process_runner.py",
+      "type": "file",
+      "name": "test_in_process_runner.py",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "summary": "单元测试文件，测试 in_process_runner 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_in_process_runner.py:_mock_call_model_factory",
+      "type": "function",
+      "name": "_mock_call_model_factory",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "lineRange": [
+        23,
+        28
+      ],
+      "summary": " 中的 _mock_call_model_factory 函数，处理 model、max_tokens。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_in_process_runner.py:test_run_sets_identity",
+      "type": "function",
+      "name": "test_run_sets_identity",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "lineRange": [
+        39,
+        51
+      ],
+      "summary": " 中的 test_run_sets_identity 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_in_process_runner.py:test_identity_isolation",
+      "type": "function",
+      "name": "test_identity_isolation",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "lineRange": [
+        55,
+        70
+      ],
+      "summary": " 中的 test_identity_isolation 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_in_process_runner.py:test_sends_completion_message",
+      "type": "function",
+      "name": "test_sends_completion_message",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "lineRange": [
+        74,
+        91
+      ],
+      "summary": " 中的 test_sends_completion_message 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_in_process_runner.py:test_uses_non_interactive_permissions",
+      "type": "function",
+      "name": "test_uses_non_interactive_permissions",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "lineRange": [
+        95,
+        110
+      ],
+      "summary": " 中的 test_uses_non_interactive_permissions 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_in_process_runner.py:TestContextVars",
+      "type": "class",
+      "name": "TestContextVars",
+      "filePath": "tests/unit/swarm/test_in_process_runner.py",
+      "lineRange": [
+        31,
+        35
+      ],
+      "summary": " 中的 TestContextVars 类，包含 test_default_not_teammate 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/swarm/test_mailbox.py",
+      "type": "file",
+      "name": "test_mailbox.py",
+      "filePath": "tests/unit/swarm/test_mailbox.py",
+      "summary": "单元测试文件，测试 mailbox 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_mailbox.py:mailbox",
+      "type": "function",
+      "name": "mailbox",
+      "filePath": "tests/unit/swarm/test_mailbox.py",
+      "lineRange": [
+        13,
+        17
+      ],
+      "summary": " 中的 mailbox 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_mailbox.py:TestTeammateMessage",
+      "type": "class",
+      "name": "TestTeammateMessage",
+      "filePath": "tests/unit/swarm/test_mailbox.py",
+      "lineRange": [
+        20,
+        42
+      ],
+      "summary": " 中的 TestTeammateMessage 类，包含 test_roundtrip、test_roundtrip_no_summary 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_mailbox.py:TestTeammateMailbox",
+      "type": "class",
+      "name": "TestTeammateMailbox",
+      "filePath": "tests/unit/swarm/test_mailbox.py",
+      "lineRange": [
+        45,
+        93
+      ],
+      "summary": " 中的 TestTeammateMailbox 类，提供 6 个方法：test_send_and_receive、test_receive_empty、test_mark_all_read、test_multiple_sends、test_send_forces_unread 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/swarm/test_spawn.py",
+      "type": "file",
+      "name": "test_spawn.py",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "summary": "单元测试文件，测试 spawn 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_spawn.py:_mock_factory",
+      "type": "function",
+      "name": "_mock_factory",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "lineRange": [
+        21,
+        26
+      ],
+      "summary": " 中的 _mock_factory 函数，处理 model、max_tokens。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_spawn.py:claude_dir",
+      "type": "function",
+      "name": "claude_dir",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "lineRange": [
+        30,
+        42
+      ],
+      "summary": " 中的 claude_dir 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_spawn.py:test_spawn_returns_task_id",
+      "type": "function",
+      "name": "test_spawn_returns_task_id",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "lineRange": [
+        46,
+        62
+      ],
+      "summary": " 中的 test_spawn_returns_task_id 函数，处理 claude_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_spawn.py:test_spawn_registers_member",
+      "type": "function",
+      "name": "test_spawn_registers_member",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "lineRange": [
+        66,
+        86
+      ],
+      "summary": " 中的 test_spawn_registers_member 函数，处理 claude_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_spawn.py:test_spawn_teammate_sends_message",
+      "type": "function",
+      "name": "test_spawn_teammate_sends_message",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "lineRange": [
+        90,
+        112
+      ],
+      "summary": " 中的 test_spawn_teammate_sends_message 函数，处理 claude_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_spawn.py:test_spawn_with_task_registry",
+      "type": "function",
+      "name": "test_spawn_with_task_registry",
+      "filePath": "tests/unit/swarm/test_spawn.py",
+      "lineRange": [
+        116,
+        145
+      ],
+      "summary": " 中的 test_spawn_with_task_registry 函数，处理 claude_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/swarm/test_team_file.py",
+      "type": "file",
+      "name": "test_team_file.py",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "summary": "单元测试文件，测试 team_file 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/swarm/test_team_file.py:claude_dir",
+      "type": "function",
+      "name": "claude_dir",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "lineRange": [
+        25,
+        26
+      ],
+      "summary": " 中的 claude_dir 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_team_file.py:TestTeamMember",
+      "type": "class",
+      "name": "TestTeamMember",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "lineRange": [
+        29,
+        48
+      ],
+      "summary": " 中的 TestTeamMember 类，包含 test_roundtrip 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_team_file.py:TestTeamFile",
+      "type": "class",
+      "name": "TestTeamFile",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "lineRange": [
+        51,
+        72
+      ],
+      "summary": " 中的 TestTeamFile 类，包含 test_roundtrip 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_team_file.py:TestSaveAndLoad",
+      "type": "class",
+      "name": "TestSaveAndLoad",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "lineRange": [
+        75,
+        100
+      ],
+      "summary": " 中的 TestSaveAndLoad 类，包含 test_save_and_load、test_load_nonexistent 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_team_file.py:TestAddMember",
+      "type": "class",
+      "name": "TestAddMember",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "lineRange": [
+        103,
+        146
+      ],
+      "summary": " 中的 TestAddMember 类，包含 test_add_member、test_add_member_no_team_raises、test_add_duplicate_is_noop 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_team_file.py:TestRemoveMember",
+      "type": "class",
+      "name": "TestRemoveMember",
+      "filePath": "tests/unit/swarm/test_team_file.py",
+      "lineRange": [
+        149,
+        177
+      ],
+      "summary": " 中的 TestRemoveMember 类，包含 test_remove_member、test_remove_nonexistent_member、test_remove_no_team_raises 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_send_message.py",
+      "type": "file",
+      "name": "test_send_message.py",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "summary": "单元测试文件，测试 send_message 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:team_dir",
+      "type": "function",
+      "name": "team_dir",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        21,
+        33
+      ],
+      "summary": " 中的 team_dir 函数，处理 tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:tool",
+      "type": "function",
+      "name": "tool",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        37,
+        38
+      ],
+      "summary": " 中的 tool 函数，处理 team_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:test_send_message",
+      "type": "function",
+      "name": "test_send_message",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        42,
+        60
+      ],
+      "summary": " 中的 test_send_message 函数，处理 tool、team_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:test_broadcast",
+      "type": "function",
+      "name": "test_broadcast",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        64,
+        79
+      ],
+      "summary": " 中的 test_broadcast 函数，处理 tool、team_dir。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:test_send_empty_to",
+      "type": "function",
+      "name": "test_send_empty_to",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        83,
+        87
+      ],
+      "summary": " 中的 test_send_empty_to 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:test_send_no_team",
+      "type": "function",
+      "name": "test_send_no_team",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        91,
+        95
+      ],
+      "summary": " 中的 test_send_no_team 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_send_message.py:test_schema",
+      "type": "function",
+      "name": "test_schema",
+      "filePath": "tests/unit/tools/test_send_message.py",
+      "lineRange": [
+        99,
+        104
+      ],
+      "summary": " 中的 test_schema 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_team_create.py",
+      "type": "file",
+      "name": "test_team_create.py",
+      "filePath": "tests/unit/tools/test_team_create.py",
+      "summary": "单元测试文件，测试 team_create 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_create.py:tool",
+      "type": "function",
+      "name": "tool",
+      "filePath": "tests/unit/tools/test_team_create.py",
+      "lineRange": [
+        18,
+        19
+      ],
+      "summary": " 中的 tool 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_create.py:test_create_team",
+      "type": "function",
+      "name": "test_create_team",
+      "filePath": "tests/unit/tools/test_team_create.py",
+      "lineRange": [
+        23,
+        32
+      ],
+      "summary": " 中的 test_create_team 函数，处理 tool、tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_create.py:test_create_duplicate_team",
+      "type": "function",
+      "name": "test_create_duplicate_team",
+      "filePath": "tests/unit/tools/test_team_create.py",
+      "lineRange": [
+        36,
+        43
+      ],
+      "summary": " 中的 test_create_duplicate_team 函数，处理 tool、tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_create.py:test_create_empty_name",
+      "type": "function",
+      "name": "test_create_empty_name",
+      "filePath": "tests/unit/tools/test_team_create.py",
+      "lineRange": [
+        47,
+        51
+      ],
+      "summary": " 中的 test_create_empty_name 函数，处理 tool。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_create.py:test_schema",
+      "type": "function",
+      "name": "test_schema",
+      "filePath": "tests/unit/tools/test_team_create.py",
+      "lineRange": [
+        55,
+        58
+      ],
+      "summary": " 中的 test_schema 函数，处理 tool。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_team_delete.py",
+      "type": "file",
+      "name": "test_team_delete.py",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "summary": "单元测试文件，测试 team_delete 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_delete.py:tool",
+      "type": "function",
+      "name": "tool",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "lineRange": [
+        20,
+        21
+      ],
+      "summary": " 中的 tool 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_delete.py:test_delete_team",
+      "type": "function",
+      "name": "test_delete_team",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "lineRange": [
+        25,
+        49
+      ],
+      "summary": " 中的 test_delete_team 函数，处理 tool、tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_delete.py:test_delete_nonexistent",
+      "type": "function",
+      "name": "test_delete_nonexistent",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "lineRange": [
+        53,
+        60
+      ],
+      "summary": " 中的 test_delete_nonexistent 函数，处理 tool、tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_delete.py:test_delete_with_active_members",
+      "type": "function",
+      "name": "test_delete_with_active_members",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "lineRange": [
+        64,
+        80
+      ],
+      "summary": " 中的 test_delete_with_active_members 函数，处理 tool、tmp_path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_delete.py:test_delete_empty_name",
+      "type": "function",
+      "name": "test_delete_empty_name",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "lineRange": [
+        84,
+        86
+      ],
+      "summary": " 中的 test_delete_empty_name 函数，处理 tool。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_team_delete.py:test_schema",
+      "type": "function",
+      "name": "test_schema",
+      "filePath": "tests/unit/tools/test_team_delete.py",
+      "lineRange": [
+        90,
+        92
+      ],
+      "summary": " 中的 test_schema 函数，处理 tool。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "function:cc/swarm/identity.py:parse_agent_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "function:cc/swarm/identity.py:parse_agent_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "function:cc/swarm/identity.py:format_agent_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "function:cc/swarm/identity.py:format_agent_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "function:cc/swarm/identity.py:sanitize_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "function:cc/swarm/identity.py:sanitize_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "class:cc/swarm/identity.py:AgentRoute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "class:cc/swarm/identity.py:AgentRoute",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "function:cc/swarm/in_process_runner.py:get_current_teammate_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "function:cc/swarm/in_process_runner.py:get_current_teammate_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "function:cc/swarm/in_process_runner.py:get_current_team_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "function:cc/swarm/in_process_runner.py:get_current_team_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "function:cc/swarm/in_process_runner.py:is_in_process_teammate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "function:cc/swarm/in_process_runner.py:is_in_process_teammate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "class:cc/swarm/in_process_runner.py:InProcessTeammate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "class:cc/swarm/in_process_runner.py:InProcessTeammate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/mailbox.py",
+      "target": "class:cc/swarm/mailbox.py:TeammateMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/mailbox.py",
+      "target": "class:cc/swarm/mailbox.py:TeammateMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/mailbox.py",
+      "target": "class:cc/swarm/mailbox.py:TeammateMailbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/mailbox.py",
+      "target": "class:cc/swarm/mailbox.py:TeammateMailbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "function:cc/swarm/spawn.py:spawn_teammate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "function:cc/swarm/spawn.py:spawn_teammate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "function:cc/swarm/spawn.py:get_running_tasks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "function:cc/swarm/spawn.py:get_running_tasks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:_get_team_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:_get_team_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:_get_team_file_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:_get_team_file_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:load_team_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:load_team_file",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:save_team_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:save_team_file",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:add_member",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:add_member",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:remove_member",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "function:cc/swarm/team_file.py:remove_member",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "class:cc/swarm/team_file.py:TeamMember",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "class:cc/swarm/team_file.py:TeamMember",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "class:cc/swarm/team_file.py:TeamFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "class:cc/swarm/team_file.py:TeamFile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/send_message/send_message_tool.py",
+      "target": "class:cc/tools/send_message/send_message_tool.py:SendMessageTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/send_message/send_message_tool.py",
+      "target": "class:cc/tools/send_message/send_message_tool.py:SendMessageTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/team/team_create_tool.py",
+      "target": "class:cc/tools/team/team_create_tool.py:TeamCreateTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/team/team_create_tool.py",
+      "target": "class:cc/tools/team/team_create_tool.py:TeamCreateTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/team/team_delete_tool.py",
+      "target": "class:cc/tools/team/team_delete_tool.py:TeamDeleteTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/team/team_delete_tool.py",
+      "target": "class:cc/tools/team/team_delete_tool.py:TeamDeleteTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "class:tests/unit/swarm/test_identity.py:TestFormatAgentId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "class:tests/unit/swarm/test_identity.py:TestFormatAgentId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "class:tests/unit/swarm/test_identity.py:TestParseAgentId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "class:tests/unit/swarm/test_identity.py:TestParseAgentId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "class:tests/unit/swarm/test_identity.py:TestSanitizeName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "class:tests/unit/swarm/test_identity.py:TestSanitizeName",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:_mock_call_model_factory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:_mock_call_model_factory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_run_sets_identity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_run_sets_identity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_identity_isolation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_identity_isolation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_sends_completion_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_sends_completion_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_uses_non_interactive_permissions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "function:tests/unit/swarm/test_in_process_runner.py:test_uses_non_interactive_permissions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "class:tests/unit/swarm/test_in_process_runner.py:TestContextVars",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "class:tests/unit/swarm/test_in_process_runner.py:TestContextVars",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "function:tests/unit/swarm/test_mailbox.py:mailbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "function:tests/unit/swarm/test_mailbox.py:mailbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "class:tests/unit/swarm/test_mailbox.py:TestTeammateMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "class:tests/unit/swarm/test_mailbox.py:TestTeammateMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "class:tests/unit/swarm/test_mailbox.py:TestTeammateMailbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "class:tests/unit/swarm/test_mailbox.py:TestTeammateMailbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:_mock_factory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:_mock_factory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:claude_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:claude_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_returns_task_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_returns_task_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_registers_member",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_registers_member",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_teammate_sends_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_teammate_sends_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_with_task_registry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "function:tests/unit/swarm/test_spawn.py:test_spawn_with_task_registry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "function:tests/unit/swarm/test_team_file.py:claude_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "function:tests/unit/swarm/test_team_file.py:claude_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestTeamMember",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestTeamMember",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestTeamFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestTeamFile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestSaveAndLoad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestSaveAndLoad",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestAddMember",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestAddMember",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestRemoveMember",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "class:tests/unit/swarm/test_team_file.py:TestRemoveMember",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:team_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:team_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_send_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_send_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_broadcast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_broadcast",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_send_empty_to",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_send_empty_to",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_send_no_team",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_send_no_team",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "function:tests/unit/tools/test_send_message.py:test_schema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_create_team",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_create_team",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_create_duplicate_team",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_create_duplicate_team",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_create_empty_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_create_empty_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "function:tests/unit/tools/test_team_create.py:test_schema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_team",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_team",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_nonexistent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_nonexistent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_with_active_members",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_with_active_members",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_empty_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_delete_empty_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "function:tests/unit/tools/test_team_delete.py:test_schema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/mailbox.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "file:cc/swarm/in_process_runner.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/send_message/send_message_tool.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/send_message/send_message_tool.py",
+      "target": "file:cc/swarm/mailbox.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/send_message/send_message_tool.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/send_message/send_message_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/team/team_create_tool.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/team/team_create_tool.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/team/team_create_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/team/team_delete_tool.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/team/team_delete_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_identity.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "file:cc/swarm/in_process_runner.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_in_process_runner.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_mailbox.py",
+      "target": "file:cc/swarm/mailbox.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "file:cc/swarm/spawn.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_spawn.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_team_file.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "file:cc/swarm/mailbox.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_send_message.py",
+      "target": "file:cc/tools/send_message/send_message_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_create.py",
+      "target": "file:cc/tools/team/team_create_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "file:cc/swarm/identity.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "file:cc/swarm/team_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_team_delete.py",
+      "target": "file:cc/tools/team/team_delete_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/swarm/identity.py",
+      "target": "file:tests/unit/swarm/test_identity.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/swarm/in_process_runner.py",
+      "target": "file:tests/unit/swarm/test_in_process_runner.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/swarm/mailbox.py",
+      "target": "file:tests/unit/swarm/test_mailbox.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/swarm/spawn.py",
+      "target": "file:tests/unit/swarm/test_spawn.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/swarm/team_file.py",
+      "target": "file:tests/unit/swarm/test_team_file.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

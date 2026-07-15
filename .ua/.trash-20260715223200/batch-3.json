@@ -1,0 +1,3035 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/memory/extractor.py",
+      "type": "file",
+      "name": "extractor.py",
+      "filePath": "cc/memory/extractor.py",
+      "summary": "记忆系统：加载/保存/提取/索引/ExtractionCoordinator。定义了 ExtractionCoordinator 等类和 extract_memories、_extract_description、_format_messages_for_extraction 等函数。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/memory/extractor.py:extract_memories",
+      "type": "function",
+      "name": "extract_memories",
+      "filePath": "cc/memory/extractor.py",
+      "lineRange": [
+        82,
+        192
+      ],
+      "summary": "记忆系统 中的核心函数 extract_memories，实现关键业务逻辑（110 行）。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/memory/extractor.py:_extract_description",
+      "type": "function",
+      "name": "_extract_description",
+      "filePath": "cc/memory/extractor.py",
+      "lineRange": [
+        195,
+        219
+      ],
+      "summary": "记忆系统 中的 _extract_description 函数，处理 content。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/extractor.py:_format_messages_for_extraction",
+      "type": "function",
+      "name": "_format_messages_for_extraction",
+      "filePath": "cc/memory/extractor.py",
+      "lineRange": [
+        222,
+        239
+      ],
+      "summary": "记忆系统 中的 _format_messages_for_extraction 函数，处理 messages。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/extractor.py:_count_visible",
+      "type": "function",
+      "name": "_count_visible",
+      "filePath": "cc/memory/extractor.py",
+      "lineRange": [
+        242,
+        250
+      ],
+      "summary": "记忆系统 中的 _count_visible 函数，处理 messages。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/memory/extractor.py:ExtractionCoordinator",
+      "type": "class",
+      "name": "ExtractionCoordinator",
+      "filePath": "cc/memory/extractor.py",
+      "lineRange": [
+        253,
+        328
+      ],
+      "summary": "记忆系统 中的 ExtractionCoordinator 类，包含 __init__、last_extracted_count、request_extraction 方法。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/memory/session_memory.py",
+      "type": "file",
+      "name": "session_memory.py",
+      "filePath": "cc/memory/session_memory.py",
+      "summary": "记忆系统：加载/保存/提取/索引/ExtractionCoordinator。核心函数：_project_id、get_memory_dir、load_memories、save_memory、delete_memory。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:_project_id",
+      "type": "function",
+      "name": "_project_id",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        18,
+        28
+      ],
+      "summary": "记忆系统 中的 _project_id 函数，处理 cwd。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:get_memory_dir",
+      "type": "function",
+      "name": "get_memory_dir",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        31,
+        41
+      ],
+      "summary": "记忆系统 中的 get_memory_dir 函数，处理 cwd、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:load_memories",
+      "type": "function",
+      "name": "load_memories",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        44,
+        70
+      ],
+      "summary": "记忆系统 中的 load_memories 函数，处理 cwd、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:save_memory",
+      "type": "function",
+      "name": "save_memory",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        73,
+        94
+      ],
+      "summary": "记忆系统 中的 save_memory 函数，处理 cwd、name、content、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:delete_memory",
+      "type": "function",
+      "name": "delete_memory",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        97,
+        113
+      ],
+      "summary": "记忆系统 中的 delete_memory 函数，处理 cwd、name、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:format_memories_for_prompt",
+      "type": "function",
+      "name": "format_memories_for_prompt",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        116,
+        133
+      ],
+      "summary": "记忆系统 中的 format_memories_for_prompt 函数，处理 memories。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:update_memory_index",
+      "type": "function",
+      "name": "update_memory_index",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        136,
+        176
+      ],
+      "summary": "记忆系统 中的 update_memory_index 函数，处理 cwd、name、description、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/memory/session_memory.py:load_memory_index",
+      "type": "function",
+      "name": "load_memory_index",
+      "filePath": "cc/memory/session_memory.py",
+      "lineRange": [
+        179,
+        198
+      ],
+      "summary": "记忆系统 中的 load_memory_index 函数，处理 cwd、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/models/content_blocks.py",
+      "type": "file",
+      "name": "content_blocks.py",
+      "filePath": "cc/models/content_blocks.py",
+      "summary": "数据模型：消息类型、content blocks、API 规范化。定义了 TextBlock、ToolUseBlock、ToolResultContent、ToolResultBlock、ThinkingBlock、RedactedThinkingBlock、ImageBlock、ImageSource 等类和 content_block_from_api_dict 等函数。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/models/content_blocks.py:content_block_from_api_dict",
+      "type": "function",
+      "name": "content_block_from_api_dict",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        246,
+        268
+      ],
+      "summary": "数据模型 中的 content_block_from_api_dict 函数，处理 data。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:TextBlock",
+      "type": "class",
+      "name": "TextBlock",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        26,
+        39
+      ],
+      "summary": "数据模型 中的 TextBlock 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:ToolUseBlock",
+      "type": "class",
+      "name": "ToolUseBlock",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        46,
+        62
+      ],
+      "summary": "数据模型 中的 ToolUseBlock 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:ToolResultContent",
+      "type": "class",
+      "name": "ToolResultContent",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        71,
+        94
+      ],
+      "summary": "数据模型 中的 ToolResultContent 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:ToolResultBlock",
+      "type": "class",
+      "name": "ToolResultBlock",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        103,
+        141
+      ],
+      "summary": "数据模型 中的 ToolResultBlock 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:ThinkingBlock",
+      "type": "class",
+      "name": "ThinkingBlock",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        150,
+        164
+      ],
+      "summary": "数据模型 中的 ThinkingBlock 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:RedactedThinkingBlock",
+      "type": "class",
+      "name": "RedactedThinkingBlock",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        173,
+        184
+      ],
+      "summary": "数据模型 中的 RedactedThinkingBlock 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:ImageBlock",
+      "type": "class",
+      "name": "ImageBlock",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        193,
+        204
+      ],
+      "summary": "数据模型 中的 ImageBlock 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/content_blocks.py:ImageSource",
+      "type": "class",
+      "name": "ImageSource",
+      "filePath": "cc/models/content_blocks.py",
+      "lineRange": [
+        208,
+        227
+      ],
+      "summary": "数据模型 中的 ImageSource 类，包含 to_api_dict、from_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/models/messages.py",
+      "type": "file",
+      "name": "messages.py",
+      "filePath": "cc/models/messages.py",
+      "summary": "数据模型：消息类型、content blocks、API 规范化。定义了 Usage、UserMessage、AssistantMessage、SystemMessage、CompactBoundaryMessage 等类和 normalize_messages_for_api、_merge_user_messages、_ensure_tool_result_pairing 等函数。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/models/messages.py:normalize_messages_for_api",
+      "type": "function",
+      "name": "normalize_messages_for_api",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        184,
+        230
+      ],
+      "summary": "数据模型 中的 normalize_messages_for_api 函数，处理 messages。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/models/messages.py:_merge_user_messages",
+      "type": "function",
+      "name": "_merge_user_messages",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        233,
+        248
+      ],
+      "summary": "数据模型 中的 _merge_user_messages 函数，处理 target、source。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/models/messages.py:_ensure_tool_result_pairing",
+      "type": "function",
+      "name": "_ensure_tool_result_pairing",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        255,
+        354
+      ],
+      "summary": "数据模型 中的 _ensure_tool_result_pairing 函数，处理 messages。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/models/messages.py:get_messages_after_compact_boundary",
+      "type": "function",
+      "name": "get_messages_after_compact_boundary",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        357,
+        372
+      ],
+      "summary": "数据模型 中的 get_messages_after_compact_boundary 函数，处理 messages。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/models/messages.py:create_user_message",
+      "type": "function",
+      "name": "create_user_message",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        380,
+        394
+      ],
+      "summary": "数据模型 中的 create_user_message 函数，处理 content。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/models/messages.py:create_assistant_message",
+      "type": "function",
+      "name": "create_assistant_message",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        397,
+        421
+      ],
+      "summary": "数据模型 中的 create_assistant_message 函数，处理 content、usage、stop_reason。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/models/messages.py:create_tool_result_message",
+      "type": "function",
+      "name": "create_tool_result_message",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        424,
+        434
+      ],
+      "summary": "数据模型 中的 create_tool_result_message 函数，处理 tool_use_id、content、is_error。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/messages.py:Usage",
+      "type": "class",
+      "name": "Usage",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        41,
+        53
+      ],
+      "summary": "数据模型 中的 Usage 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/messages.py:UserMessage",
+      "type": "class",
+      "name": "UserMessage",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        61,
+        85
+      ],
+      "summary": "数据模型 中的 UserMessage 类，包含 to_api_dict 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/messages.py:AssistantMessage",
+      "type": "class",
+      "name": "AssistantMessage",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        89,
+        130
+      ],
+      "summary": "数据模型 中的 AssistantMessage 类，包含 to_api_dict、get_text、get_tool_use_blocks 方法。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/messages.py:SystemMessage",
+      "type": "class",
+      "name": "SystemMessage",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        134,
+        148
+      ],
+      "summary": "数据模型 中的 SystemMessage 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/messages.py:CompactBoundaryMessage",
+      "type": "class",
+      "name": "CompactBoundaryMessage",
+      "filePath": "cc/models/messages.py",
+      "lineRange": [
+        152,
+        167
+      ],
+      "summary": "数据模型 中的 CompactBoundaryMessage 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/session/recovery.py",
+      "type": "file",
+      "name": "recovery.py",
+      "filePath": "cc/session/recovery.py",
+      "summary": "会话管理：持久化、TaskRegistry、transcript recovery。核心函数：validate_transcript。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/session/recovery.py:validate_transcript",
+      "type": "function",
+      "name": "validate_transcript",
+      "filePath": "cc/session/recovery.py",
+      "lineRange": [
+        29,
+        130
+      ],
+      "summary": "会话管理 中的核心函数 validate_transcript，实现关键业务逻辑（101 行）。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/session/storage.py",
+      "type": "file",
+      "name": "storage.py",
+      "filePath": "cc/session/storage.py",
+      "summary": "会话管理：持久化、TaskRegistry、transcript recovery。核心函数：get_sessions_dir、save_session、load_session、load_task_snapshot、list_sessions。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/session/storage.py:get_sessions_dir",
+      "type": "function",
+      "name": "get_sessions_dir",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        31,
+        37
+      ],
+      "summary": "会话管理 中的 get_sessions_dir 函数，处理 claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/storage.py:save_session",
+      "type": "function",
+      "name": "save_session",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        40,
+        70
+      ],
+      "summary": "会话管理 中的 save_session 函数，处理 session_id、messages、claude_dir、task_snapshot。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/storage.py:load_session",
+      "type": "function",
+      "name": "load_session",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        73,
+        104
+      ],
+      "summary": "会话管理 中的 load_session 函数，处理 session_id、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/storage.py:load_task_snapshot",
+      "type": "function",
+      "name": "load_task_snapshot",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        107,
+        127
+      ],
+      "summary": "会话管理 中的 load_task_snapshot 函数，处理 session_id、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/storage.py:list_sessions",
+      "type": "function",
+      "name": "list_sessions",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        130,
+        138
+      ],
+      "summary": "会话管理 中的 list_sessions 函数，处理 claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/storage.py:_message_to_record",
+      "type": "function",
+      "name": "_message_to_record",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        141,
+        196
+      ],
+      "summary": "会话管理 中的 _message_to_record 函数，处理 msg。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/session/storage.py:_record_to_message",
+      "type": "function",
+      "name": "_record_to_message",
+      "filePath": "cc/session/storage.py",
+      "lineRange": [
+        199,
+        256
+      ],
+      "summary": "会话管理 中的 _record_to_message 函数，处理 record。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/session/task_registry.py",
+      "type": "file",
+      "name": "task_registry.py",
+      "filePath": "cc/session/task_registry.py",
+      "summary": "会话管理：持久化、TaskRegistry、transcript recovery。核心类：TaskState、TaskRecord、TaskRegistry。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:cc/session/task_registry.py:TaskState",
+      "type": "class",
+      "name": "TaskState",
+      "filePath": "cc/session/task_registry.py",
+      "lineRange": [
+        40,
+        57
+      ],
+      "summary": "会话管理 中的 TaskState 类。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/session/task_registry.py:TaskRecord",
+      "type": "class",
+      "name": "TaskRecord",
+      "filePath": "cc/session/task_registry.py",
+      "lineRange": [
+        66,
+        118
+      ],
+      "summary": "会话管理 中的 TaskRecord 类，包含 is_terminal、to_dict、from_dict 方法。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/session/task_registry.py:TaskRegistry",
+      "type": "class",
+      "name": "TaskRegistry",
+      "filePath": "cc/session/task_registry.py",
+      "lineRange": [
+        121,
+        251
+      ],
+      "summary": "会话管理 中的 TaskRegistry 类，提供 9 个方法：__init__、register、update_state、get、list_all 等。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/agent/background.py",
+      "type": "file",
+      "name": "background.py",
+      "filePath": "cc/tools/agent/background.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：BackgroundAgentManager。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/agent/background.py:BackgroundAgentManager",
+      "type": "class",
+      "name": "BackgroundAgentManager",
+      "filePath": "cc/tools/agent/background.py",
+      "lineRange": [
+        32,
+        131
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 BackgroundAgentManager 类，包含 __init__、spawn、_run_and_notify、poll_completed 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/core/test_events.py",
+      "type": "file",
+      "name": "test_events.py",
+      "filePath": "tests/unit/core/test_events.py",
+      "summary": "单元测试文件，测试 events 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_events.py:TestEventRepr",
+      "type": "class",
+      "name": "TestEventRepr",
+      "filePath": "tests/unit/core/test_events.py",
+      "lineRange": [
+        18,
+        57
+      ],
+      "summary": " 中的 TestEventRepr 类，提供 7 个方法：test_text_delta_repr、test_thinking_delta_repr、test_tool_use_start_repr、test_tool_result_ready_repr、test_compact_occurred_repr 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "type": "file",
+      "name": "test_extraction_coalescing.py",
+      "filePath": "tests/unit/memory/test_extraction_coalescing.py",
+      "summary": "单元测试文件，测试 extraction_coalescing 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/memory/test_extraction_coalescing.py:_make_messages",
+      "type": "function",
+      "name": "_make_messages",
+      "filePath": "tests/unit/memory/test_extraction_coalescing.py",
+      "lineRange": [
+        19,
+        25
+      ],
+      "summary": " 中的 _make_messages 函数，处理 n。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/memory/test_extraction_coalescing.py:_make_mock_call_model",
+      "type": "function",
+      "name": "_make_mock_call_model",
+      "filePath": "tests/unit/memory/test_extraction_coalescing.py",
+      "lineRange": [
+        28,
+        35
+      ],
+      "summary": " 中的 _make_mock_call_model 函数，处理 delay。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/memory/test_extraction_coalescing.py:TestExtractionCoordinator",
+      "type": "class",
+      "name": "TestExtractionCoordinator",
+      "filePath": "tests/unit/memory/test_extraction_coalescing.py",
+      "lineRange": [
+        38,
+        111
+      ],
+      "summary": " 中的 TestExtractionCoordinator 类，包含 test_basic_extraction_runs、test_short_conversation_skipped、test_concurrent_request_coalesced、test_dirty_flag_causes_rerun 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/memory/test_memory_index_update.py",
+      "type": "file",
+      "name": "test_memory_index_update.py",
+      "filePath": "tests/unit/memory/test_memory_index_update.py",
+      "summary": "单元测试文件，测试 memory_index_update 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/memory/test_memory_index_update.py:TestUpdateMemoryIndex",
+      "type": "class",
+      "name": "TestUpdateMemoryIndex",
+      "filePath": "tests/unit/memory/test_memory_index_update.py",
+      "lineRange": [
+        18,
+        56
+      ],
+      "summary": " 中的 TestUpdateMemoryIndex 类，包含 test_creates_index_if_missing、test_appends_to_existing_index、test_updates_existing_entry、test_no_duplicate_on_repeat、test_index_loaded_in_prompt 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/memory/test_memory_index_update.py:TestExtractDescription",
+      "type": "class",
+      "name": "TestExtractDescription",
+      "filePath": "tests/unit/memory/test_memory_index_update.py",
+      "lineRange": [
+        59,
+        79
+      ],
+      "summary": " 中的 TestExtractDescription 类，包含 test_extracts_from_frontmatter、test_returns_none_without_frontmatter、test_returns_none_without_description_field 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/models/test_content_blocks.py",
+      "type": "file",
+      "name": "test_content_blocks.py",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "summary": "单元测试文件，测试 content_blocks 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestTextBlock",
+      "type": "class",
+      "name": "TestTextBlock",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        21,
+        40
+      ],
+      "summary": " 中的 TestTextBlock 类，包含 test_roundtrip、test_empty_text、test_unicode_text 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestToolUseBlock",
+      "type": "class",
+      "name": "TestToolUseBlock",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        43,
+        60
+      ],
+      "summary": " 中的 TestToolUseBlock 类，包含 test_roundtrip、test_complex_input 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestToolResultBlock",
+      "type": "class",
+      "name": "TestToolResultBlock",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        63,
+        100
+      ],
+      "summary": " 中的 TestToolResultBlock 类，包含 test_string_content_roundtrip、test_error_result、test_non_error_omits_is_error、test_list_content_with_image 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestThinkingBlock",
+      "type": "class",
+      "name": "TestThinkingBlock",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        103,
+        109
+      ],
+      "summary": " 中的 TestThinkingBlock 类，包含 test_roundtrip 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestRedactedThinkingBlock",
+      "type": "class",
+      "name": "TestRedactedThinkingBlock",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        112,
+        117
+      ],
+      "summary": " 中的 TestRedactedThinkingBlock 类，包含 test_roundtrip 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestImageBlock",
+      "type": "class",
+      "name": "TestImageBlock",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        120,
+        126
+      ],
+      "summary": " 中的 TestImageBlock 类，包含 test_roundtrip 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_content_blocks.py:TestContentBlockFromApiDict",
+      "type": "class",
+      "name": "TestContentBlockFromApiDict",
+      "filePath": "tests/unit/models/test_content_blocks.py",
+      "lineRange": [
+        129,
+        159
+      ],
+      "summary": " 中的 TestContentBlockFromApiDict 类，提供 7 个方法：test_text、test_tool_use、test_tool_result、test_thinking、test_redacted_thinking 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/models/test_message_normalization.py",
+      "type": "file",
+      "name": "test_message_normalization.py",
+      "filePath": "tests/unit/models/test_message_normalization.py",
+      "summary": "单元测试文件，测试 message_normalization 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/models/test_message_normalization.py:_make_assistant_with_tool_use",
+      "type": "function",
+      "name": "_make_assistant_with_tool_use",
+      "filePath": "tests/unit/models/test_message_normalization.py",
+      "lineRange": [
+        18,
+        25
+      ],
+      "summary": " 中的 _make_assistant_with_tool_use 函数，处理 tool_use_id。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/models/test_message_normalization.py:_make_user_with_tool_result",
+      "type": "function",
+      "name": "_make_user_with_tool_result",
+      "filePath": "tests/unit/models/test_message_normalization.py",
+      "lineRange": [
+        28,
+        34
+      ],
+      "summary": " 中的 _make_user_with_tool_result 函数，处理 tool_use_id、content。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_message_normalization.py:TestOrphanedToolResult",
+      "type": "class",
+      "name": "TestOrphanedToolResult",
+      "filePath": "tests/unit/models/test_message_normalization.py",
+      "lineRange": [
+        37,
+        58
+      ],
+      "summary": " 中的 TestOrphanedToolResult 类，包含 test_orphaned_tool_result_removed 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_message_normalization.py:TestOrphanedToolUse",
+      "type": "class",
+      "name": "TestOrphanedToolUse",
+      "filePath": "tests/unit/models/test_message_normalization.py",
+      "lineRange": [
+        61,
+        156
+      ],
+      "summary": " 中的 TestOrphanedToolUse 类，包含 test_synthetic_result_added_for_orphaned_tool_use、test_matched_pair_unchanged、test_multiple_tool_uses_partial_results 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/models/test_messages.py",
+      "type": "file",
+      "name": "test_messages.py",
+      "filePath": "tests/unit/models/test_messages.py",
+      "summary": "单元测试文件，测试 messages 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:tests/unit/models/test_messages.py:TestUserMessage",
+      "type": "class",
+      "name": "TestUserMessage",
+      "filePath": "tests/unit/models/test_messages.py",
+      "lineRange": [
+        20,
+        30
+      ],
+      "summary": " 中的 TestUserMessage 类，包含 test_string_content_to_api、test_block_content_to_api 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_messages.py:TestAssistantMessage",
+      "type": "class",
+      "name": "TestAssistantMessage",
+      "filePath": "tests/unit/models/test_messages.py",
+      "lineRange": [
+        33,
+        61
+      ],
+      "summary": " 中的 TestAssistantMessage 类，包含 test_to_api、test_get_text、test_get_text_skips_non_text、test_get_tool_use_blocks 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_messages.py:TestNormalizeMessagesForApi",
+      "type": "class",
+      "name": "TestNormalizeMessagesForApi",
+      "filePath": "tests/unit/models/test_messages.py",
+      "lineRange": [
+        64,
+        188
+      ],
+      "summary": " 中的 TestNormalizeMessagesForApi 类，提供 9 个方法：test_simple_conversation、test_tool_use_and_result、test_consecutive_user_messages_merged、test_consecutive_assistant_messages_get_separator、test_starts_with_assistant_gets_user_prefix 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/models/test_messages.py:TestGetMessagesAfterCompactBoundary",
+      "type": "class",
+      "name": "TestGetMessagesAfterCompactBoundary",
+      "filePath": "tests/unit/models/test_messages.py",
+      "lineRange": [
+        191,
+        219
+      ],
+      "summary": " 中的 TestGetMessagesAfterCompactBoundary 类，包含 test_no_boundary、test_with_boundary、test_multiple_boundaries_uses_last 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_messages.py:TestFactoryFunctions",
+      "type": "class",
+      "name": "TestFactoryFunctions",
+      "filePath": "tests/unit/models/test_messages.py",
+      "lineRange": [
+        222,
+        254
+      ],
+      "summary": " 中的 TestFactoryFunctions 类，包含 test_create_user_message、test_create_assistant_message_from_string、test_create_assistant_message_from_blocks、test_create_tool_result_message、test_create_tool_result_message_error 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/models/test_tool_result_serialization.py",
+      "type": "file",
+      "name": "test_tool_result_serialization.py",
+      "filePath": "tests/unit/models/test_tool_result_serialization.py",
+      "summary": "单元测试文件，测试 tool_result_serialization 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/models/test_tool_result_serialization.py:TestToolResultBlockSerialization",
+      "type": "class",
+      "name": "TestToolResultBlockSerialization",
+      "filePath": "tests/unit/models/test_tool_result_serialization.py",
+      "lineRange": [
+        11,
+        54
+      ],
+      "summary": " 中的 TestToolResultBlockSerialization 类，包含 test_str_content_serializes、test_str_content_with_error、test_list_content_serializes、test_roundtrip_str、test_roundtrip_list 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/models/test_tool_result_serialization.py:TestToolResultContentFromApiDict",
+      "type": "class",
+      "name": "TestToolResultContentFromApiDict",
+      "filePath": "tests/unit/models/test_tool_result_serialization.py",
+      "lineRange": [
+        57,
+        74
+      ],
+      "summary": " 中的 TestToolResultContentFromApiDict 类，包含 test_text_type、test_image_type、test_unknown_type_treated_as_text_fallback 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/session/test_recovery.py",
+      "type": "file",
+      "name": "test_recovery.py",
+      "filePath": "tests/unit/session/test_recovery.py",
+      "summary": "单元测试文件，测试 recovery 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/session/test_recovery.py:TestValidateTranscriptTruncation",
+      "type": "class",
+      "name": "TestValidateTranscriptTruncation",
+      "filePath": "tests/unit/session/test_recovery.py",
+      "lineRange": [
+        10,
+        44
+      ],
+      "summary": " 中的 TestValidateTranscriptTruncation 类，包含 test_truncated_transcript_gets_synthetic_result、test_normal_transcript_unchanged、test_empty_transcript 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/session/test_recovery.py:TestValidateTranscriptMidOrphans",
+      "type": "class",
+      "name": "TestValidateTranscriptMidOrphans",
+      "filePath": "tests/unit/session/test_recovery.py",
+      "lineRange": [
+        47,
+        86
+      ],
+      "summary": " 中的 TestValidateTranscriptMidOrphans 类，包含 test_mid_transcript_missing_result_patched、test_properly_paired_not_patched 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/session/test_storage.py",
+      "type": "file",
+      "name": "test_storage.py",
+      "filePath": "tests/unit/session/test_storage.py",
+      "summary": "单元测试文件，测试 storage 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/session/test_storage.py:TestSessionStorage",
+      "type": "class",
+      "name": "TestSessionStorage",
+      "filePath": "tests/unit/session/test_storage.py",
+      "lineRange": [
+        13,
+        94
+      ],
+      "summary": " 中的 TestSessionStorage 类，提供 8 个方法：test_save_and_load_roundtrip、test_roundtrip_with_tool_use、test_roundtrip_compact_boundary、test_missing_session_returns_none、test_corrupt_line_skipped 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/session/test_task_persistence.py",
+      "type": "file",
+      "name": "test_task_persistence.py",
+      "filePath": "tests/unit/session/test_task_persistence.py",
+      "summary": "单元测试文件，测试 task_persistence 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/session/test_task_persistence.py:TestTaskPersistence",
+      "type": "class",
+      "name": "TestTaskPersistence",
+      "filePath": "tests/unit/session/test_task_persistence.py",
+      "lineRange": [
+        15,
+        88
+      ],
+      "summary": " 中的 TestTaskPersistence 类，包含 test_save_with_task_snapshot、test_load_task_snapshot、test_restore_marks_running_as_killed、test_load_missing_snapshot_returns_none、test_save_without_snapshot 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/session/test_task_registry.py",
+      "type": "file",
+      "name": "test_task_registry.py",
+      "filePath": "tests/unit/session/test_task_registry.py",
+      "summary": "单元测试文件，测试 task_registry 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/session/test_task_registry.py:TestTaskRegistryBasics",
+      "type": "class",
+      "name": "TestTaskRegistryBasics",
+      "filePath": "tests/unit/session/test_task_registry.py",
+      "lineRange": [
+        12,
+        55
+      ],
+      "summary": " 中的 TestTaskRegistryBasics 类，提供 7 个方法：test_register_returns_id、test_register_teammate_prefix、test_get_returns_record、test_get_unknown_returns_none、test_update_state 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/session/test_task_registry.py:TestTaskRegistryStop",
+      "type": "class",
+      "name": "TestTaskRegistryStop",
+      "filePath": "tests/unit/session/test_task_registry.py",
+      "lineRange": [
+        58,
+        86
+      ],
+      "summary": " 中的 TestTaskRegistryStop 类，包含 test_stop_running_task、test_stop_completed_task_returns_false、test_stop_unknown_returns_false、test_stop_cancels_asyncio_task 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/session/test_task_registry.py:TestTaskRegistrySnapshotRestore",
+      "type": "class",
+      "name": "TestTaskRegistrySnapshotRestore",
+      "filePath": "tests/unit/session/test_task_registry.py",
+      "lineRange": [
+        89,
+        116
+      ],
+      "summary": " 中的 TestTaskRegistrySnapshotRestore 类，包含 test_snapshot_roundtrip、test_restore_marks_running_as_killed 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/session/test_task_registry.py:TestTaskRecordSerialization",
+      "type": "class",
+      "name": "TestTaskRecordSerialization",
+      "filePath": "tests/unit/session/test_task_registry.py",
+      "lineRange": [
+        119,
+        139
+      ],
+      "summary": " 中的 TestTaskRecordSerialization 类，包含 test_to_dict、test_from_dict 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/agent/test_background_agent.py",
+      "type": "file",
+      "name": "test_background_agent.py",
+      "filePath": "tests/unit/tools/agent/test_background_agent.py",
+      "summary": "单元测试文件，测试 background_agent 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/agent/test_background_agent.py:TestBackgroundAgentManager",
+      "type": "class",
+      "name": "TestBackgroundAgentManager",
+      "filePath": "tests/unit/tools/agent/test_background_agent.py",
+      "lineRange": [
+        13,
+        67
+      ],
+      "summary": " 中的 TestBackgroundAgentManager 类，包含 test_spawn_and_complete、test_spawn_failure、test_without_registry 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/agent/test_background_agent.py:TestAgentToolBackgroundSchema",
+      "type": "class",
+      "name": "TestAgentToolBackgroundSchema",
+      "filePath": "tests/unit/tools/agent/test_background_agent.py",
+      "lineRange": [
+        70,
+        82
+      ],
+      "summary": " 中的 TestAgentToolBackgroundSchema 类，包含 test_schema_has_background_params 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_extractor.py",
+      "type": "file",
+      "name": "test_extractor.py",
+      "filePath": "tests/unit/tools/test_extractor.py",
+      "summary": "单元测试文件，测试 extractor 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_extractor.py:TestExtractMemories",
+      "type": "class",
+      "name": "TestExtractMemories",
+      "filePath": "tests/unit/tools/test_extractor.py",
+      "lineRange": [
+        16,
+        149
+      ],
+      "summary": " 中的 TestExtractMemories 类，提供 6 个方法：test_extracts_user_preference、test_skips_short_conversations、test_empty_extraction、test_handles_malformed_response、test_handles_api_failure 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_memory.py",
+      "type": "file",
+      "name": "test_memory.py",
+      "filePath": "tests/unit/tools/test_memory.py",
+      "summary": "单元测试文件，测试 memory 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_memory.py:TestMemory",
+      "type": "class",
+      "name": "TestMemory",
+      "filePath": "tests/unit/tools/test_memory.py",
+      "lineRange": [
+        16,
+        77
+      ],
+      "summary": " 中的 TestMemory 类，提供 9 个方法：test_save_and_load、test_save_multiple、test_delete、test_delete_nonexistent、test_format_for_prompt 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:extract_memories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:extract_memories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:_extract_description",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:_extract_description",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:_format_messages_for_extraction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:_format_messages_for_extraction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:_count_visible",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "function:cc/memory/extractor.py:_count_visible",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "class:cc/memory/extractor.py:ExtractionCoordinator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "class:cc/memory/extractor.py:ExtractionCoordinator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:_project_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:_project_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:get_memory_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:get_memory_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:load_memories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:load_memories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:save_memory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:save_memory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:delete_memory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:delete_memory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:format_memories_for_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:format_memories_for_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:update_memory_index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:update_memory_index",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:load_memory_index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/memory/session_memory.py",
+      "target": "function:cc/memory/session_memory.py:load_memory_index",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "function:cc/models/content_blocks.py:content_block_from_api_dict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "function:cc/models/content_blocks.py:content_block_from_api_dict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:TextBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:TextBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ToolUseBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ToolUseBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ToolResultContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ToolResultContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ToolResultBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ToolResultBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ThinkingBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ThinkingBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:RedactedThinkingBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:RedactedThinkingBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ImageBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ImageBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ImageSource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "class:cc/models/content_blocks.py:ImageSource",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:normalize_messages_for_api",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:normalize_messages_for_api",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:_merge_user_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:_merge_user_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:_ensure_tool_result_pairing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:_ensure_tool_result_pairing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:get_messages_after_compact_boundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:get_messages_after_compact_boundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:create_user_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:create_user_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:create_assistant_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:create_assistant_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:create_tool_result_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "function:cc/models/messages.py:create_tool_result_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:Usage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:Usage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:UserMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:UserMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:AssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:AssistantMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:SystemMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:SystemMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:CompactBoundaryMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "class:cc/models/messages.py:CompactBoundaryMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/recovery.py",
+      "target": "function:cc/session/recovery.py:validate_transcript",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/recovery.py",
+      "target": "function:cc/session/recovery.py:validate_transcript",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:get_sessions_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:get_sessions_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:save_session",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:save_session",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:load_session",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:load_session",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:load_task_snapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:load_task_snapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:list_sessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:list_sessions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:_message_to_record",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:_message_to_record",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:_record_to_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "function:cc/session/storage.py:_record_to_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "class:cc/session/task_registry.py:TaskState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "class:cc/session/task_registry.py:TaskState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "class:cc/session/task_registry.py:TaskRecord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "class:cc/session/task_registry.py:TaskRecord",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "class:cc/session/task_registry.py:TaskRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "class:cc/session/task_registry.py:TaskRegistry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/agent/background.py",
+      "target": "class:cc/tools/agent/background.py:BackgroundAgentManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/agent/background.py",
+      "target": "class:cc/tools/agent/background.py:BackgroundAgentManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_events.py",
+      "target": "class:tests/unit/core/test_events.py:TestEventRepr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_events.py",
+      "target": "class:tests/unit/core/test_events.py:TestEventRepr",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "function:tests/unit/memory/test_extraction_coalescing.py:_make_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "function:tests/unit/memory/test_extraction_coalescing.py:_make_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "function:tests/unit/memory/test_extraction_coalescing.py:_make_mock_call_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "function:tests/unit/memory/test_extraction_coalescing.py:_make_mock_call_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "class:tests/unit/memory/test_extraction_coalescing.py:TestExtractionCoordinator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "class:tests/unit/memory/test_extraction_coalescing.py:TestExtractionCoordinator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/memory/test_memory_index_update.py",
+      "target": "class:tests/unit/memory/test_memory_index_update.py:TestUpdateMemoryIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/memory/test_memory_index_update.py",
+      "target": "class:tests/unit/memory/test_memory_index_update.py:TestUpdateMemoryIndex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/memory/test_memory_index_update.py",
+      "target": "class:tests/unit/memory/test_memory_index_update.py:TestExtractDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/memory/test_memory_index_update.py",
+      "target": "class:tests/unit/memory/test_memory_index_update.py:TestExtractDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestTextBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestTextBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestToolUseBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestToolUseBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestToolResultBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestToolResultBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestThinkingBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestThinkingBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestRedactedThinkingBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestRedactedThinkingBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestImageBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestImageBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestContentBlockFromApiDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "class:tests/unit/models/test_content_blocks.py:TestContentBlockFromApiDict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "function:tests/unit/models/test_message_normalization.py:_make_assistant_with_tool_use",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "function:tests/unit/models/test_message_normalization.py:_make_assistant_with_tool_use",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "function:tests/unit/models/test_message_normalization.py:_make_user_with_tool_result",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "function:tests/unit/models/test_message_normalization.py:_make_user_with_tool_result",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "class:tests/unit/models/test_message_normalization.py:TestOrphanedToolResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "class:tests/unit/models/test_message_normalization.py:TestOrphanedToolResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "class:tests/unit/models/test_message_normalization.py:TestOrphanedToolUse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "class:tests/unit/models/test_message_normalization.py:TestOrphanedToolUse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestUserMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestUserMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestAssistantMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestAssistantMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestNormalizeMessagesForApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestNormalizeMessagesForApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestGetMessagesAfterCompactBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestGetMessagesAfterCompactBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestFactoryFunctions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "class:tests/unit/models/test_messages.py:TestFactoryFunctions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_tool_result_serialization.py",
+      "target": "class:tests/unit/models/test_tool_result_serialization.py:TestToolResultBlockSerialization",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_tool_result_serialization.py",
+      "target": "class:tests/unit/models/test_tool_result_serialization.py:TestToolResultBlockSerialization",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/models/test_tool_result_serialization.py",
+      "target": "class:tests/unit/models/test_tool_result_serialization.py:TestToolResultContentFromApiDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/models/test_tool_result_serialization.py",
+      "target": "class:tests/unit/models/test_tool_result_serialization.py:TestToolResultContentFromApiDict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "class:tests/unit/session/test_recovery.py:TestValidateTranscriptTruncation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "class:tests/unit/session/test_recovery.py:TestValidateTranscriptTruncation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "class:tests/unit/session/test_recovery.py:TestValidateTranscriptMidOrphans",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "class:tests/unit/session/test_recovery.py:TestValidateTranscriptMidOrphans",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_storage.py",
+      "target": "class:tests/unit/session/test_storage.py:TestSessionStorage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_storage.py",
+      "target": "class:tests/unit/session/test_storage.py:TestSessionStorage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_task_persistence.py",
+      "target": "class:tests/unit/session/test_task_persistence.py:TestTaskPersistence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_task_persistence.py",
+      "target": "class:tests/unit/session/test_task_persistence.py:TestTaskPersistence",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRegistryBasics",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRegistryBasics",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRegistryStop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRegistryStop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRegistrySnapshotRestore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRegistrySnapshotRestore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRecordSerialization",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "class:tests/unit/session/test_task_registry.py:TestTaskRecordSerialization",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_background_agent.py",
+      "target": "class:tests/unit/tools/agent/test_background_agent.py:TestBackgroundAgentManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_background_agent.py",
+      "target": "class:tests/unit/tools/agent/test_background_agent.py:TestBackgroundAgentManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_background_agent.py",
+      "target": "class:tests/unit/tools/agent/test_background_agent.py:TestAgentToolBackgroundSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_background_agent.py",
+      "target": "class:tests/unit/tools/agent/test_background_agent.py:TestAgentToolBackgroundSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "class:tests/unit/tools/test_extractor.py:TestExtractMemories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "class:tests/unit/tools/test_extractor.py:TestExtractMemories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_memory.py",
+      "target": "class:tests/unit/tools/test_memory.py:TestMemory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_memory.py",
+      "target": "class:tests/unit/tools/test_memory.py:TestMemory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/memory/extractor.py",
+      "target": "file:cc/memory/session_memory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/session/recovery.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_events.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_events.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "file:cc/memory/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/memory/test_extraction_coalescing.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/memory/test_memory_index_update.py",
+      "target": "file:cc/memory/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/memory/test_memory_index_update.py",
+      "target": "file:cc/memory/session_memory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/models/test_content_blocks.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/models/test_message_normalization.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/models/test_messages.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/models/test_tool_result_serialization.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_recovery.py",
+      "target": "file:cc/session/recovery.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_storage.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_storage.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_storage.py",
+      "target": "file:cc/session/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_task_persistence.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_task_persistence.py",
+      "target": "file:cc/session/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_task_persistence.py",
+      "target": "file:cc/session/task_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_task_registry.py",
+      "target": "file:cc/session/task_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_background_agent.py",
+      "target": "file:cc/session/task_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_background_agent.py",
+      "target": "file:cc/tools/agent/background.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "file:cc/memory/extractor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "file:cc/memory/session_memory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_extractor.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_memory.py",
+      "target": "file:cc/memory/session_memory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/models/content_blocks.py",
+      "target": "file:tests/unit/models/test_content_blocks.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/models/messages.py",
+      "target": "file:tests/unit/models/test_messages.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/session/recovery.py",
+      "target": "file:tests/unit/session/test_recovery.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/session/storage.py",
+      "target": "file:tests/unit/session/test_storage.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/session/task_registry.py",
+      "target": "file:tests/unit/session/test_task_registry.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

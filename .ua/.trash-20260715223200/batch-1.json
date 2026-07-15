@@ -1,0 +1,2588 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/mcp/client.py",
+      "type": "file",
+      "name": "client.py",
+      "filePath": "cc/mcp/client.py",
+      "summary": "MCP 协议：stdio 客户端、工具桥接。定义了 McpToolProxy 等类和 connect_mcp_server 等函数。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/mcp/client.py:connect_mcp_server",
+      "type": "function",
+      "name": "connect_mcp_server",
+      "filePath": "cc/mcp/client.py",
+      "lineRange": [
+        112,
+        196
+      ],
+      "summary": "MCP 协议 中的 connect_mcp_server 函数，处理 config、registry。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/mcp/client.py:McpToolProxy",
+      "type": "class",
+      "name": "McpToolProxy",
+      "filePath": "cc/mcp/client.py",
+      "lineRange": [
+        30,
+        109
+      ],
+      "summary": "MCP 协议 中的 McpToolProxy 类，包含 __init__、get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/ask_user/ask_user_tool.py",
+      "type": "file",
+      "name": "ask_user_tool.py",
+      "filePath": "cc/tools/ask_user/ask_user_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：AskUserQuestionTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/ask_user/ask_user_tool.py:AskUserQuestionTool",
+      "type": "class",
+      "name": "AskUserQuestionTool",
+      "filePath": "cc/tools/ask_user/ask_user_tool.py",
+      "lineRange": [
+        15,
+        69
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 AskUserQuestionTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "cc/tools/base.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：ToolSchema、ToolResult、Tool、ToolRegistry。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/base.py:ToolSchema",
+      "type": "class",
+      "name": "ToolSchema",
+      "filePath": "cc/tools/base.py",
+      "lineRange": [
+        23,
+        32
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 ToolSchema 类。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/base.py:ToolResult",
+      "type": "class",
+      "name": "ToolResult",
+      "filePath": "cc/tools/base.py",
+      "lineRange": [
+        36,
+        66
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 ToolResult 类，包含 text 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/base.py:Tool",
+      "type": "class",
+      "name": "Tool",
+      "filePath": "cc/tools/base.py",
+      "lineRange": [
+        69,
+        111
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 Tool 类，包含 get_name、get_schema、execute、is_concurrency_safe 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/base.py:ToolRegistry",
+      "type": "class",
+      "name": "ToolRegistry",
+      "filePath": "cc/tools/base.py",
+      "lineRange": [
+        115,
+        160
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 ToolRegistry 类，包含 register、get、list_tools、get_api_schemas 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/brief/brief_tool.py",
+      "type": "file",
+      "name": "brief_tool.py",
+      "filePath": "cc/tools/brief/brief_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：BriefTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/brief/brief_tool.py:BriefTool",
+      "type": "class",
+      "name": "BriefTool",
+      "filePath": "cc/tools/brief/brief_tool.py",
+      "lineRange": [
+        18,
+        86
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 BriefTool 类，提供 6 个方法：__init__、get_name、get_schema、is_concurrency_safe、update_message_count 等。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/lsp/lsp_tool.py",
+      "type": "file",
+      "name": "lsp_tool.py",
+      "filePath": "cc/tools/lsp/lsp_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：LSPTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/lsp/lsp_tool.py:LSPTool",
+      "type": "class",
+      "name": "LSPTool",
+      "filePath": "cc/tools/lsp/lsp_tool.py",
+      "lineRange": [
+        23,
+        96
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 LSPTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "type": "file",
+      "name": "notebook_edit_tool.py",
+      "filePath": "cc/tools/notebook/notebook_edit_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。定义了 NotebookEditTool 等类和 _make_cell 等函数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/tools/notebook/notebook_edit_tool.py:_make_cell",
+      "type": "function",
+      "name": "_make_cell",
+      "filePath": "cc/tools/notebook/notebook_edit_tool.py",
+      "lineRange": [
+        25,
+        43
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 _make_cell 函数，处理 cell_type、source。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/notebook/notebook_edit_tool.py:NotebookEditTool",
+      "type": "class",
+      "name": "NotebookEditTool",
+      "filePath": "cc/tools/notebook/notebook_edit_tool.py",
+      "lineRange": [
+        46,
+        211
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 NotebookEditTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/orchestration.py",
+      "type": "file",
+      "name": "orchestration.py",
+      "filePath": "cc/tools/orchestration.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心函数：run_tools、_execute_with_sem、_partition_batches、_execute_one。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/tools/orchestration.py:run_tools",
+      "type": "function",
+      "name": "run_tools",
+      "filePath": "cc/tools/orchestration.py",
+      "lineRange": [
+        34,
+        69
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 run_tools 函数，处理 tool_use_blocks、registry、hooks。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/tools/orchestration.py:_execute_with_sem",
+      "type": "function",
+      "name": "_execute_with_sem",
+      "filePath": "cc/tools/orchestration.py",
+      "lineRange": [
+        72,
+        82
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 _execute_with_sem 函数，处理 sem、block、registry、hooks。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/tools/orchestration.py:_partition_batches",
+      "type": "function",
+      "name": "_partition_batches",
+      "filePath": "cc/tools/orchestration.py",
+      "lineRange": [
+        85,
+        124
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 _partition_batches 函数，处理 blocks、registry。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/tools/orchestration.py:_execute_one",
+      "type": "function",
+      "name": "_execute_one",
+      "filePath": "cc/tools/orchestration.py",
+      "lineRange": [
+        127,
+        171
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 _execute_one 函数，处理 block、registry、hooks。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "type": "file",
+      "name": "plan_mode_tool.py",
+      "filePath": "cc/tools/plan_mode/plan_mode_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。定义了 EnterPlanModeTool、ExitPlanModeTool 等类和 is_plan_mode_active、reset_plan_mode 等函数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/tools/plan_mode/plan_mode_tool.py:is_plan_mode_active",
+      "type": "function",
+      "name": "is_plan_mode_active",
+      "filePath": "cc/tools/plan_mode/plan_mode_tool.py",
+      "lineRange": [
+        28,
+        32
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 is_plan_mode_active 函数，处理 相关参数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/tools/plan_mode/plan_mode_tool.py:reset_plan_mode",
+      "type": "function",
+      "name": "reset_plan_mode",
+      "filePath": "cc/tools/plan_mode/plan_mode_tool.py",
+      "lineRange": [
+        35,
+        40
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 reset_plan_mode 函数，处理 相关参数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/plan_mode/plan_mode_tool.py:EnterPlanModeTool",
+      "type": "class",
+      "name": "EnterPlanModeTool",
+      "filePath": "cc/tools/plan_mode/plan_mode_tool.py",
+      "lineRange": [
+        43,
+        70
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 EnterPlanModeTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/plan_mode/plan_mode_tool.py:ExitPlanModeTool",
+      "type": "class",
+      "name": "ExitPlanModeTool",
+      "filePath": "cc/tools/plan_mode/plan_mode_tool.py",
+      "lineRange": [
+        73,
+        96
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 ExitPlanModeTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/streaming_executor.py",
+      "type": "file",
+      "name": "streaming_executor.py",
+      "filePath": "cc/tools/streaming_executor.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：StreamingToolExecutor。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/streaming_executor.py:StreamingToolExecutor",
+      "type": "class",
+      "name": "StreamingToolExecutor",
+      "filePath": "cc/tools/streaming_executor.py",
+      "lineRange": [
+        42,
+        212
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 StreamingToolExecutor 类，提供 8 个方法：__init__、add_tool、_start_execution、_execute_one、get_results 等。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/task_tools/task_tools.py",
+      "type": "file",
+      "name": "task_tools.py",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。定义了 Task、TaskStore、TaskCreateTool、TaskGetTool、TaskListTool、TaskUpdateTool、TaskStopTool 等类和 get_task_store 等函数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/tools/task_tools/task_tools.py:get_task_store",
+      "type": "function",
+      "name": "get_task_store",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        85,
+        86
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 get_task_store 函数，处理 相关参数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:Task",
+      "type": "class",
+      "name": "Task",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        24,
+        33
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 Task 类。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:TaskStore",
+      "type": "class",
+      "name": "TaskStore",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        36,
+        77
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TaskStore 类，提供 6 个方法：__init__、create、get、list_all、update 等。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:TaskCreateTool",
+      "type": "class",
+      "name": "TaskCreateTool",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        89,
+        119
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TaskCreateTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:TaskGetTool",
+      "type": "class",
+      "name": "TaskGetTool",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        122,
+        155
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TaskGetTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:TaskListTool",
+      "type": "class",
+      "name": "TaskListTool",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        158,
+        181
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TaskListTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:TaskUpdateTool",
+      "type": "class",
+      "name": "TaskUpdateTool",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        184,
+        215
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TaskUpdateTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/task_tools/task_tools.py:TaskStopTool",
+      "type": "class",
+      "name": "TaskStopTool",
+      "filePath": "cc/tools/task_tools/task_tools.py",
+      "lineRange": [
+        218,
+        269
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TaskStopTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/todo/todo_write_tool.py",
+      "type": "file",
+      "name": "todo_write_tool.py",
+      "filePath": "cc/tools/todo/todo_write_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。定义了 TodoWriteTool 等类和 _get_project_hash、_get_todos_dir 等函数。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/tools/todo/todo_write_tool.py:_get_project_hash",
+      "type": "function",
+      "name": "_get_project_hash",
+      "filePath": "cc/tools/todo/todo_write_tool.py",
+      "lineRange": [
+        25,
+        32
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 _get_project_hash 函数，处理 project_dir。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/tools/todo/todo_write_tool.py:_get_todos_dir",
+      "type": "function",
+      "name": "_get_todos_dir",
+      "filePath": "cc/tools/todo/todo_write_tool.py",
+      "lineRange": [
+        35,
+        41
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 _get_todos_dir 函数，处理 claude_dir。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/tools/todo/todo_write_tool.py:TodoWriteTool",
+      "type": "class",
+      "name": "TodoWriteTool",
+      "filePath": "cc/tools/todo/todo_write_tool.py",
+      "lineRange": [
+        44,
+        147
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 TodoWriteTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/tool_search/tool_search_tool.py",
+      "type": "file",
+      "name": "tool_search_tool.py",
+      "filePath": "cc/tools/tool_search/tool_search_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：ToolSearchTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/tool_search/tool_search_tool.py:ToolSearchTool",
+      "type": "class",
+      "name": "ToolSearchTool",
+      "filePath": "cc/tools/tool_search/tool_search_tool.py",
+      "lineRange": [
+        22,
+        110
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 ToolSearchTool 类，包含 __init__、get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/web_fetch/web_fetch_tool.py",
+      "type": "file",
+      "name": "web_fetch_tool.py",
+      "filePath": "cc/tools/web_fetch/web_fetch_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：WebFetchTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/web_fetch/web_fetch_tool.py:WebFetchTool",
+      "type": "class",
+      "name": "WebFetchTool",
+      "filePath": "cc/tools/web_fetch/web_fetch_tool.py",
+      "lineRange": [
+        20,
+        92
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 WebFetchTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/web_search/web_search_tool.py",
+      "type": "file",
+      "name": "web_search_tool.py",
+      "filePath": "cc/tools/web_search/web_search_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：WebSearchTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/web_search/web_search_tool.py:WebSearchTool",
+      "type": "class",
+      "name": "WebSearchTool",
+      "filePath": "cc/tools/web_search/web_search_tool.py",
+      "lineRange": [
+        22,
+        70
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 WebSearchTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_ask_user.py",
+      "type": "file",
+      "name": "test_ask_user.py",
+      "filePath": "tests/unit/tools/test_ask_user.py",
+      "summary": "单元测试文件，测试 ask_user 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_ask_user.py:TestAskUserTool",
+      "type": "class",
+      "name": "TestAskUserTool",
+      "filePath": "tests/unit/tools/test_ask_user.py",
+      "lineRange": [
+        9,
+        25
+      ],
+      "summary": " 中的 TestAskUserTool 类，包含 test_no_input_fn_returns_message、test_empty_question_error、test_schema 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_base.py",
+      "type": "file",
+      "name": "test_base.py",
+      "filePath": "tests/unit/tools/test_base.py",
+      "summary": "单元测试文件，测试 base 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_base.py:MockTool",
+      "type": "class",
+      "name": "MockTool",
+      "filePath": "tests/unit/tools/test_base.py",
+      "lineRange": [
+        13,
+        28
+      ],
+      "summary": " 中的 MockTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_base.py:TestToolRegistry",
+      "type": "class",
+      "name": "TestToolRegistry",
+      "filePath": "tests/unit/tools/test_base.py",
+      "lineRange": [
+        31,
+        69
+      ],
+      "summary": " 中的 TestToolRegistry 类，提供 6 个方法：test_register_and_get、test_get_unknown_returns_none、test_duplicate_registration_raises、test_list_tools、test_get_api_schemas 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_brief_tool.py",
+      "type": "file",
+      "name": "test_brief_tool.py",
+      "filePath": "tests/unit/tools/test_brief_tool.py",
+      "summary": "单元测试文件，测试 brief_tool 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_brief_tool.py:TestBriefTool",
+      "type": "class",
+      "name": "TestBriefTool",
+      "filePath": "tests/unit/tools/test_brief_tool.py",
+      "lineRange": [
+        13,
+        80
+      ],
+      "summary": " 中的 TestBriefTool 类，提供 10 个方法：test_name、test_schema、test_concurrency_safe、test_execute_no_messages、test_execute_short_conversation 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_lsp.py",
+      "type": "file",
+      "name": "test_lsp.py",
+      "filePath": "tests/unit/tools/test_lsp.py",
+      "summary": "单元测试文件，测试 lsp 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_lsp.py:TestLSPTool",
+      "type": "class",
+      "name": "TestLSPTool",
+      "filePath": "tests/unit/tools/test_lsp.py",
+      "lineRange": [
+        11,
+        85
+      ],
+      "summary": " 中的 TestLSPTool 类，提供 7 个方法：test_stub_returns_config_message、test_invalid_action_error、test_missing_file_path_error、test_all_actions_return_stub、test_schema 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_notebook_edit.py",
+      "type": "file",
+      "name": "test_notebook_edit.py",
+      "filePath": "tests/unit/tools/test_notebook_edit.py",
+      "summary": "单元测试文件，测试 notebook_edit 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/tools/test_notebook_edit.py:_make_notebook",
+      "type": "function",
+      "name": "_make_notebook",
+      "filePath": "tests/unit/tools/test_notebook_edit.py",
+      "lineRange": [
+        14,
+        22
+      ],
+      "summary": " 中的 _make_notebook 函数，处理 path、cells。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/unit/tools/test_notebook_edit.py:_read_notebook",
+      "type": "function",
+      "name": "_read_notebook",
+      "filePath": "tests/unit/tools/test_notebook_edit.py",
+      "lineRange": [
+        25,
+        26
+      ],
+      "summary": " 中的 _read_notebook 函数，处理 path。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_notebook_edit.py:TestNotebookEditTool",
+      "type": "class",
+      "name": "TestNotebookEditTool",
+      "filePath": "tests/unit/tools/test_notebook_edit.py",
+      "lineRange": [
+        29,
+        189
+      ],
+      "summary": " 中的 TestNotebookEditTool 类，提供 11 个方法：test_insert_cell_into_new_notebook、test_insert_cell_into_existing_notebook、test_replace_cell、test_delete_cell、test_replace_out_of_range 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_orchestration.py",
+      "type": "file",
+      "name": "test_orchestration.py",
+      "filePath": "tests/unit/tools/test_orchestration.py",
+      "summary": "单元测试文件，测试 orchestration 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_orchestration.py:SlowTool",
+      "type": "class",
+      "name": "SlowTool",
+      "filePath": "tests/unit/tools/test_orchestration.py",
+      "lineRange": [
+        15,
+        32
+      ],
+      "summary": " 中的 SlowTool 类，包含 __init__、get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_orchestration.py:ErrorTool",
+      "type": "class",
+      "name": "ErrorTool",
+      "filePath": "tests/unit/tools/test_orchestration.py",
+      "lineRange": [
+        35,
+        43
+      ],
+      "summary": " 中的 ErrorTool 类，包含 get_name、get_schema、execute 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_orchestration.py:TestRunTools",
+      "type": "class",
+      "name": "TestRunTools",
+      "filePath": "tests/unit/tools/test_orchestration.py",
+      "lineRange": [
+        46,
+        105
+      ],
+      "summary": " 中的 TestRunTools 类，包含 test_concurrent_tools_parallel、test_serial_tool_runs_alone、test_tool_error_returns_is_error、test_unknown_tool 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "type": "file",
+      "name": "test_plan_mode_tool.py",
+      "filePath": "tests/unit/tools/test_plan_mode_tool.py",
+      "summary": "单元测试文件，测试 plan_mode_tool 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/tools/test_plan_mode_tool.py:_reset_state",
+      "type": "function",
+      "name": "_reset_state",
+      "filePath": "tests/unit/tools/test_plan_mode_tool.py",
+      "lineRange": [
+        19,
+        21
+      ],
+      "summary": " 中的 _reset_state 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_plan_mode_tool.py:TestEnterPlanModeTool",
+      "type": "class",
+      "name": "TestEnterPlanModeTool",
+      "filePath": "tests/unit/tools/test_plan_mode_tool.py",
+      "lineRange": [
+        24,
+        45
+      ],
+      "summary": " 中的 TestEnterPlanModeTool 类，包含 test_name、test_schema、test_concurrency_safe、test_execute_activates_plan_mode 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_plan_mode_tool.py:TestExitPlanModeTool",
+      "type": "class",
+      "name": "TestExitPlanModeTool",
+      "filePath": "tests/unit/tools/test_plan_mode_tool.py",
+      "lineRange": [
+        48,
+        83
+      ],
+      "summary": " 中的 TestExitPlanModeTool 类，包含 test_name、test_schema、test_concurrency_safe、test_execute_deactivates_plan_mode、test_exit_when_not_active 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_plan_mode_tool.py:TestPlanModeToggle",
+      "type": "class",
+      "name": "TestPlanModeToggle",
+      "filePath": "tests/unit/tools/test_plan_mode_tool.py",
+      "lineRange": [
+        86,
+        111
+      ],
+      "summary": " 中的 TestPlanModeToggle 类，包含 test_toggle_cycle、test_reset_helper 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_streaming_executor.py",
+      "type": "file",
+      "name": "test_streaming_executor.py",
+      "filePath": "tests/unit/tools/test_streaming_executor.py",
+      "summary": "单元测试文件，测试 streaming_executor 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor.py:SlowTool",
+      "type": "class",
+      "name": "SlowTool",
+      "filePath": "tests/unit/tools/test_streaming_executor.py",
+      "lineRange": [
+        15,
+        30
+      ],
+      "summary": " 中的 SlowTool 类，包含 __init__、get_name、get_schema、execute、is_concurrency_safe 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor.py:TestStreamingToolExecutor",
+      "type": "class",
+      "name": "TestStreamingToolExecutor",
+      "filePath": "tests/unit/tools/test_streaming_executor.py",
+      "lineRange": [
+        33,
+        89
+      ],
+      "summary": " 中的 TestStreamingToolExecutor 类，包含 test_tools_start_immediately、test_results_in_order、test_unknown_tool、test_has_pending 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "type": "file",
+      "name": "test_streaming_executor_enhanced.py",
+      "filePath": "tests/unit/tools/test_streaming_executor_enhanced.py",
+      "summary": "单元测试文件，测试 streaming_executor_enhanced 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor_enhanced.py:SlowTool",
+      "type": "class",
+      "name": "SlowTool",
+      "filePath": "tests/unit/tools/test_streaming_executor_enhanced.py",
+      "lineRange": [
+        15,
+        34
+      ],
+      "summary": " 中的 SlowTool 类，包含 __init__、get_name、get_schema、execute、is_concurrency_safe 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorConcurrency",
+      "type": "class",
+      "name": "TestEnhancedExecutorConcurrency",
+      "filePath": "tests/unit/tools/test_streaming_executor_enhanced.py",
+      "lineRange": [
+        37,
+        73
+      ],
+      "summary": " 中的 TestEnhancedExecutorConcurrency 类，包含 test_concurrent_safe_tools_run_parallel、test_non_safe_tool_runs_exclusively 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorHooks",
+      "type": "class",
+      "name": "TestEnhancedExecutorHooks",
+      "filePath": "tests/unit/tools/test_streaming_executor_enhanced.py",
+      "lineRange": [
+        76,
+        113
+      ],
+      "summary": " 中的 TestEnhancedExecutorHooks 类，包含 test_pre_hook_blocks_execution 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorPermission",
+      "type": "class",
+      "name": "TestEnhancedExecutorPermission",
+      "filePath": "tests/unit/tools/test_streaming_executor_enhanced.py",
+      "lineRange": [
+        116,
+        144
+      ],
+      "summary": " 中的 TestEnhancedExecutorPermission 类，包含 test_permission_checker_denies、test_permission_checker_allows 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorErrorHandling",
+      "type": "class",
+      "name": "TestEnhancedExecutorErrorHandling",
+      "filePath": "tests/unit/tools/test_streaming_executor_enhanced.py",
+      "lineRange": [
+        147,
+        173
+      ],
+      "summary": " 中的 TestEnhancedExecutorErrorHandling 类，包含 test_unknown_tool_returns_error、test_tool_exception_returns_error 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_task_stop.py",
+      "type": "file",
+      "name": "test_task_stop.py",
+      "filePath": "tests/unit/tools/test_task_stop.py",
+      "summary": "单元测试文件，测试 task_stop 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_task_stop.py:TestTaskStopTool",
+      "type": "class",
+      "name": "TestTaskStopTool",
+      "filePath": "tests/unit/tools/test_task_stop.py",
+      "lineRange": [
+        15,
+        65
+      ],
+      "summary": " 中的 TestTaskStopTool 类，包含 _make_store、test_stop_existing_task、test_stop_nonexistent_task、test_stop_empty_task_id、test_schema 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_task_tools.py",
+      "type": "file",
+      "name": "test_task_tools.py",
+      "filePath": "tests/unit/tools/test_task_tools.py",
+      "summary": "单元测试文件，测试 task_tools 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_task_tools.py:TestTaskTools",
+      "type": "class",
+      "name": "TestTaskTools",
+      "filePath": "tests/unit/tools/test_task_tools.py",
+      "lineRange": [
+        15,
+        79
+      ],
+      "summary": " 中的 TestTaskTools 类，提供 7 个方法：_make_store、test_create_and_get、test_create_and_update、test_list_multiple、test_get_nonexistent 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_todo_write.py",
+      "type": "file",
+      "name": "test_todo_write.py",
+      "filePath": "tests/unit/tools/test_todo_write.py",
+      "summary": "单元测试文件，测试 todo_write 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_todo_write.py:TestTodoWriteTool",
+      "type": "class",
+      "name": "TestTodoWriteTool",
+      "filePath": "tests/unit/tools/test_todo_write.py",
+      "lineRange": [
+        15,
+        89
+      ],
+      "summary": " 中的 TestTodoWriteTool 类，提供 7 个方法：test_write_todos、test_write_empty_todos、test_missing_todos_field、test_invalid_todos_type、test_invalid_status 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_tool_search.py",
+      "type": "file",
+      "name": "test_tool_search.py",
+      "filePath": "tests/unit/tools/test_tool_search.py",
+      "summary": "单元测试文件，测试 tool_search 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/tools/test_tool_search.py:_make_registry_with_tools",
+      "type": "function",
+      "name": "_make_registry_with_tools",
+      "filePath": "tests/unit/tools/test_tool_search.py",
+      "lineRange": [
+        35,
+        43
+      ],
+      "summary": " 中的 _make_registry_with_tools 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_tool_search.py:_DummyTool",
+      "type": "class",
+      "name": "_DummyTool",
+      "filePath": "tests/unit/tools/test_tool_search.py",
+      "lineRange": [
+        12,
+        32
+      ],
+      "summary": " 中的 _DummyTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_tool_search.py:TestToolSearchTool",
+      "type": "class",
+      "name": "TestToolSearchTool",
+      "filePath": "tests/unit/tools/test_tool_search.py",
+      "lineRange": [
+        46,
+        120
+      ],
+      "summary": " 中的 TestToolSearchTool 类，提供 8 个方法：test_search_by_name、test_search_by_description、test_search_web_tools、test_search_no_results、test_search_max_results 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_web_fetch.py",
+      "type": "file",
+      "name": "test_web_fetch.py",
+      "filePath": "tests/unit/tools/test_web_fetch.py",
+      "summary": "单元测试文件，测试 web_fetch 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_web_fetch.py:TestWebFetchTool",
+      "type": "class",
+      "name": "TestWebFetchTool",
+      "filePath": "tests/unit/tools/test_web_fetch.py",
+      "lineRange": [
+        10,
+        24
+      ],
+      "summary": " 中的 TestWebFetchTool 类，包含 test_empty_url_error、test_is_concurrency_safe、test_schema 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_web_search.py",
+      "type": "file",
+      "name": "test_web_search.py",
+      "filePath": "tests/unit/tools/test_web_search.py",
+      "summary": "单元测试文件，测试 web_search 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_web_search.py:TestWebSearchTool",
+      "type": "class",
+      "name": "TestWebSearchTool",
+      "filePath": "tests/unit/tools/test_web_search.py",
+      "lineRange": [
+        11,
+        39
+      ],
+      "summary": " 中的 TestWebSearchTool 类，包含 test_search_returns_stub_error、test_empty_query_error、test_schema、test_concurrency_safe 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/mcp/client.py",
+      "target": "function:cc/mcp/client.py:connect_mcp_server",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/mcp/client.py",
+      "target": "function:cc/mcp/client.py:connect_mcp_server",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/mcp/client.py",
+      "target": "class:cc/mcp/client.py:McpToolProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/mcp/client.py",
+      "target": "class:cc/mcp/client.py:McpToolProxy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/ask_user/ask_user_tool.py",
+      "target": "class:cc/tools/ask_user/ask_user_tool.py:AskUserQuestionTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/ask_user/ask_user_tool.py",
+      "target": "class:cc/tools/ask_user/ask_user_tool.py:AskUserQuestionTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:ToolSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:ToolSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:ToolResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:ToolResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:Tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:Tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:ToolRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "class:cc/tools/base.py:ToolRegistry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/brief/brief_tool.py",
+      "target": "class:cc/tools/brief/brief_tool.py:BriefTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/brief/brief_tool.py",
+      "target": "class:cc/tools/brief/brief_tool.py:BriefTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/lsp/lsp_tool.py",
+      "target": "class:cc/tools/lsp/lsp_tool.py:LSPTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/lsp/lsp_tool.py",
+      "target": "class:cc/tools/lsp/lsp_tool.py:LSPTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "target": "function:cc/tools/notebook/notebook_edit_tool.py:_make_cell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "target": "function:cc/tools/notebook/notebook_edit_tool.py:_make_cell",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "target": "class:cc/tools/notebook/notebook_edit_tool.py:NotebookEditTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "target": "class:cc/tools/notebook/notebook_edit_tool.py:NotebookEditTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:run_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:run_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:_execute_with_sem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:_execute_with_sem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:_partition_batches",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:_partition_batches",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:_execute_one",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "function:cc/tools/orchestration.py:_execute_one",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "function:cc/tools/plan_mode/plan_mode_tool.py:is_plan_mode_active",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "function:cc/tools/plan_mode/plan_mode_tool.py:is_plan_mode_active",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "function:cc/tools/plan_mode/plan_mode_tool.py:reset_plan_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "function:cc/tools/plan_mode/plan_mode_tool.py:reset_plan_mode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "class:cc/tools/plan_mode/plan_mode_tool.py:EnterPlanModeTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "class:cc/tools/plan_mode/plan_mode_tool.py:EnterPlanModeTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "class:cc/tools/plan_mode/plan_mode_tool.py:ExitPlanModeTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "class:cc/tools/plan_mode/plan_mode_tool.py:ExitPlanModeTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/streaming_executor.py",
+      "target": "class:cc/tools/streaming_executor.py:StreamingToolExecutor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/streaming_executor.py",
+      "target": "class:cc/tools/streaming_executor.py:StreamingToolExecutor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "function:cc/tools/task_tools/task_tools.py:get_task_store",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "function:cc/tools/task_tools/task_tools.py:get_task_store",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:Task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:Task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskStore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskCreateTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskCreateTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskGetTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskGetTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskListTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskListTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskUpdateTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskUpdateTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskStopTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "class:cc/tools/task_tools/task_tools.py:TaskStopTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "function:cc/tools/todo/todo_write_tool.py:_get_project_hash",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "function:cc/tools/todo/todo_write_tool.py:_get_project_hash",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "function:cc/tools/todo/todo_write_tool.py:_get_todos_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "function:cc/tools/todo/todo_write_tool.py:_get_todos_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "class:cc/tools/todo/todo_write_tool.py:TodoWriteTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "class:cc/tools/todo/todo_write_tool.py:TodoWriteTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/tool_search/tool_search_tool.py",
+      "target": "class:cc/tools/tool_search/tool_search_tool.py:ToolSearchTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/tool_search/tool_search_tool.py",
+      "target": "class:cc/tools/tool_search/tool_search_tool.py:ToolSearchTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/web_fetch/web_fetch_tool.py",
+      "target": "class:cc/tools/web_fetch/web_fetch_tool.py:WebFetchTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/web_fetch/web_fetch_tool.py",
+      "target": "class:cc/tools/web_fetch/web_fetch_tool.py:WebFetchTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/web_search/web_search_tool.py",
+      "target": "class:cc/tools/web_search/web_search_tool.py:WebSearchTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/web_search/web_search_tool.py",
+      "target": "class:cc/tools/web_search/web_search_tool.py:WebSearchTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_ask_user.py",
+      "target": "class:tests/unit/tools/test_ask_user.py:TestAskUserTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_ask_user.py",
+      "target": "class:tests/unit/tools/test_ask_user.py:TestAskUserTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_base.py",
+      "target": "class:tests/unit/tools/test_base.py:MockTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_base.py",
+      "target": "class:tests/unit/tools/test_base.py:MockTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_base.py",
+      "target": "class:tests/unit/tools/test_base.py:TestToolRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_base.py",
+      "target": "class:tests/unit/tools/test_base.py:TestToolRegistry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_brief_tool.py",
+      "target": "class:tests/unit/tools/test_brief_tool.py:TestBriefTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_brief_tool.py",
+      "target": "class:tests/unit/tools/test_brief_tool.py:TestBriefTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_lsp.py",
+      "target": "class:tests/unit/tools/test_lsp.py:TestLSPTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_lsp.py",
+      "target": "class:tests/unit/tools/test_lsp.py:TestLSPTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "function:tests/unit/tools/test_notebook_edit.py:_make_notebook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "function:tests/unit/tools/test_notebook_edit.py:_make_notebook",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "function:tests/unit/tools/test_notebook_edit.py:_read_notebook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "function:tests/unit/tools/test_notebook_edit.py:_read_notebook",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "class:tests/unit/tools/test_notebook_edit.py:TestNotebookEditTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "class:tests/unit/tools/test_notebook_edit.py:TestNotebookEditTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "class:tests/unit/tools/test_orchestration.py:SlowTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "class:tests/unit/tools/test_orchestration.py:SlowTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "class:tests/unit/tools/test_orchestration.py:ErrorTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "class:tests/unit/tools/test_orchestration.py:ErrorTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "class:tests/unit/tools/test_orchestration.py:TestRunTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "class:tests/unit/tools/test_orchestration.py:TestRunTools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "function:tests/unit/tools/test_plan_mode_tool.py:_reset_state",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "function:tests/unit/tools/test_plan_mode_tool.py:_reset_state",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "class:tests/unit/tools/test_plan_mode_tool.py:TestEnterPlanModeTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "class:tests/unit/tools/test_plan_mode_tool.py:TestEnterPlanModeTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "class:tests/unit/tools/test_plan_mode_tool.py:TestExitPlanModeTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "class:tests/unit/tools/test_plan_mode_tool.py:TestExitPlanModeTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "class:tests/unit/tools/test_plan_mode_tool.py:TestPlanModeToggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "class:tests/unit/tools/test_plan_mode_tool.py:TestPlanModeToggle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "class:tests/unit/tools/test_streaming_executor.py:SlowTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "class:tests/unit/tools/test_streaming_executor.py:SlowTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "class:tests/unit/tools/test_streaming_executor.py:TestStreamingToolExecutor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "class:tests/unit/tools/test_streaming_executor.py:TestStreamingToolExecutor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:SlowTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:SlowTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorConcurrency",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorConcurrency",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorHooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorHooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorPermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorPermission",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorErrorHandling",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "class:tests/unit/tools/test_streaming_executor_enhanced.py:TestEnhancedExecutorErrorHandling",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_task_stop.py",
+      "target": "class:tests/unit/tools/test_task_stop.py:TestTaskStopTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_task_stop.py",
+      "target": "class:tests/unit/tools/test_task_stop.py:TestTaskStopTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_task_tools.py",
+      "target": "class:tests/unit/tools/test_task_tools.py:TestTaskTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_task_tools.py",
+      "target": "class:tests/unit/tools/test_task_tools.py:TestTaskTools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_todo_write.py",
+      "target": "class:tests/unit/tools/test_todo_write.py:TestTodoWriteTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_todo_write.py",
+      "target": "class:tests/unit/tools/test_todo_write.py:TestTodoWriteTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "function:tests/unit/tools/test_tool_search.py:_make_registry_with_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "function:tests/unit/tools/test_tool_search.py:_make_registry_with_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "class:tests/unit/tools/test_tool_search.py:_DummyTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "class:tests/unit/tools/test_tool_search.py:_DummyTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "class:tests/unit/tools/test_tool_search.py:TestToolSearchTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "class:tests/unit/tools/test_tool_search.py:TestToolSearchTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_web_fetch.py",
+      "target": "class:tests/unit/tools/test_web_fetch.py:TestWebFetchTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_web_fetch.py",
+      "target": "class:tests/unit/tools/test_web_fetch.py:TestWebFetchTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_web_search.py",
+      "target": "class:tests/unit/tools/test_web_search.py:TestWebSearchTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_web_search.py",
+      "target": "class:tests/unit/tools/test_web_search.py:TestWebSearchTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/mcp/client.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/ask_user/ask_user_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/brief/brief_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/lsp/lsp_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/streaming_executor.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/task_tools/task_tools.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/todo/todo_write_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/tool_search/tool_search_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/web_fetch/web_fetch_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/web_search/web_search_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_ask_user.py",
+      "target": "file:cc/tools/ask_user/ask_user_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_base.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_brief_tool.py",
+      "target": "file:cc/tools/brief/brief_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_lsp.py",
+      "target": "file:cc/tools/lsp/lsp_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_notebook_edit.py",
+      "target": "file:cc/tools/notebook/notebook_edit_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_orchestration.py",
+      "target": "file:cc/tools/orchestration.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_plan_mode_tool.py",
+      "target": "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor.py",
+      "target": "file:cc/tools/streaming_executor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "file:cc/models/content_blocks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "target": "file:cc/tools/streaming_executor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_task_stop.py",
+      "target": "file:cc/tools/task_tools/task_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_task_tools.py",
+      "target": "file:cc/tools/task_tools/task_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_todo_write.py",
+      "target": "file:cc/tools/todo/todo_write_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_tool_search.py",
+      "target": "file:cc/tools/tool_search/tool_search_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_web_fetch.py",
+      "target": "file:cc/tools/web_fetch/web_fetch_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_web_search.py",
+      "target": "file:cc/tools/web_search/web_search_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/base.py",
+      "target": "file:tests/unit/tools/test_base.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/tools/orchestration.py",
+      "target": "file:tests/unit/tools/test_orchestration.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/tools/streaming_executor.py",
+      "target": "file:tests/unit/tools/test_streaming_executor.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

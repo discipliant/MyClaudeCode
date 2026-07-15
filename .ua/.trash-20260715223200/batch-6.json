@@ -1,0 +1,707 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/prompts/builder.py",
+      "type": "file",
+      "name": "builder.py",
+      "filePath": "cc/prompts/builder.py",
+      "summary": "System Prompt：多段动态拼装 + Coordinator/Teammate 提示词。核心函数：compute_env_info、build_system_prompt。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/prompts/builder.py:compute_env_info",
+      "type": "function",
+      "name": "compute_env_info",
+      "filePath": "cc/prompts/builder.py",
+      "lineRange": [
+        34,
+        71
+      ],
+      "summary": "System Prompt 中的 compute_env_info 函数，处理 cwd、model、is_git。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/builder.py:build_system_prompt",
+      "type": "function",
+      "name": "build_system_prompt",
+      "filePath": "cc/prompts/builder.py",
+      "lineRange": [
+        74,
+        135
+      ],
+      "summary": "System Prompt 中的 build_system_prompt 函数，处理 cwd、model、claude_md_content、memory_dir、memory_index_content。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/prompts/sections.py",
+      "type": "file",
+      "name": "sections.py",
+      "filePath": "cc/prompts/sections.py",
+      "summary": "System Prompt：多段动态拼装 + Coordinator/Teammate 提示词。核心函数：get_intro_section、get_system_section、get_doing_tasks_section、get_actions_section、get_using_tools_section。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_intro_section",
+      "type": "function",
+      "name": "get_intro_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        38,
+        48
+      ],
+      "summary": "System Prompt 中的 get_intro_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_system_section",
+      "type": "function",
+      "name": "get_system_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        51,
+        63
+      ],
+      "summary": "System Prompt 中的 get_system_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_doing_tasks_section",
+      "type": "function",
+      "name": "get_doing_tasks_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        66,
+        86
+      ],
+      "summary": "System Prompt 中的 get_doing_tasks_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_actions_section",
+      "type": "function",
+      "name": "get_actions_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        89,
+        106
+      ],
+      "summary": "System Prompt 中的 get_actions_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_using_tools_section",
+      "type": "function",
+      "name": "get_using_tools_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        109,
+        123
+      ],
+      "summary": "System Prompt 中的 get_using_tools_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_tone_style_section",
+      "type": "function",
+      "name": "get_tone_style_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        126,
+        137
+      ],
+      "summary": "System Prompt 中的 get_tone_style_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:get_output_efficiency_section",
+      "type": "function",
+      "name": "get_output_efficiency_section",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        140,
+        157
+      ],
+      "summary": "System Prompt 中的 get_output_efficiency_section 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/prompts/sections.py:build_memory_prompt",
+      "type": "function",
+      "name": "build_memory_prompt",
+      "filePath": "cc/prompts/sections.py",
+      "lineRange": [
+        310,
+        400
+      ],
+      "summary": "System Prompt 中的 build_memory_prompt 函数，处理 memory_dir、entrypoint_content。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/agent/agent_tool.py",
+      "type": "file",
+      "name": "agent_tool.py",
+      "filePath": "cc/tools/agent/agent_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：AgentTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:cc/tools/agent/agent_tool.py:AgentTool",
+      "type": "class",
+      "name": "AgentTool",
+      "filePath": "cc/tools/agent/agent_tool.py",
+      "lineRange": [
+        35,
+        264
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 AgentTool 类，包含 __init__、get_name、get_schema、_build_sub_permission_checker、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/unit/prompts/test_builder.py",
+      "type": "file",
+      "name": "test_builder.py",
+      "filePath": "tests/unit/prompts/test_builder.py",
+      "summary": "单元测试文件，测试 builder 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/prompts/test_builder.py:TestComputeEnvInfo",
+      "type": "class",
+      "name": "TestComputeEnvInfo",
+      "filePath": "tests/unit/prompts/test_builder.py",
+      "lineRange": [
+        9,
+        20
+      ],
+      "summary": " 中的 TestComputeEnvInfo 类，包含 test_contains_cwd、test_contains_model、test_contains_platform 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/prompts/test_builder.py:TestBuildSystemPrompt",
+      "type": "class",
+      "name": "TestBuildSystemPrompt",
+      "filePath": "tests/unit/prompts/test_builder.py",
+      "lineRange": [
+        23,
+        107
+      ],
+      "summary": " 中的 TestBuildSystemPrompt 类，提供 10 个方法：test_returns_list_of_strings、test_contains_static_sections、test_contains_dynamic_env、test_claude_md_injected、test_no_claude_md_section_when_none 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/prompts/test_sections.py",
+      "type": "file",
+      "name": "test_sections.py",
+      "filePath": "tests/unit/prompts/test_sections.py",
+      "summary": "单元测试文件，测试 sections 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/prompts/test_sections.py:TestPromptSections",
+      "type": "class",
+      "name": "TestPromptSections",
+      "filePath": "tests/unit/prompts/test_sections.py",
+      "lineRange": [
+        17,
+        72
+      ],
+      "summary": " 中的 TestPromptSections 类，提供 9 个方法：test_intro_contains_claude_code、test_system_section_mentions_tools、test_doing_tasks_mentions_security、test_actions_mentions_reversibility、test_using_tools_mentions_read_and_bash 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "type": "file",
+      "name": "test_agent_permission_wiring.py",
+      "filePath": "tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "summary": "单元测试文件，测试 agent_permission_wiring 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/agent/test_agent_permission_wiring.py:TestAgentPermissionWiring",
+      "type": "class",
+      "name": "TestAgentPermissionWiring",
+      "filePath": "tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "lineRange": [
+        14,
+        65
+      ],
+      "summary": " 中的 TestAgentPermissionWiring 类，包含 test_foreground_agent_gets_permission_checker、test_background_agent_gets_non_interactive_checker、test_background_checker_denies_bash、test_background_checker_allows_read、test_foreground_checker_allows_edit 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_agent_tool.py",
+      "type": "file",
+      "name": "test_agent_tool.py",
+      "filePath": "tests/unit/tools/test_agent_tool.py",
+      "summary": "单元测试文件，测试 agent_tool 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_agent_tool.py:DummyTool",
+      "type": "class",
+      "name": "DummyTool",
+      "filePath": "tests/unit/tools/test_agent_tool.py",
+      "lineRange": [
+        14,
+        25
+      ],
+      "summary": " 中的 DummyTool 类，包含 __init__、get_name、get_schema、execute 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_agent_tool.py:TestAgentTool",
+      "type": "class",
+      "name": "TestAgentTool",
+      "filePath": "tests/unit/tools/test_agent_tool.py",
+      "lineRange": [
+        28,
+        79
+      ],
+      "summary": " 中的 TestAgentTool 类，包含 test_agent_returns_text、test_agent_excludes_itself、test_empty_prompt_error 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/prompts/builder.py",
+      "target": "function:cc/prompts/builder.py:compute_env_info",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/builder.py",
+      "target": "function:cc/prompts/builder.py:compute_env_info",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/builder.py",
+      "target": "function:cc/prompts/builder.py:build_system_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/builder.py",
+      "target": "function:cc/prompts/builder.py:build_system_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_intro_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_intro_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_system_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_system_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_doing_tasks_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_doing_tasks_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_actions_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_actions_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_using_tools_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_using_tools_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_tone_style_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_tone_style_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_output_efficiency_section",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:get_output_efficiency_section",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:build_memory_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "function:cc/prompts/sections.py:build_memory_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/agent/agent_tool.py",
+      "target": "class:cc/tools/agent/agent_tool.py:AgentTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/agent/agent_tool.py",
+      "target": "class:cc/tools/agent/agent_tool.py:AgentTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_builder.py",
+      "target": "class:tests/unit/prompts/test_builder.py:TestComputeEnvInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/prompts/test_builder.py",
+      "target": "class:tests/unit/prompts/test_builder.py:TestComputeEnvInfo",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_builder.py",
+      "target": "class:tests/unit/prompts/test_builder.py:TestBuildSystemPrompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/prompts/test_builder.py",
+      "target": "class:tests/unit/prompts/test_builder.py:TestBuildSystemPrompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_sections.py",
+      "target": "class:tests/unit/prompts/test_sections.py:TestPromptSections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/prompts/test_sections.py",
+      "target": "class:tests/unit/prompts/test_sections.py:TestPromptSections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "target": "class:tests/unit/tools/agent/test_agent_permission_wiring.py:TestAgentPermissionWiring",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "target": "class:tests/unit/tools/agent/test_agent_permission_wiring.py:TestAgentPermissionWiring",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "class:tests/unit/tools/test_agent_tool.py:DummyTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "class:tests/unit/tools/test_agent_tool.py:DummyTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "class:tests/unit/tools/test_agent_tool.py:TestAgentTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "class:tests/unit/tools/test_agent_tool.py:TestAgentTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/builder.py",
+      "target": "file:cc/prompts/sections.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/agent/agent_tool.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/agent/agent_tool.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/agent/agent_tool.py",
+      "target": "file:cc/prompts/sections.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/agent/agent_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/prompts/test_builder.py",
+      "target": "file:cc/prompts/builder.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/prompts/test_sections.py",
+      "target": "file:cc/prompts/sections.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "target": "file:cc/tools/agent/agent_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "file:cc/tools/agent/agent_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_agent_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/prompts/builder.py",
+      "target": "file:tests/unit/prompts/test_builder.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/prompts/sections.py",
+      "target": "file:tests/unit/prompts/test_sections.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

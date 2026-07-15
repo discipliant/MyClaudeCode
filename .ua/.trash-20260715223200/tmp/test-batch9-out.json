@@ -1,0 +1,230 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "fileCategory": "infra",
+      "totalLines": 27,
+      "nonEmptyLines": 18,
+      "steps": [
+        {
+          "name": "install",
+          "startLine": 3,
+          "endLine": 5
+        },
+        {
+          "name": "lint",
+          "startLine": 6,
+          "endLine": 8
+        },
+        {
+          "name": "format",
+          "startLine": 9,
+          "endLine": 11
+        },
+        {
+          "name": "typecheck",
+          "startLine": 12,
+          "endLine": 14
+        },
+        {
+          "name": "test",
+          "startLine": 15,
+          "endLine": 17
+        },
+        {
+          "name": "test-unit",
+          "startLine": 18,
+          "endLine": 20
+        },
+        {
+          "name": "test-integration",
+          "startLine": 21,
+          "endLine": 23
+        },
+        {
+          "name": "test-e2e",
+          "startLine": 24,
+          "endLine": 26
+        },
+        {
+          "name": "check",
+          "startLine": 27,
+          "endLine": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "stepCount": 9
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 179,
+      "nonEmptyLines": 136,
+      "sections": [
+        {
+          "heading": "Zero",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "这是什么",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "还原了什么",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "架构",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "核心数据流",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Agent Teams 数据流",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "快速开始",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "环境要求",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "安装",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "配置 API Key",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "使用阿里云百炼（可选）",
+          "level": 4,
+          "line": 114
+        },
+        {
+          "heading": "启动",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "测试",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "交流",
+          "level": 2,
+          "line": 175
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "fileCategory": "config",
+      "totalLines": 91,
+      "nonEmptyLines": 80,
+      "sections": [
+        {
+          "heading": "build-system",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "project",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "project.optional-dependencies",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "project.scripts",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "tool.pytest.ini_options",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "tool.ruff",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "tool.ruff.lint",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "tool.ruff.lint.per-file-ignores",
+          "level": 4,
+          "line": 65
+        },
+        {
+          "heading": "tool.ruff.lint.isort",
+          "level": 4,
+          "line": 73
+        },
+        {
+          "heading": "tool.hatch.build.targets.wheel",
+          "level": 5,
+          "line": 76
+        },
+        {
+          "heading": "tool.mypy",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "[[tool.mypy.overrides]]",
+          "level": 3,
+          "line": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    }
+  ]
+}

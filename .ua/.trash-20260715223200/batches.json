@@ -1,0 +1,3947 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 195,
+  "totalBatches": 12,
+  "exportsByPath": {
+    ".DS_Store": [],
+    ".ua/.understandignore": [],
+    "cc/__init__.py": [],
+    "cc/__main__.py": [],
+    "cc/api/__init__.py": [],
+    "cc/api/claude.py": [
+      "stream_response"
+    ],
+    "cc/api/client.py": [
+      "create_client"
+    ],
+    "cc/api/token_estimation.py": [
+      "estimate_tokens",
+      "count_tokens_api",
+      "estimate_messages_tokens"
+    ],
+    "cc/commands/__init__.py": [],
+    "cc/commands/registry.py": [
+      "SlashCommand",
+      "register_command",
+      "get_command",
+      "list_commands",
+      "is_slash_command",
+      "parse_slash_command",
+      "_help_handler",
+      "_clear_handler",
+      "_compact_handler",
+      "_cost_handler",
+      "is_dashscope_model",
+      "_model_handler"
+    ],
+    "cc/compact/__init__.py": [],
+    "cc/compact/compact.py": [
+      "compact_messages",
+      "should_auto_compact",
+      "_messages_to_text"
+    ],
+    "cc/core/__init__.py": [],
+    "cc/core/events.py": [
+      "TextDelta",
+      "ThinkingDelta",
+      "ToolUseStart",
+      "ToolResultReady",
+      "CompactOccurred",
+      "TurnComplete",
+      "ErrorEvent"
+    ],
+    "cc/core/query_engine.py": [
+      "CallModelFn",
+      "QueryEngine"
+    ],
+    "cc/core/query_loop.py": [
+      "query_loop"
+    ],
+    "cc/hooks/__init__.py": [],
+    "cc/hooks/hook_runner.py": [
+      "HookConfig",
+      "HookResult",
+      "load_hooks",
+      "run_hook",
+      "run_pre_tool_hooks",
+      "run_post_tool_hooks"
+    ],
+    "cc/main.py": [
+      "_build_registry",
+      "_connect_mcp_servers",
+      "_load_env",
+      "_get_api_key",
+      "_make_call_model_factory",
+      "_make_call_model",
+      "_build_system",
+      "_build_engine",
+      "_read_multiline_input",
+      "_needs_continuation",
+      "_run_print_mode",
+      "_run_repl",
+      "main"
+    ],
+    "cc/mcp/__init__.py": [],
+    "cc/mcp/client.py": [
+      "McpToolProxy",
+      "connect_mcp_server"
+    ],
+    "cc/mcp/config.py": [
+      "McpServerConfig",
+      "load_mcp_configs",
+      "_parse_server_config"
+    ],
+    "cc/memory/__init__.py": [],
+    "cc/memory/extractor.py": [
+      "extract_memories",
+      "_extract_description",
+      "_format_messages_for_extraction",
+      "_count_visible",
+      "ExtractionCoordinator"
+    ],
+    "cc/memory/session_memory.py": [
+      "_project_id",
+      "get_memory_dir",
+      "load_memories",
+      "save_memory",
+      "delete_memory",
+      "format_memories_for_prompt",
+      "update_memory_index",
+      "load_memory_index"
+    ],
+    "cc/models/__init__.py": [],
+    "cc/models/content_blocks.py": [
+      "TextBlock",
+      "ToolUseBlock",
+      "ToolResultContent",
+      "ToolResultBlock",
+      "ThinkingBlock",
+      "RedactedThinkingBlock",
+      "ImageBlock",
+      "ImageSource",
+      "content_block_from_api_dict"
+    ],
+    "cc/models/messages.py": [
+      "Usage",
+      "UserMessage",
+      "AssistantMessage",
+      "SystemMessage",
+      "CompactBoundaryMessage",
+      "normalize_messages_for_api",
+      "_merge_user_messages",
+      "_ensure_tool_result_pairing",
+      "get_messages_after_compact_boundary",
+      "create_user_message",
+      "create_assistant_message",
+      "create_tool_result_message"
+    ],
+    "cc/models/state.py": [
+      "AutoCompactTracking",
+      "QueryState",
+      "ThinkingConfig",
+      "AppConfig"
+    ],
+    "cc/permissions/__init__.py": [],
+    "cc/permissions/gate.py": [
+      "PermissionMode",
+      "PermissionDecision",
+      "check_permission",
+      "PermissionContext"
+    ],
+    "cc/permissions/rules.py": [
+      "PermissionRules",
+      "load_permission_rules",
+      "_matches_rule",
+      "apply_rules"
+    ],
+    "cc/prompts/__init__.py": [],
+    "cc/prompts/builder.py": [
+      "compute_env_info",
+      "build_system_prompt"
+    ],
+    "cc/prompts/claudemd.py": [
+      "load_claude_md",
+      "_read_and_expand"
+    ],
+    "cc/prompts/coordinator_prompt.py": [
+      "get_coordinator_prompt"
+    ],
+    "cc/prompts/sections.py": [
+      "get_intro_section",
+      "get_system_section",
+      "get_doing_tasks_section",
+      "get_actions_section",
+      "get_using_tools_section",
+      "get_tone_style_section",
+      "get_output_efficiency_section",
+      "build_memory_prompt"
+    ],
+    "cc/prompts/teammate_prompt.py": [
+      "build_teammate_prompt_addendum"
+    ],
+    "cc/session/__init__.py": [],
+    "cc/session/history.py": [
+      "HistoryEntry",
+      "get_history_path",
+      "add_to_history",
+      "get_history"
+    ],
+    "cc/session/recovery.py": [
+      "validate_transcript"
+    ],
+    "cc/session/storage.py": [
+      "get_sessions_dir",
+      "save_session",
+      "load_session",
+      "load_task_snapshot",
+      "list_sessions",
+      "_message_to_record",
+      "_record_to_message"
+    ],
+    "cc/session/task_registry.py": [
+      "TaskState",
+      "TaskRecord",
+      "TaskRegistry"
+    ],
+    "cc/skills/__init__.py": [],
+    "cc/skills/bundled/__init__.py": [],
+    "cc/skills/loader.py": [
+      "Skill",
+      "load_skills",
+      "_parse_skill_file",
+      "get_skill_by_name"
+    ],
+    "cc/swarm/__init__.py": [],
+    "cc/swarm/coordinator.py": [
+      "is_coordinator_mode",
+      "get_coordinator_config",
+      "maybe_inject_coordinator_prompt"
+    ],
+    "cc/swarm/identity.py": [
+      "AgentRoute",
+      "parse_agent_id",
+      "format_agent_id",
+      "sanitize_name"
+    ],
+    "cc/swarm/in_process_runner.py": [
+      "get_current_teammate_id",
+      "get_current_team_name",
+      "is_in_process_teammate",
+      "InProcessTeammate"
+    ],
+    "cc/swarm/mailbox.py": [
+      "TeammateMessage",
+      "TeammateMailbox"
+    ],
+    "cc/swarm/spawn.py": [
+      "spawn_teammate",
+      "get_running_tasks"
+    ],
+    "cc/swarm/team_context.py": [
+      "TeamContext"
+    ],
+    "cc/swarm/team_file.py": [
+      "TeamMember",
+      "TeamFile",
+      "_get_team_dir",
+      "_get_team_file_path",
+      "load_team_file",
+      "save_team_file",
+      "add_member",
+      "remove_member"
+    ],
+    "cc/tools/__init__.py": [],
+    "cc/tools/agent/__init__.py": [],
+    "cc/tools/agent/agent_tool.py": [
+      "AgentTool"
+    ],
+    "cc/tools/agent/background.py": [
+      "BackgroundAgentManager"
+    ],
+    "cc/tools/agent/worktree.py": [
+      "create_agent_worktree",
+      "cleanup_agent_worktree"
+    ],
+    "cc/tools/ask_user/__init__.py": [],
+    "cc/tools/ask_user/ask_user_tool.py": [
+      "AskUserQuestionTool"
+    ],
+    "cc/tools/base.py": [
+      "ToolSchema",
+      "ToolResult",
+      "Tool",
+      "ToolRegistry"
+    ],
+    "cc/tools/bash/__init__.py": [],
+    "cc/tools/bash/bash_tool.py": [
+      "BashTool"
+    ],
+    "cc/tools/brief/__init__.py": [],
+    "cc/tools/brief/brief_tool.py": [
+      "BriefTool"
+    ],
+    "cc/tools/file_edit/__init__.py": [],
+    "cc/tools/file_edit/file_edit_tool.py": [
+      "FileEditTool"
+    ],
+    "cc/tools/file_read/__init__.py": [],
+    "cc/tools/file_read/file_read_tool.py": [
+      "FileReadTool"
+    ],
+    "cc/tools/file_write/__init__.py": [],
+    "cc/tools/file_write/file_write_tool.py": [
+      "FileWriteTool"
+    ],
+    "cc/tools/glob_tool/__init__.py": [],
+    "cc/tools/glob_tool/glob_tool.py": [
+      "GlobTool"
+    ],
+    "cc/tools/grep_tool/__init__.py": [],
+    "cc/tools/grep_tool/grep_tool.py": [
+      "GrepTool"
+    ],
+    "cc/tools/lsp/__init__.py": [],
+    "cc/tools/lsp/lsp_tool.py": [
+      "LSPTool"
+    ],
+    "cc/tools/mcp_tool/__init__.py": [],
+    "cc/tools/notebook/__init__.py": [],
+    "cc/tools/notebook/notebook_edit_tool.py": [
+      "_make_cell",
+      "NotebookEditTool"
+    ],
+    "cc/tools/orchestration.py": [
+      "run_tools",
+      "_execute_with_sem",
+      "_partition_batches",
+      "_execute_one"
+    ],
+    "cc/tools/plan_mode/__init__.py": [],
+    "cc/tools/plan_mode/plan_mode_tool.py": [
+      "is_plan_mode_active",
+      "reset_plan_mode",
+      "EnterPlanModeTool",
+      "ExitPlanModeTool"
+    ],
+    "cc/tools/send_message/__init__.py": [],
+    "cc/tools/send_message/send_message_tool.py": [
+      "SendMessageTool"
+    ],
+    "cc/tools/skill/__init__.py": [],
+    "cc/tools/skill/skill_tool.py": [
+      "SkillTool"
+    ],
+    "cc/tools/streaming_executor.py": [
+      "StreamingToolExecutor"
+    ],
+    "cc/tools/task_tools/__init__.py": [],
+    "cc/tools/task_tools/task_tools.py": [
+      "Task",
+      "TaskStore",
+      "get_task_store",
+      "TaskCreateTool",
+      "TaskGetTool",
+      "TaskListTool",
+      "TaskUpdateTool",
+      "TaskStopTool"
+    ],
+    "cc/tools/team/__init__.py": [],
+    "cc/tools/team/team_create_tool.py": [
+      "TeamCreateTool"
+    ],
+    "cc/tools/team/team_delete_tool.py": [
+      "TeamDeleteTool"
+    ],
+    "cc/tools/todo/__init__.py": [],
+    "cc/tools/todo/todo_write_tool.py": [
+      "_get_project_hash",
+      "_get_todos_dir",
+      "TodoWriteTool"
+    ],
+    "cc/tools/tool_search/__init__.py": [],
+    "cc/tools/tool_search/tool_search_tool.py": [
+      "ToolSearchTool"
+    ],
+    "cc/tools/web_fetch/__init__.py": [],
+    "cc/tools/web_fetch/web_fetch_tool.py": [
+      "WebFetchTool"
+    ],
+    "cc/tools/web_search/__init__.py": [],
+    "cc/tools/web_search/web_search_tool.py": [
+      "WebSearchTool"
+    ],
+    "cc/ui/__init__.py": [],
+    "cc/ui/renderer.py": [
+      "_shorten_paths",
+      "render_event",
+      "print_welcome",
+      "print_prompt"
+    ],
+    "cc/utils/__init__.py": [],
+    "cc/utils/errors.py": [
+      "CCError",
+      "ConfigError",
+      "APIError",
+      "ToolExecutionError",
+      "CompactError",
+      "AbortError"
+    ],
+    "tests/__init__.py": [],
+    "tests/e2e/__init__.py": [],
+    "tests/e2e/test_cli.py": [
+      "get_api_key",
+      "TestCLIHelp",
+      "TestCLIPrintMode"
+    ],
+    "tests/integration/__init__.py": [],
+    "tests/integration/test_query_loop.py": [
+      "get_api_key",
+      "_check_for_connection_error",
+      "TestQueryLoopRealAPI"
+    ],
+    "tests/unit/__init__.py": [],
+    "tests/unit/api/__init__.py": [],
+    "tests/unit/api/test_claude.py": [
+      "MockContentBlock",
+      "MockDelta",
+      "MockUsage",
+      "MockMessage",
+      "MockEvent",
+      "make_text_stream_events",
+      "make_tool_use_stream_events",
+      "MockStream",
+      "TestStreamResponseTextOnly",
+      "TestStreamResponseToolUse"
+    ],
+    "tests/unit/api/test_client.py": [
+      "TestCreateClient"
+    ],
+    "tests/unit/api/test_stop_reason.py": [
+      "MockContentBlock",
+      "MockDelta",
+      "MockUsage",
+      "MockMessage",
+      "MockEvent",
+      "MockStream",
+      "_make_events_with_stop_reason",
+      "_make_client",
+      "TestStopReasonNotMasked",
+      "TestStopReasonNoMessageDeltaAttr"
+    ],
+    "tests/unit/api/test_token_estimation.py": [
+      "TestEstimateTokens",
+      "TestEstimateMessagesTokens"
+    ],
+    "tests/unit/api/test_tool_input_parse.py": [
+      "MockContentBlock",
+      "MockDelta",
+      "MockUsage",
+      "MockMessage",
+      "MockEvent",
+      "MockStream",
+      "TestToolInputJsonParseFallback"
+    ],
+    "tests/unit/api/test_unknown_block_type.py": [
+      "MockContentBlock",
+      "MockDelta",
+      "MockUsage",
+      "MockMessage",
+      "MockEvent",
+      "MockStream",
+      "TestUnknownBlockTypeWarning"
+    ],
+    "tests/unit/api/test_usage_tracking.py": [
+      "MockContentBlock",
+      "MockDelta",
+      "MockStartUsage",
+      "MockDeltaUsage",
+      "MockMessage",
+      "MockEvent",
+      "MockStream",
+      "TestUsageTracking"
+    ],
+    "tests/unit/compact/__init__.py": [],
+    "tests/unit/compact/test_compact.py": [
+      "TestShouldAutoCompact"
+    ],
+    "tests/unit/core/__init__.py": [],
+    "tests/unit/core/test_events.py": [
+      "TestEventRepr"
+    ],
+    "tests/unit/core/test_multiline.py": [
+      "TestNeedsContinuation"
+    ],
+    "tests/unit/core/test_query_engine_unified.py": [
+      "_mock_query_loop_capturing_kwargs",
+      "TestQueryEngineUnifiedPermissions"
+    ],
+    "tests/unit/core/test_query_engine.py": [
+      "_make_mock_client",
+      "TestQueryEngineInit",
+      "TestQueryEngineMakeCallModel",
+      "TestQueryEngineFactory",
+      "TestQueryEngineSubmit"
+    ],
+    "tests/unit/core/test_query_loop.py": [
+      "TestQueryLoopTextOnly",
+      "TestQueryLoopMaxTokensRecovery",
+      "TestQueryLoopRecoverableError"
+    ],
+    "tests/unit/mcp/__init__.py": [],
+    "tests/unit/memory/test_extraction_coalescing.py": [
+      "_make_messages",
+      "_make_mock_call_model",
+      "TestExtractionCoordinator"
+    ],
+    "tests/unit/memory/test_memory_index_update.py": [
+      "TestUpdateMemoryIndex",
+      "TestExtractDescription"
+    ],
+    "tests/unit/models/__init__.py": [],
+    "tests/unit/models/test_content_blocks.py": [
+      "TestTextBlock",
+      "TestToolUseBlock",
+      "TestToolResultBlock",
+      "TestThinkingBlock",
+      "TestRedactedThinkingBlock",
+      "TestImageBlock",
+      "TestContentBlockFromApiDict"
+    ],
+    "tests/unit/models/test_message_normalization.py": [
+      "_make_assistant_with_tool_use",
+      "_make_user_with_tool_result",
+      "TestOrphanedToolResult",
+      "TestOrphanedToolUse"
+    ],
+    "tests/unit/models/test_messages.py": [
+      "TestUserMessage",
+      "TestAssistantMessage",
+      "TestNormalizeMessagesForApi",
+      "TestGetMessagesAfterCompactBoundary",
+      "TestFactoryFunctions"
+    ],
+    "tests/unit/models/test_tool_result_serialization.py": [
+      "TestToolResultBlockSerialization",
+      "TestToolResultContentFromApiDict"
+    ],
+    "tests/unit/permissions/__init__.py": [],
+    "tests/unit/permissions/test_gate.py": [
+      "TestCheckPermission",
+      "TestPermissionContextNonInteractive"
+    ],
+    "tests/unit/permissions/test_non_interactive.py": [
+      "TestNonInteractiveSemantics"
+    ],
+    "tests/unit/permissions/test_rules.py": [
+      "TestLoadPermissionRules",
+      "TestApplyRules",
+      "TestPermissionContextWithRules"
+    ],
+    "tests/unit/prompts/__init__.py": [],
+    "tests/unit/prompts/test_builder.py": [
+      "TestComputeEnvInfo",
+      "TestBuildSystemPrompt"
+    ],
+    "tests/unit/prompts/test_claudemd.py": [
+      "TestLoadClaudeMd"
+    ],
+    "tests/unit/prompts/test_sections.py": [
+      "TestPromptSections"
+    ],
+    "tests/unit/prompts/test_teammate_prompt.py": [
+      "TestTeammateSystemPromptAddendum",
+      "TestBuildTeammatePromptAddendum"
+    ],
+    "tests/unit/session/__init__.py": [],
+    "tests/unit/session/test_history.py": [
+      "TestHistory"
+    ],
+    "tests/unit/session/test_recovery.py": [
+      "TestValidateTranscriptTruncation",
+      "TestValidateTranscriptMidOrphans"
+    ],
+    "tests/unit/session/test_storage.py": [
+      "TestSessionStorage"
+    ],
+    "tests/unit/session/test_task_persistence.py": [
+      "TestTaskPersistence"
+    ],
+    "tests/unit/session/test_task_registry.py": [
+      "TestTaskRegistryBasics",
+      "TestTaskRegistryStop",
+      "TestTaskRegistrySnapshotRestore",
+      "TestTaskRecordSerialization"
+    ],
+    "tests/unit/swarm/__init__.py": [],
+    "tests/unit/swarm/test_coordinator.py": [
+      "TestIsCoordinatorMode",
+      "TestGetCoordinatorConfig"
+    ],
+    "tests/unit/swarm/test_identity.py": [
+      "TestFormatAgentId",
+      "TestParseAgentId",
+      "TestSanitizeName"
+    ],
+    "tests/unit/swarm/test_in_process_runner.py": [
+      "_mock_call_model_factory",
+      "TestContextVars",
+      "test_run_sets_identity",
+      "test_identity_isolation",
+      "test_sends_completion_message",
+      "test_uses_non_interactive_permissions"
+    ],
+    "tests/unit/swarm/test_mailbox.py": [
+      "mailbox",
+      "TestTeammateMessage",
+      "TestTeammateMailbox"
+    ],
+    "tests/unit/swarm/test_spawn.py": [
+      "_mock_factory",
+      "claude_dir",
+      "test_spawn_returns_task_id",
+      "test_spawn_registers_member",
+      "test_spawn_teammate_sends_message",
+      "test_spawn_with_task_registry"
+    ],
+    "tests/unit/swarm/test_team_file.py": [
+      "claude_dir",
+      "TestTeamMember",
+      "TestTeamFile",
+      "TestSaveAndLoad",
+      "TestAddMember",
+      "TestRemoveMember"
+    ],
+    "tests/unit/tools/__init__.py": [],
+    "tests/unit/tools/agent/__init__.py": [],
+    "tests/unit/tools/agent/test_agent_permission_wiring.py": [
+      "TestAgentPermissionWiring"
+    ],
+    "tests/unit/tools/agent/test_background_agent.py": [
+      "TestBackgroundAgentManager",
+      "TestAgentToolBackgroundSchema"
+    ],
+    "tests/unit/tools/agent/test_worktree.py": [
+      "TestCreateAgentWorktree",
+      "TestCleanupAgentWorktree",
+      "TestAgentToolWorktreeSchema"
+    ],
+    "tests/unit/tools/test_agent_tool.py": [
+      "DummyTool",
+      "TestAgentTool"
+    ],
+    "tests/unit/tools/test_ask_user.py": [
+      "TestAskUserTool"
+    ],
+    "tests/unit/tools/test_base.py": [
+      "MockTool",
+      "TestToolRegistry"
+    ],
+    "tests/unit/tools/test_bash_tool.py": [
+      "TestBashTool"
+    ],
+    "tests/unit/tools/test_brief_tool.py": [
+      "TestBriefTool"
+    ],
+    "tests/unit/tools/test_extractor.py": [
+      "TestExtractMemories"
+    ],
+    "tests/unit/tools/test_file_tools.py": [
+      "TestFileReadTool",
+      "TestFileEditTool",
+      "TestFileWriteTool"
+    ],
+    "tests/unit/tools/test_glob_grep.py": [
+      "TestGlobTool",
+      "TestGrepTool"
+    ],
+    "tests/unit/tools/test_hooks.py": [
+      "TestLoadHooks",
+      "TestRunHook",
+      "TestRunPreToolHooks"
+    ],
+    "tests/unit/tools/test_lsp.py": [
+      "TestLSPTool"
+    ],
+    "tests/unit/tools/test_mcp_config.py": [
+      "TestMcpConfig"
+    ],
+    "tests/unit/tools/test_memory.py": [
+      "TestMemory"
+    ],
+    "tests/unit/tools/test_notebook_edit.py": [
+      "_make_notebook",
+      "_read_notebook",
+      "TestNotebookEditTool"
+    ],
+    "tests/unit/tools/test_orchestration.py": [
+      "SlowTool",
+      "ErrorTool",
+      "TestRunTools"
+    ],
+    "tests/unit/tools/test_plan_mode_tool.py": [
+      "_reset_state",
+      "TestEnterPlanModeTool",
+      "TestExitPlanModeTool",
+      "TestPlanModeToggle"
+    ],
+    "tests/unit/tools/test_send_message.py": [
+      "team_dir",
+      "tool",
+      "test_send_message",
+      "test_broadcast",
+      "test_send_empty_to",
+      "test_send_no_team",
+      "test_schema"
+    ],
+    "tests/unit/tools/test_skill_tool.py": [
+      "sample_skills",
+      "TestSkillTool"
+    ],
+    "tests/unit/tools/test_skills.py": [
+      "TestLoadSkills"
+    ],
+    "tests/unit/tools/test_streaming_executor_enhanced.py": [
+      "SlowTool",
+      "TestEnhancedExecutorConcurrency",
+      "TestEnhancedExecutorHooks",
+      "TestEnhancedExecutorPermission",
+      "TestEnhancedExecutorErrorHandling"
+    ],
+    "tests/unit/tools/test_streaming_executor.py": [
+      "SlowTool",
+      "TestStreamingToolExecutor"
+    ],
+    "tests/unit/tools/test_task_stop.py": [
+      "TestTaskStopTool"
+    ],
+    "tests/unit/tools/test_task_tools.py": [
+      "TestTaskTools"
+    ],
+    "tests/unit/tools/test_team_create.py": [
+      "tool",
+      "test_create_team",
+      "test_create_duplicate_team",
+      "test_create_empty_name",
+      "test_schema"
+    ],
+    "tests/unit/tools/test_team_delete.py": [
+      "tool",
+      "test_delete_team",
+      "test_delete_nonexistent",
+      "test_delete_with_active_members",
+      "test_delete_empty_name",
+      "test_schema"
+    ],
+    "tests/unit/tools/test_todo_write.py": [
+      "TestTodoWriteTool"
+    ],
+    "tests/unit/tools/test_tool_search.py": [
+      "_DummyTool",
+      "_make_registry_with_tools",
+      "TestToolSearchTool"
+    ],
+    "tests/unit/tools/test_web_fetch.py": [
+      "TestWebFetchTool"
+    ],
+    "tests/unit/tools/test_web_search.py": [
+      "TestWebSearchTool"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "cc/mcp/client.py",
+          "language": "python",
+          "sizeLines": 196,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/ask_user/ask_user_tool.py",
+          "language": "python",
+          "sizeLines": 69,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/base.py",
+          "language": "python",
+          "sizeLines": 160,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/brief/brief_tool.py",
+          "language": "python",
+          "sizeLines": 86,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/lsp/lsp_tool.py",
+          "language": "python",
+          "sizeLines": 96,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/notebook/notebook_edit_tool.py",
+          "language": "python",
+          "sizeLines": 211,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/orchestration.py",
+          "language": "python",
+          "sizeLines": 171,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/plan_mode/plan_mode_tool.py",
+          "language": "python",
+          "sizeLines": 96,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/streaming_executor.py",
+          "language": "python",
+          "sizeLines": 212,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/task_tools/task_tools.py",
+          "language": "python",
+          "sizeLines": 269,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/todo/todo_write_tool.py",
+          "language": "python",
+          "sizeLines": 147,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/tool_search/tool_search_tool.py",
+          "language": "python",
+          "sizeLines": 110,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/web_fetch/web_fetch_tool.py",
+          "language": "python",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/web_search/web_search_tool.py",
+          "language": "python",
+          "sizeLines": 70,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_ask_user.py",
+          "language": "python",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_base.py",
+          "language": "python",
+          "sizeLines": 69,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_brief_tool.py",
+          "language": "python",
+          "sizeLines": 80,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_lsp.py",
+          "language": "python",
+          "sizeLines": 85,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_notebook_edit.py",
+          "language": "python",
+          "sizeLines": 189,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_orchestration.py",
+          "language": "python",
+          "sizeLines": 105,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_plan_mode_tool.py",
+          "language": "python",
+          "sizeLines": 111,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_streaming_executor.py",
+          "language": "python",
+          "sizeLines": 89,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_streaming_executor_enhanced.py",
+          "language": "python",
+          "sizeLines": 173,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_task_stop.py",
+          "language": "python",
+          "sizeLines": 65,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_task_tools.py",
+          "language": "python",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_todo_write.py",
+          "language": "python",
+          "sizeLines": 89,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_tool_search.py",
+          "language": "python",
+          "sizeLines": 120,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_web_fetch.py",
+          "language": "python",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_web_search.py",
+          "language": "python",
+          "sizeLines": 39,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/mcp/client.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/ask_user/ask_user_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/base.py": [],
+        "cc/tools/brief/brief_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/lsp/lsp_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/notebook/notebook_edit_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/orchestration.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/plan_mode/plan_mode_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/streaming_executor.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/task_tools/task_tools.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/todo/todo_write_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/tool_search/tool_search_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/web_fetch/web_fetch_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/web_search/web_search_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "tests/unit/tools/test_ask_user.py": [
+          "cc/tools/ask_user/ask_user_tool.py"
+        ],
+        "tests/unit/tools/test_base.py": [
+          "cc/tools/base.py"
+        ],
+        "tests/unit/tools/test_brief_tool.py": [
+          "cc/tools/brief/brief_tool.py"
+        ],
+        "tests/unit/tools/test_lsp.py": [
+          "cc/tools/lsp/lsp_tool.py"
+        ],
+        "tests/unit/tools/test_notebook_edit.py": [
+          "cc/tools/notebook/notebook_edit_tool.py"
+        ],
+        "tests/unit/tools/test_orchestration.py": [
+          "cc/models/content_blocks.py",
+          "cc/tools/base.py",
+          "cc/tools/orchestration.py"
+        ],
+        "tests/unit/tools/test_plan_mode_tool.py": [
+          "cc/tools/plan_mode/plan_mode_tool.py"
+        ],
+        "tests/unit/tools/test_streaming_executor.py": [
+          "cc/models/content_blocks.py",
+          "cc/tools/base.py",
+          "cc/tools/streaming_executor.py"
+        ],
+        "tests/unit/tools/test_streaming_executor_enhanced.py": [
+          "cc/models/content_blocks.py",
+          "cc/tools/base.py",
+          "cc/tools/streaming_executor.py"
+        ],
+        "tests/unit/tools/test_task_stop.py": [
+          "cc/tools/task_tools/task_tools.py"
+        ],
+        "tests/unit/tools/test_task_tools.py": [
+          "cc/tools/task_tools/task_tools.py"
+        ],
+        "tests/unit/tools/test_todo_write.py": [
+          "cc/tools/todo/todo_write_tool.py"
+        ],
+        "tests/unit/tools/test_tool_search.py": [
+          "cc/tools/base.py",
+          "cc/tools/tool_search/tool_search_tool.py"
+        ],
+        "tests/unit/tools/test_web_fetch.py": [
+          "cc/tools/web_fetch/web_fetch_tool.py"
+        ],
+        "tests/unit/tools/test_web_search.py": [
+          "cc/tools/web_search/web_search_tool.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/tools/base.py": [
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          },
+          {
+            "path": "cc/tools/agent/agent_tool.py",
+            "batchIndex": 6,
+            "symbols": [
+              "AgentTool"
+            ]
+          },
+          {
+            "path": "cc/tools/bash/bash_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "BashTool"
+            ]
+          },
+          {
+            "path": "cc/tools/file_edit/file_edit_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "FileEditTool"
+            ]
+          },
+          {
+            "path": "cc/tools/file_read/file_read_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "FileReadTool"
+            ]
+          },
+          {
+            "path": "cc/tools/file_write/file_write_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "FileWriteTool"
+            ]
+          },
+          {
+            "path": "cc/tools/glob_tool/glob_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "GlobTool"
+            ]
+          },
+          {
+            "path": "cc/tools/grep_tool/grep_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "GrepTool"
+            ]
+          },
+          {
+            "path": "cc/tools/send_message/send_message_tool.py",
+            "batchIndex": 5,
+            "symbols": [
+              "SendMessageTool"
+            ]
+          },
+          {
+            "path": "cc/tools/skill/skill_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "SkillTool"
+            ]
+          },
+          {
+            "path": "cc/tools/team/team_create_tool.py",
+            "batchIndex": 5,
+            "symbols": [
+              "TeamCreateTool"
+            ]
+          },
+          {
+            "path": "cc/tools/team/team_delete_tool.py",
+            "batchIndex": 5,
+            "symbols": [
+              "TeamDeleteTool"
+            ]
+          },
+          {
+            "path": "tests/integration/test_query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "get_api_key",
+              "_check_for_connection_error",
+              "TestQueryLoopRealAPI"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_engine_unified.py",
+            "batchIndex": 7,
+            "symbols": [
+              "_mock_query_loop_capturing_kwargs",
+              "TestQueryEngineUnifiedPermissions"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_engine.py",
+            "batchIndex": 4,
+            "symbols": [
+              "_make_mock_client",
+              "TestQueryEngineInit",
+              "TestQueryEngineMakeCallModel",
+              "TestQueryEngineFactory",
+              "TestQueryEngineSubmit"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TestQueryLoopTextOnly",
+              "TestQueryLoopMaxTokensRecovery",
+              "TestQueryLoopRecoverableError"
+            ]
+          },
+          {
+            "path": "tests/unit/swarm/test_in_process_runner.py",
+            "batchIndex": 5,
+            "symbols": [
+              "_mock_call_model_factory",
+              "TestContextVars",
+              "test_run_sets_identity",
+              "test_identity_isolation",
+              "test_sends_completion_message",
+              "test_uses_non_interactive_permissions"
+            ]
+          },
+          {
+            "path": "tests/unit/swarm/test_spawn.py",
+            "batchIndex": 5,
+            "symbols": [
+              "_mock_factory",
+              "claude_dir",
+              "test_spawn_returns_task_id",
+              "test_spawn_registers_member",
+              "test_spawn_teammate_sends_message",
+              "test_spawn_with_task_registry"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/agent/test_agent_permission_wiring.py",
+            "batchIndex": 6,
+            "symbols": [
+              "TestAgentPermissionWiring"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_agent_tool.py",
+            "batchIndex": 6,
+            "symbols": [
+              "DummyTool",
+              "TestAgentTool"
+            ]
+          }
+        ],
+        "tests/unit/tools/test_orchestration.py": [
+          {
+            "path": "cc/models/content_blocks.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TextBlock",
+              "ToolUseBlock",
+              "ToolResultContent",
+              "ToolResultBlock",
+              "ThinkingBlock",
+              "RedactedThinkingBlock",
+              "ImageBlock",
+              "ImageSource",
+              "content_block_from_api_dict"
+            ]
+          }
+        ],
+        "tests/unit/tools/test_streaming_executor.py": [
+          {
+            "path": "cc/models/content_blocks.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TextBlock",
+              "ToolUseBlock",
+              "ToolResultContent",
+              "ToolResultBlock",
+              "ThinkingBlock",
+              "RedactedThinkingBlock",
+              "ImageBlock",
+              "ImageSource",
+              "content_block_from_api_dict"
+            ]
+          }
+        ],
+        "tests/unit/tools/test_streaming_executor_enhanced.py": [
+          {
+            "path": "cc/models/content_blocks.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TextBlock",
+              "ToolUseBlock",
+              "ToolResultContent",
+              "ToolResultBlock",
+              "ThinkingBlock",
+              "RedactedThinkingBlock",
+              "ImageBlock",
+              "ImageSource",
+              "content_block_from_api_dict"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "cc/__main__.py",
+          "language": "python",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/hooks/hook_runner.py",
+          "language": "python",
+          "sizeLines": 209,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/main.py",
+          "language": "python",
+          "sizeLines": 874,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/prompts/claudemd.py",
+          "language": "python",
+          "sizeLines": 155,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/session/history.py",
+          "language": "python",
+          "sizeLines": 127,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/skills/loader.py",
+          "language": "python",
+          "sizeLines": 127,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/bash/bash_tool.py",
+          "language": "python",
+          "sizeLines": 156,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/file_edit/file_edit_tool.py",
+          "language": "python",
+          "sizeLines": 134,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/file_read/file_read_tool.py",
+          "language": "python",
+          "sizeLines": 143,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/file_write/file_write_tool.py",
+          "language": "python",
+          "sizeLines": 104,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/glob_tool/glob_tool.py",
+          "language": "python",
+          "sizeLines": 84,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/grep_tool/grep_tool.py",
+          "language": "python",
+          "sizeLines": 207,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/skill/skill_tool.py",
+          "language": "python",
+          "sizeLines": 85,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/ui/renderer.py",
+          "language": "python",
+          "sizeLines": 145,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/core/test_multiline.py",
+          "language": "python",
+          "sizeLines": 40,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/prompts/test_claudemd.py",
+          "language": "python",
+          "sizeLines": 72,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/session/test_history.py",
+          "language": "python",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_bash_tool.py",
+          "language": "python",
+          "sizeLines": 68,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_file_tools.py",
+          "language": "python",
+          "sizeLines": 151,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_glob_grep.py",
+          "language": "python",
+          "sizeLines": 67,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_hooks.py",
+          "language": "python",
+          "sizeLines": 78,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_skill_tool.py",
+          "language": "python",
+          "sizeLines": 81,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_skills.py",
+          "language": "python",
+          "sizeLines": 61,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/__main__.py": [
+          "cc/main.py"
+        ],
+        "cc/hooks/hook_runner.py": [],
+        "cc/main.py": [
+          "cc/api/claude.py",
+          "cc/api/client.py",
+          "cc/core/events.py",
+          "cc/core/query_engine.py",
+          "cc/hooks/hook_runner.py",
+          "cc/models/messages.py",
+          "cc/prompts/builder.py",
+          "cc/prompts/claudemd.py",
+          "cc/session/history.py",
+          "cc/session/storage.py",
+          "cc/skills/loader.py",
+          "cc/tools/base.py",
+          "cc/tools/bash/bash_tool.py",
+          "cc/tools/file_edit/file_edit_tool.py",
+          "cc/tools/file_read/file_read_tool.py",
+          "cc/tools/file_write/file_write_tool.py",
+          "cc/tools/glob_tool/glob_tool.py",
+          "cc/tools/grep_tool/grep_tool.py",
+          "cc/ui/renderer.py"
+        ],
+        "cc/prompts/claudemd.py": [],
+        "cc/session/history.py": [],
+        "cc/skills/loader.py": [],
+        "cc/tools/bash/bash_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/file_edit/file_edit_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/file_read/file_read_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/file_write/file_write_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/glob_tool/glob_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/grep_tool/grep_tool.py": [
+          "cc/tools/base.py"
+        ],
+        "cc/tools/skill/skill_tool.py": [
+          "cc/skills/loader.py",
+          "cc/tools/base.py"
+        ],
+        "cc/ui/renderer.py": [],
+        "tests/unit/core/test_multiline.py": [
+          "cc/main.py"
+        ],
+        "tests/unit/prompts/test_claudemd.py": [
+          "cc/prompts/claudemd.py"
+        ],
+        "tests/unit/session/test_history.py": [
+          "cc/session/history.py"
+        ],
+        "tests/unit/tools/test_bash_tool.py": [
+          "cc/tools/bash/bash_tool.py"
+        ],
+        "tests/unit/tools/test_file_tools.py": [
+          "cc/tools/file_edit/file_edit_tool.py",
+          "cc/tools/file_read/file_read_tool.py",
+          "cc/tools/file_write/file_write_tool.py"
+        ],
+        "tests/unit/tools/test_glob_grep.py": [
+          "cc/tools/glob_tool/glob_tool.py",
+          "cc/tools/grep_tool/grep_tool.py"
+        ],
+        "tests/unit/tools/test_hooks.py": [
+          "cc/hooks/hook_runner.py"
+        ],
+        "tests/unit/tools/test_skill_tool.py": [
+          "cc/skills/loader.py",
+          "cc/tools/skill/skill_tool.py"
+        ],
+        "tests/unit/tools/test_skills.py": [
+          "cc/skills/loader.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/main.py": [
+          {
+            "path": "cc/api/claude.py",
+            "batchIndex": 4,
+            "symbols": [
+              "stream_response"
+            ]
+          },
+          {
+            "path": "cc/api/client.py",
+            "batchIndex": 8,
+            "symbols": [
+              "create_client"
+            ]
+          },
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          },
+          {
+            "path": "cc/core/query_engine.py",
+            "batchIndex": 4,
+            "symbols": [
+              "CallModelFn",
+              "QueryEngine"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/prompts/builder.py",
+            "batchIndex": 6,
+            "symbols": [
+              "compute_env_info",
+              "build_system_prompt"
+            ]
+          },
+          {
+            "path": "cc/session/storage.py",
+            "batchIndex": 3,
+            "symbols": [
+              "get_sessions_dir",
+              "save_session",
+              "load_session",
+              "load_task_snapshot",
+              "list_sessions",
+              "_message_to_record",
+              "_record_to_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/bash/bash_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          },
+          {
+            "path": "tests/integration/test_query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "get_api_key",
+              "_check_for_connection_error",
+              "TestQueryLoopRealAPI"
+            ]
+          }
+        ],
+        "cc/tools/file_edit/file_edit_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/file_read/file_read_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/file_write/file_write_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/glob_tool/glob_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/grep_tool/grep_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/skill/skill_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "cc/memory/extractor.py",
+          "language": "python",
+          "sizeLines": 328,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/memory/session_memory.py",
+          "language": "python",
+          "sizeLines": 198,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/models/content_blocks.py",
+          "language": "python",
+          "sizeLines": 268,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/models/messages.py",
+          "language": "python",
+          "sizeLines": 434,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/session/recovery.py",
+          "language": "python",
+          "sizeLines": 130,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/session/storage.py",
+          "language": "python",
+          "sizeLines": 256,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/session/task_registry.py",
+          "language": "python",
+          "sizeLines": 251,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/agent/background.py",
+          "language": "python",
+          "sizeLines": 131,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/core/test_events.py",
+          "language": "python",
+          "sizeLines": 57,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/memory/test_extraction_coalescing.py",
+          "language": "python",
+          "sizeLines": 111,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/memory/test_memory_index_update.py",
+          "language": "python",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/models/test_content_blocks.py",
+          "language": "python",
+          "sizeLines": 159,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/models/test_message_normalization.py",
+          "language": "python",
+          "sizeLines": 156,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/models/test_messages.py",
+          "language": "python",
+          "sizeLines": 254,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/models/test_tool_result_serialization.py",
+          "language": "python",
+          "sizeLines": 74,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/session/test_recovery.py",
+          "language": "python",
+          "sizeLines": 86,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/session/test_storage.py",
+          "language": "python",
+          "sizeLines": 94,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/session/test_task_persistence.py",
+          "language": "python",
+          "sizeLines": 88,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/session/test_task_registry.py",
+          "language": "python",
+          "sizeLines": 139,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/agent/test_background_agent.py",
+          "language": "python",
+          "sizeLines": 82,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_extractor.py",
+          "language": "python",
+          "sizeLines": 149,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_memory.py",
+          "language": "python",
+          "sizeLines": 77,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/memory/extractor.py": [
+          "cc/memory/session_memory.py"
+        ],
+        "cc/memory/session_memory.py": [],
+        "cc/models/content_blocks.py": [],
+        "cc/models/messages.py": [
+          "cc/models/content_blocks.py"
+        ],
+        "cc/session/recovery.py": [
+          "cc/models/messages.py"
+        ],
+        "cc/session/storage.py": [
+          "cc/models/messages.py"
+        ],
+        "cc/session/task_registry.py": [],
+        "cc/tools/agent/background.py": [],
+        "tests/unit/core/test_events.py": [
+          "cc/core/events.py",
+          "cc/models/messages.py"
+        ],
+        "tests/unit/memory/test_extraction_coalescing.py": [
+          "cc/core/events.py",
+          "cc/memory/extractor.py",
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py"
+        ],
+        "tests/unit/memory/test_memory_index_update.py": [
+          "cc/memory/extractor.py",
+          "cc/memory/session_memory.py"
+        ],
+        "tests/unit/models/test_content_blocks.py": [
+          "cc/models/content_blocks.py"
+        ],
+        "tests/unit/models/test_message_normalization.py": [
+          "cc/models/messages.py"
+        ],
+        "tests/unit/models/test_messages.py": [
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py"
+        ],
+        "tests/unit/models/test_tool_result_serialization.py": [
+          "cc/models/content_blocks.py"
+        ],
+        "tests/unit/session/test_recovery.py": [
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py",
+          "cc/session/recovery.py"
+        ],
+        "tests/unit/session/test_storage.py": [
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py",
+          "cc/session/storage.py"
+        ],
+        "tests/unit/session/test_task_persistence.py": [
+          "cc/models/messages.py",
+          "cc/session/storage.py",
+          "cc/session/task_registry.py"
+        ],
+        "tests/unit/session/test_task_registry.py": [
+          "cc/session/task_registry.py"
+        ],
+        "tests/unit/tools/agent/test_background_agent.py": [
+          "cc/session/task_registry.py",
+          "cc/tools/agent/background.py"
+        ],
+        "tests/unit/tools/test_extractor.py": [
+          "cc/core/events.py",
+          "cc/memory/extractor.py",
+          "cc/memory/session_memory.py",
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py"
+        ],
+        "tests/unit/tools/test_memory.py": [
+          "cc/memory/session_memory.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/models/content_blocks.py": [
+          {
+            "path": "cc/api/claude.py",
+            "batchIndex": 4,
+            "symbols": [
+              "stream_response"
+            ]
+          },
+          {
+            "path": "cc/core/query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "query_loop"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_orchestration.py",
+            "batchIndex": 1,
+            "symbols": [
+              "SlowTool",
+              "ErrorTool",
+              "TestRunTools"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_streaming_executor_enhanced.py",
+            "batchIndex": 1,
+            "symbols": [
+              "SlowTool",
+              "TestEnhancedExecutorConcurrency",
+              "TestEnhancedExecutorHooks",
+              "TestEnhancedExecutorPermission",
+              "TestEnhancedExecutorErrorHandling"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_streaming_executor.py",
+            "batchIndex": 1,
+            "symbols": [
+              "SlowTool",
+              "TestStreamingToolExecutor"
+            ]
+          }
+        ],
+        "cc/models/messages.py": [
+          {
+            "path": "cc/api/claude.py",
+            "batchIndex": 4,
+            "symbols": [
+              "stream_response"
+            ]
+          },
+          {
+            "path": "cc/compact/compact.py",
+            "batchIndex": 4,
+            "symbols": [
+              "compact_messages",
+              "should_auto_compact",
+              "_messages_to_text"
+            ]
+          },
+          {
+            "path": "cc/core/query_engine.py",
+            "batchIndex": 4,
+            "symbols": [
+              "CallModelFn",
+              "QueryEngine"
+            ]
+          },
+          {
+            "path": "cc/core/query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "query_loop"
+            ]
+          },
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          },
+          {
+            "path": "cc/tools/agent/agent_tool.py",
+            "batchIndex": 6,
+            "symbols": [
+              "AgentTool"
+            ]
+          },
+          {
+            "path": "tests/integration/test_query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "get_api_key",
+              "_check_for_connection_error",
+              "TestQueryLoopRealAPI"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_engine_unified.py",
+            "batchIndex": 7,
+            "symbols": [
+              "_mock_query_loop_capturing_kwargs",
+              "TestQueryEngineUnifiedPermissions"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_engine.py",
+            "batchIndex": 4,
+            "symbols": [
+              "_make_mock_client",
+              "TestQueryEngineInit",
+              "TestQueryEngineMakeCallModel",
+              "TestQueryEngineFactory",
+              "TestQueryEngineSubmit"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TestQueryLoopTextOnly",
+              "TestQueryLoopMaxTokensRecovery",
+              "TestQueryLoopRecoverableError"
+            ]
+          },
+          {
+            "path": "tests/unit/swarm/test_in_process_runner.py",
+            "batchIndex": 5,
+            "symbols": [
+              "_mock_call_model_factory",
+              "TestContextVars",
+              "test_run_sets_identity",
+              "test_identity_isolation",
+              "test_sends_completion_message",
+              "test_uses_non_interactive_permissions"
+            ]
+          },
+          {
+            "path": "tests/unit/swarm/test_spawn.py",
+            "batchIndex": 5,
+            "symbols": [
+              "_mock_factory",
+              "claude_dir",
+              "test_spawn_returns_task_id",
+              "test_spawn_registers_member",
+              "test_spawn_teammate_sends_message",
+              "test_spawn_with_task_registry"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_agent_tool.py",
+            "batchIndex": 6,
+            "symbols": [
+              "DummyTool",
+              "TestAgentTool"
+            ]
+          }
+        ],
+        "cc/session/storage.py": [
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          }
+        ],
+        "tests/unit/core/test_events.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          }
+        ],
+        "tests/unit/memory/test_extraction_coalescing.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          }
+        ],
+        "tests/unit/tools/test_extractor.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "cc/api/claude.py",
+          "language": "python",
+          "sizeLines": 289,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/api/token_estimation.py",
+          "language": "python",
+          "sizeLines": 103,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/compact/compact.py",
+          "language": "python",
+          "sizeLines": 196,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/core/events.py",
+          "language": "python",
+          "sizeLines": 136,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/core/query_engine.py",
+          "language": "python",
+          "sizeLines": 316,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/core/query_loop.py",
+          "language": "python",
+          "sizeLines": 351,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/integration/test_query_loop.py",
+          "language": "python",
+          "sizeLines": 160,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_claude.py",
+          "language": "python",
+          "sizeLines": 191,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_stop_reason.py",
+          "language": "python",
+          "sizeLines": 212,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_token_estimation.py",
+          "language": "python",
+          "sizeLines": 54,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_tool_input_parse.py",
+          "language": "python",
+          "sizeLines": 166,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_unknown_block_type.py",
+          "language": "python",
+          "sizeLines": 129,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_usage_tracking.py",
+          "language": "python",
+          "sizeLines": 113,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/compact/test_compact.py",
+          "language": "python",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/core/test_query_engine.py",
+          "language": "python",
+          "sizeLines": 158,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/core/test_query_loop.py",
+          "language": "python",
+          "sizeLines": 230,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/api/claude.py": [
+          "cc/core/events.py",
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py"
+        ],
+        "cc/api/token_estimation.py": [],
+        "cc/compact/compact.py": [
+          "cc/models/messages.py"
+        ],
+        "cc/core/events.py": [],
+        "cc/core/query_engine.py": [
+          "cc/api/claude.py",
+          "cc/core/query_loop.py",
+          "cc/models/messages.py"
+        ],
+        "cc/core/query_loop.py": [
+          "cc/api/token_estimation.py",
+          "cc/compact/compact.py",
+          "cc/core/events.py",
+          "cc/models/content_blocks.py",
+          "cc/models/messages.py"
+        ],
+        "tests/integration/test_query_loop.py": [
+          "cc/api/claude.py",
+          "cc/core/events.py",
+          "cc/core/query_loop.py",
+          "cc/models/messages.py",
+          "cc/prompts/builder.py",
+          "cc/tools/base.py",
+          "cc/tools/bash/bash_tool.py"
+        ],
+        "tests/unit/api/test_claude.py": [
+          "cc/api/claude.py",
+          "cc/core/events.py"
+        ],
+        "tests/unit/api/test_stop_reason.py": [
+          "cc/api/claude.py",
+          "cc/core/events.py"
+        ],
+        "tests/unit/api/test_token_estimation.py": [
+          "cc/api/token_estimation.py"
+        ],
+        "tests/unit/api/test_tool_input_parse.py": [
+          "cc/api/claude.py",
+          "cc/core/events.py"
+        ],
+        "tests/unit/api/test_unknown_block_type.py": [
+          "cc/api/claude.py",
+          "cc/core/events.py"
+        ],
+        "tests/unit/api/test_usage_tracking.py": [
+          "cc/api/claude.py",
+          "cc/core/events.py"
+        ],
+        "tests/unit/compact/test_compact.py": [
+          "cc/compact/compact.py"
+        ],
+        "tests/unit/core/test_query_engine.py": [
+          "cc/core/events.py",
+          "cc/core/query_engine.py",
+          "cc/models/messages.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/core/test_query_loop.py": [
+          "cc/core/events.py",
+          "cc/core/query_loop.py",
+          "cc/models/messages.py",
+          "cc/tools/base.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/api/claude.py": [
+          {
+            "path": "cc/models/content_blocks.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TextBlock",
+              "ToolUseBlock",
+              "ToolResultContent",
+              "ToolResultBlock",
+              "ThinkingBlock",
+              "RedactedThinkingBlock",
+              "ImageBlock",
+              "ImageSource",
+              "content_block_from_api_dict"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          }
+        ],
+        "cc/compact/compact.py": [
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          }
+        ],
+        "cc/core/events.py": [
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          },
+          {
+            "path": "cc/tools/agent/agent_tool.py",
+            "batchIndex": 6,
+            "symbols": [
+              "AgentTool"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_events.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TestEventRepr"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_engine_unified.py",
+            "batchIndex": 7,
+            "symbols": [
+              "_mock_query_loop_capturing_kwargs",
+              "TestQueryEngineUnifiedPermissions"
+            ]
+          },
+          {
+            "path": "tests/unit/memory/test_extraction_coalescing.py",
+            "batchIndex": 3,
+            "symbols": [
+              "_make_messages",
+              "_make_mock_call_model",
+              "TestExtractionCoordinator"
+            ]
+          },
+          {
+            "path": "tests/unit/swarm/test_in_process_runner.py",
+            "batchIndex": 5,
+            "symbols": [
+              "_mock_call_model_factory",
+              "TestContextVars",
+              "test_run_sets_identity",
+              "test_identity_isolation",
+              "test_sends_completion_message",
+              "test_uses_non_interactive_permissions"
+            ]
+          },
+          {
+            "path": "tests/unit/swarm/test_spawn.py",
+            "batchIndex": 5,
+            "symbols": [
+              "_mock_factory",
+              "claude_dir",
+              "test_spawn_returns_task_id",
+              "test_spawn_registers_member",
+              "test_spawn_teammate_sends_message",
+              "test_spawn_with_task_registry"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_agent_tool.py",
+            "batchIndex": 6,
+            "symbols": [
+              "DummyTool",
+              "TestAgentTool"
+            ]
+          },
+          {
+            "path": "tests/unit/tools/test_extractor.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TestExtractMemories"
+            ]
+          }
+        ],
+        "cc/core/query_engine.py": [
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          },
+          {
+            "path": "tests/unit/core/test_query_engine_unified.py",
+            "batchIndex": 7,
+            "symbols": [
+              "_mock_query_loop_capturing_kwargs",
+              "TestQueryEngineUnifiedPermissions"
+            ]
+          }
+        ],
+        "cc/core/query_loop.py": [
+          {
+            "path": "cc/models/content_blocks.py",
+            "batchIndex": 3,
+            "symbols": [
+              "TextBlock",
+              "ToolUseBlock",
+              "ToolResultContent",
+              "ToolResultBlock",
+              "ThinkingBlock",
+              "RedactedThinkingBlock",
+              "ImageBlock",
+              "ImageSource",
+              "content_block_from_api_dict"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          }
+        ],
+        "tests/integration/test_query_loop.py": [
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/prompts/builder.py",
+            "batchIndex": 6,
+            "symbols": [
+              "compute_env_info",
+              "build_system_prompt"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          },
+          {
+            "path": "cc/tools/bash/bash_tool.py",
+            "batchIndex": 2,
+            "symbols": [
+              "BashTool"
+            ]
+          }
+        ],
+        "tests/unit/core/test_query_engine.py": [
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "tests/unit/core/test_query_loop.py": [
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "cc/swarm/identity.py",
+          "language": "python",
+          "sizeLines": 73,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/in_process_runner.py",
+          "language": "python",
+          "sizeLines": 239,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/mailbox.py",
+          "language": "python",
+          "sizeLines": 180,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/spawn.py",
+          "language": "python",
+          "sizeLines": 130,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/team_file.py",
+          "language": "python",
+          "sizeLines": 232,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/send_message/send_message_tool.py",
+          "language": "python",
+          "sizeLines": 182,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/team/team_create_tool.py",
+          "language": "python",
+          "sizeLines": 114,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/team/team_delete_tool.py",
+          "language": "python",
+          "sizeLines": 106,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/test_identity.py",
+          "language": "python",
+          "sizeLines": 61,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/test_in_process_runner.py",
+          "language": "python",
+          "sizeLines": 110,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/test_mailbox.py",
+          "language": "python",
+          "sizeLines": 93,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/test_spawn.py",
+          "language": "python",
+          "sizeLines": 145,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/test_team_file.py",
+          "language": "python",
+          "sizeLines": 177,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_send_message.py",
+          "language": "python",
+          "sizeLines": 104,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_team_create.py",
+          "language": "python",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_team_delete.py",
+          "language": "python",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/swarm/identity.py": [],
+        "cc/swarm/in_process_runner.py": [],
+        "cc/swarm/mailbox.py": [
+          "cc/swarm/identity.py"
+        ],
+        "cc/swarm/spawn.py": [
+          "cc/swarm/identity.py",
+          "cc/swarm/in_process_runner.py",
+          "cc/swarm/team_file.py"
+        ],
+        "cc/swarm/team_file.py": [
+          "cc/swarm/identity.py"
+        ],
+        "cc/tools/send_message/send_message_tool.py": [
+          "cc/swarm/identity.py",
+          "cc/swarm/mailbox.py",
+          "cc/swarm/team_file.py",
+          "cc/tools/base.py"
+        ],
+        "cc/tools/team/team_create_tool.py": [
+          "cc/swarm/identity.py",
+          "cc/swarm/team_file.py",
+          "cc/tools/base.py"
+        ],
+        "cc/tools/team/team_delete_tool.py": [
+          "cc/swarm/team_file.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/swarm/test_identity.py": [
+          "cc/swarm/identity.py"
+        ],
+        "tests/unit/swarm/test_in_process_runner.py": [
+          "cc/core/events.py",
+          "cc/models/messages.py",
+          "cc/swarm/in_process_runner.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/swarm/test_mailbox.py": [
+          "cc/swarm/mailbox.py"
+        ],
+        "tests/unit/swarm/test_spawn.py": [
+          "cc/core/events.py",
+          "cc/models/messages.py",
+          "cc/swarm/identity.py",
+          "cc/swarm/spawn.py",
+          "cc/swarm/team_file.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/swarm/test_team_file.py": [
+          "cc/swarm/identity.py",
+          "cc/swarm/team_file.py"
+        ],
+        "tests/unit/tools/test_send_message.py": [
+          "cc/swarm/identity.py",
+          "cc/swarm/mailbox.py",
+          "cc/swarm/team_file.py",
+          "cc/tools/send_message/send_message_tool.py"
+        ],
+        "tests/unit/tools/test_team_create.py": [
+          "cc/tools/team/team_create_tool.py"
+        ],
+        "tests/unit/tools/test_team_delete.py": [
+          "cc/swarm/identity.py",
+          "cc/swarm/team_file.py",
+          "cc/tools/team/team_delete_tool.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/tools/send_message/send_message_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/team/team_create_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "cc/tools/team/team_delete_tool.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "tests/unit/swarm/test_in_process_runner.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "tests/unit/swarm/test_spawn.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "cc/prompts/builder.py",
+          "language": "python",
+          "sizeLines": 135,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/prompts/sections.py",
+          "language": "python",
+          "sizeLines": 400,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/agent/agent_tool.py",
+          "language": "python",
+          "sizeLines": 264,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/prompts/test_builder.py",
+          "language": "python",
+          "sizeLines": 107,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/prompts/test_sections.py",
+          "language": "python",
+          "sizeLines": 72,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/agent/test_agent_permission_wiring.py",
+          "language": "python",
+          "sizeLines": 65,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_agent_tool.py",
+          "language": "python",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/prompts/builder.py": [
+          "cc/prompts/sections.py"
+        ],
+        "cc/prompts/sections.py": [],
+        "cc/tools/agent/agent_tool.py": [
+          "cc/core/events.py",
+          "cc/models/messages.py",
+          "cc/prompts/sections.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/prompts/test_builder.py": [
+          "cc/prompts/builder.py"
+        ],
+        "tests/unit/prompts/test_sections.py": [
+          "cc/prompts/sections.py"
+        ],
+        "tests/unit/tools/agent/test_agent_permission_wiring.py": [
+          "cc/tools/agent/agent_tool.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/tools/test_agent_tool.py": [
+          "cc/core/events.py",
+          "cc/models/messages.py",
+          "cc/tools/agent/agent_tool.py",
+          "cc/tools/base.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/prompts/builder.py": [
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          },
+          {
+            "path": "tests/integration/test_query_loop.py",
+            "batchIndex": 4,
+            "symbols": [
+              "get_api_key",
+              "_check_for_connection_error",
+              "TestQueryLoopRealAPI"
+            ]
+          }
+        ],
+        "cc/tools/agent/agent_tool.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "tests/unit/tools/agent/test_agent_permission_wiring.py": [
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ],
+        "tests/unit/tools/test_agent_tool.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": "cc/permissions/gate.py",
+          "language": "python",
+          "sizeLines": 208,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/permissions/rules.py",
+          "language": "python",
+          "sizeLines": 141,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/core/test_query_engine_unified.py",
+          "language": "python",
+          "sizeLines": 123,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/permissions/test_gate.py",
+          "language": "python",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/permissions/test_non_interactive.py",
+          "language": "python",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/permissions/test_rules.py",
+          "language": "python",
+          "sizeLines": 158,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/permissions/gate.py": [],
+        "cc/permissions/rules.py": [
+          "cc/permissions/gate.py"
+        ],
+        "tests/unit/core/test_query_engine_unified.py": [
+          "cc/core/events.py",
+          "cc/core/query_engine.py",
+          "cc/models/messages.py",
+          "cc/permissions/gate.py",
+          "cc/tools/base.py"
+        ],
+        "tests/unit/permissions/test_gate.py": [
+          "cc/permissions/gate.py"
+        ],
+        "tests/unit/permissions/test_non_interactive.py": [
+          "cc/permissions/gate.py"
+        ],
+        "tests/unit/permissions/test_rules.py": [
+          "cc/permissions/gate.py",
+          "cc/permissions/rules.py"
+        ]
+      },
+      "neighborMap": {
+        "tests/unit/core/test_query_engine_unified.py": [
+          {
+            "path": "cc/core/events.py",
+            "batchIndex": 4,
+            "symbols": [
+              "TextDelta",
+              "ThinkingDelta",
+              "ToolUseStart",
+              "ToolResultReady",
+              "CompactOccurred",
+              "TurnComplete",
+              "ErrorEvent"
+            ]
+          },
+          {
+            "path": "cc/core/query_engine.py",
+            "batchIndex": 4,
+            "symbols": [
+              "CallModelFn",
+              "QueryEngine"
+            ]
+          },
+          {
+            "path": "cc/models/messages.py",
+            "batchIndex": 3,
+            "symbols": [
+              "Usage",
+              "UserMessage",
+              "AssistantMessage",
+              "SystemMessage",
+              "CompactBoundaryMessage",
+              "normalize_messages_for_api",
+              "_merge_user_messages",
+              "_ensure_tool_result_pairing",
+              "get_messages_after_compact_boundary",
+              "create_user_message",
+              "create_assistant_message",
+              "create_tool_result_message"
+            ]
+          },
+          {
+            "path": "cc/tools/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "ToolSchema",
+              "ToolResult",
+              "Tool",
+              "ToolRegistry"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": "cc/api/client.py",
+          "language": "python",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/utils/errors.py",
+          "language": "python",
+          "sizeLines": 74,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/test_client.py",
+          "language": "python",
+          "sizeLines": 39,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/api/client.py": [
+          "cc/utils/errors.py"
+        ],
+        "cc/utils/errors.py": [],
+        "tests/unit/api/test_client.py": [
+          "cc/api/client.py",
+          "cc/utils/errors.py"
+        ]
+      },
+      "neighborMap": {
+        "cc/api/client.py": [
+          {
+            "path": "cc/main.py",
+            "batchIndex": 2,
+            "symbols": [
+              "_build_registry",
+              "_connect_mcp_servers",
+              "_load_env",
+              "_get_api_key",
+              "_make_call_model_factory",
+              "_make_call_model",
+              "_build_system",
+              "_build_engine",
+              "_read_multiline_input",
+              "_needs_continuation",
+              "_run_print_mode",
+              "_run_repl",
+              "main"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "Makefile",
+          "language": "makefile",
+          "sizeLines": 27,
+          "fileCategory": "infra"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 179,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "pyproject.toml",
+          "language": "toml",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "Makefile": [],
+        "README.md": [],
+        "pyproject.toml": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 10,
+      "files": [
+        {
+          "path": ".DS_Store",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".ua/.understandignore",
+          "language": "unknown",
+          "sizeLines": 61,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".ua/config.json",
+          "language": "json",
+          "sizeLines": 3,
+          "fileCategory": "config"
+        },
+        {
+          "path": "cc/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/api/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/commands/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/commands/registry.py",
+          "language": "python",
+          "sizeLines": 174,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/compact/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/core/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/hooks/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/mcp/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/mcp/config.py",
+          "language": "python",
+          "sizeLines": 120,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/memory/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/models/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/models/state.py",
+          "language": "python",
+          "sizeLines": 112,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/permissions/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/prompts/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/prompts/coordinator_prompt.py",
+          "language": "python",
+          "sizeLines": 192,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/prompts/teammate_prompt.py",
+          "language": "python",
+          "sizeLines": 81,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/session/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/skills/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/skills/bundled/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/__init__.py",
+          "language": "python",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/coordinator.py",
+          "language": "python",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/swarm/team_context.py",
+          "language": "python",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".DS_Store": [],
+        ".ua/.understandignore": [],
+        ".ua/config.json": [],
+        "cc/__init__.py": [],
+        "cc/api/__init__.py": [],
+        "cc/commands/__init__.py": [],
+        "cc/commands/registry.py": [],
+        "cc/compact/__init__.py": [],
+        "cc/core/__init__.py": [],
+        "cc/hooks/__init__.py": [],
+        "cc/mcp/__init__.py": [],
+        "cc/mcp/config.py": [],
+        "cc/memory/__init__.py": [],
+        "cc/models/__init__.py": [],
+        "cc/models/state.py": [],
+        "cc/permissions/__init__.py": [],
+        "cc/prompts/__init__.py": [],
+        "cc/prompts/coordinator_prompt.py": [],
+        "cc/prompts/teammate_prompt.py": [],
+        "cc/session/__init__.py": [],
+        "cc/skills/__init__.py": [],
+        "cc/skills/bundled/__init__.py": [],
+        "cc/swarm/__init__.py": [],
+        "cc/swarm/coordinator.py": [],
+        "cc/swarm/team_context.py": []
+      },
+      "neighborMap": {
+        "cc/mcp/config.py": [
+          {
+            "path": "tests/unit/tools/test_mcp_config.py",
+            "batchIndex": 12,
+            "symbols": [
+              "TestMcpConfig"
+            ]
+          }
+        ],
+        "cc/prompts/teammate_prompt.py": [
+          {
+            "path": "tests/unit/prompts/test_teammate_prompt.py",
+            "batchIndex": 12,
+            "symbols": [
+              "TestTeammateSystemPromptAddendum",
+              "TestBuildTeammatePromptAddendum"
+            ]
+          }
+        ],
+        "cc/swarm/coordinator.py": [
+          {
+            "path": "tests/unit/swarm/test_coordinator.py",
+            "batchIndex": 12,
+            "symbols": [
+              "TestIsCoordinatorMode",
+              "TestGetCoordinatorConfig"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 11,
+      "files": [
+        {
+          "path": "cc/tools/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/agent/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/agent/worktree.py",
+          "language": "python",
+          "sizeLines": 123,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/ask_user/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/bash/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/brief/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/file_edit/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/file_read/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/file_write/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/glob_tool/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/grep_tool/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/lsp/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/mcp_tool/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/notebook/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/plan_mode/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/send_message/__init__.py",
+          "language": "python",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/skill/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/task_tools/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/team/__init__.py",
+          "language": "python",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/todo/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/tool_search/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/web_fetch/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/tools/web_search/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/ui/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "cc/utils/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "cc/tools/__init__.py": [],
+        "cc/tools/agent/__init__.py": [],
+        "cc/tools/agent/worktree.py": [],
+        "cc/tools/ask_user/__init__.py": [],
+        "cc/tools/bash/__init__.py": [],
+        "cc/tools/brief/__init__.py": [],
+        "cc/tools/file_edit/__init__.py": [],
+        "cc/tools/file_read/__init__.py": [],
+        "cc/tools/file_write/__init__.py": [],
+        "cc/tools/glob_tool/__init__.py": [],
+        "cc/tools/grep_tool/__init__.py": [],
+        "cc/tools/lsp/__init__.py": [],
+        "cc/tools/mcp_tool/__init__.py": [],
+        "cc/tools/notebook/__init__.py": [],
+        "cc/tools/plan_mode/__init__.py": [],
+        "cc/tools/send_message/__init__.py": [],
+        "cc/tools/skill/__init__.py": [],
+        "cc/tools/task_tools/__init__.py": [],
+        "cc/tools/team/__init__.py": [],
+        "cc/tools/todo/__init__.py": [],
+        "cc/tools/tool_search/__init__.py": [],
+        "cc/tools/web_fetch/__init__.py": [],
+        "cc/tools/web_search/__init__.py": [],
+        "cc/ui/__init__.py": [],
+        "cc/utils/__init__.py": []
+      },
+      "neighborMap": {
+        "cc/tools/agent/worktree.py": [
+          {
+            "path": "tests/unit/tools/agent/test_worktree.py",
+            "batchIndex": 12,
+            "symbols": [
+              "TestCreateAgentWorktree",
+              "TestCleanupAgentWorktree",
+              "TestAgentToolWorktreeSchema"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 12,
+      "files": [
+        {
+          "path": "tests/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/e2e/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/e2e/test_cli.py",
+          "language": "python",
+          "sizeLines": 86,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/integration/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/api/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/compact/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/core/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/mcp/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/models/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/permissions/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/prompts/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/prompts/test_teammate_prompt.py",
+          "language": "python",
+          "sizeLines": 46,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/session/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/swarm/test_coordinator.py",
+          "language": "python",
+          "sizeLines": 49,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/agent/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/agent/test_worktree.py",
+          "language": "python",
+          "sizeLines": 122,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/unit/tools/test_mcp_config.py",
+          "language": "python",
+          "sizeLines": 78,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "tests/__init__.py": [],
+        "tests/e2e/__init__.py": [],
+        "tests/e2e/test_cli.py": [],
+        "tests/integration/__init__.py": [],
+        "tests/unit/__init__.py": [],
+        "tests/unit/api/__init__.py": [],
+        "tests/unit/compact/__init__.py": [],
+        "tests/unit/core/__init__.py": [],
+        "tests/unit/mcp/__init__.py": [],
+        "tests/unit/models/__init__.py": [],
+        "tests/unit/permissions/__init__.py": [],
+        "tests/unit/prompts/__init__.py": [],
+        "tests/unit/prompts/test_teammate_prompt.py": [
+          "cc/prompts/teammate_prompt.py"
+        ],
+        "tests/unit/session/__init__.py": [],
+        "tests/unit/swarm/__init__.py": [],
+        "tests/unit/swarm/test_coordinator.py": [
+          "cc/swarm/coordinator.py"
+        ],
+        "tests/unit/tools/__init__.py": [],
+        "tests/unit/tools/agent/__init__.py": [],
+        "tests/unit/tools/agent/test_worktree.py": [
+          "cc/tools/agent/worktree.py"
+        ],
+        "tests/unit/tools/test_mcp_config.py": [
+          "cc/mcp/config.py"
+        ]
+      },
+      "neighborMap": {
+        "tests/unit/prompts/test_teammate_prompt.py": [
+          {
+            "path": "cc/prompts/teammate_prompt.py",
+            "batchIndex": 10,
+            "symbols": [
+              "build_teammate_prompt_addendum"
+            ]
+          }
+        ],
+        "tests/unit/swarm/test_coordinator.py": [
+          {
+            "path": "cc/swarm/coordinator.py",
+            "batchIndex": 10,
+            "symbols": [
+              "is_coordinator_mode",
+              "get_coordinator_config",
+              "maybe_inject_coordinator_prompt"
+            ]
+          }
+        ],
+        "tests/unit/tools/agent/test_worktree.py": [
+          {
+            "path": "cc/tools/agent/worktree.py",
+            "batchIndex": 11,
+            "symbols": [
+              "create_agent_worktree",
+              "cleanup_agent_worktree"
+            ]
+          }
+        ],
+        "tests/unit/tools/test_mcp_config.py": [
+          {
+            "path": "cc/mcp/config.py",
+            "batchIndex": 10,
+            "symbols": [
+              "McpServerConfig",
+              "load_mcp_configs",
+              "_parse_server_config"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

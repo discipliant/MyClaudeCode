@@ -1,0 +1,2254 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/__main__.py",
+      "type": "file",
+      "name": "__main__.py",
+      "filePath": "cc/__main__.py",
+      "summary": "Python 模块入口，支持 `python -m cc` 方式启动 CLI。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/hooks/hook_runner.py",
+      "type": "file",
+      "name": "hook_runner.py",
+      "filePath": "cc/hooks/hook_runner.py",
+      "summary": "Hooks 系统：配置加载、PreToolUse/PostToolUse 拦截。定义了 HookConfig、HookResult 等类和 load_hooks、run_hook、run_pre_tool_hooks 等函数。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/hooks/hook_runner.py:load_hooks",
+      "type": "function",
+      "name": "load_hooks",
+      "filePath": "cc/hooks/hook_runner.py",
+      "lineRange": [
+        56,
+        94
+      ],
+      "summary": "Hooks 系统 中的 load_hooks 函数，处理 claude_dir。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/hooks/hook_runner.py:run_hook",
+      "type": "function",
+      "name": "run_hook",
+      "filePath": "cc/hooks/hook_runner.py",
+      "lineRange": [
+        97,
+        155
+      ],
+      "summary": "Hooks 系统 中的 run_hook 函数，处理 hook、context。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/hooks/hook_runner.py:run_pre_tool_hooks",
+      "type": "function",
+      "name": "run_pre_tool_hooks",
+      "filePath": "cc/hooks/hook_runner.py",
+      "lineRange": [
+        158,
+        183
+      ],
+      "summary": "Hooks 系统 中的 run_pre_tool_hooks 函数，处理 hooks、tool_name、tool_input。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/hooks/hook_runner.py:run_post_tool_hooks",
+      "type": "function",
+      "name": "run_post_tool_hooks",
+      "filePath": "cc/hooks/hook_runner.py",
+      "lineRange": [
+        186,
+        209
+      ],
+      "summary": "Hooks 系统 中的 run_post_tool_hooks 函数，处理 hooks、tool_name、tool_input、tool_output。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/hooks/hook_runner.py:HookConfig",
+      "type": "class",
+      "name": "HookConfig",
+      "filePath": "cc/hooks/hook_runner.py",
+      "lineRange": [
+        31,
+        41
+      ],
+      "summary": "Hooks 系统 中的 HookConfig 类。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/hooks/hook_runner.py:HookResult",
+      "type": "class",
+      "name": "HookResult",
+      "filePath": "cc/hooks/hook_runner.py",
+      "lineRange": [
+        45,
+        53
+      ],
+      "summary": "Hooks 系统 中的 HookResult 类。",
+      "tags": [
+        "hook",
+        "middleware",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "cc/main.py",
+      "summary": "程序主入口：REPL 循环、模块组装、inbox polling，负责初始化 QueryEngine 并运行交互式 agent loop。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/main.py:_build_registry",
+      "type": "function",
+      "name": "_build_registry",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        76,
+        187
+      ],
+      "summary": " 中的核心函数 _build_registry，实现关键业务逻辑（111 行）。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/main.py:_connect_mcp_servers",
+      "type": "function",
+      "name": "_connect_mcp_servers",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        190,
+        204
+      ],
+      "summary": " 中的 _connect_mcp_servers 函数，处理 cwd、registry。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_load_env",
+      "type": "function",
+      "name": "_load_env",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        207,
+        230
+      ],
+      "summary": " 中的 _load_env 函数，处理 相关参数。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_get_api_key",
+      "type": "function",
+      "name": "_get_api_key",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        233,
+        235
+      ],
+      "summary": " 中的 _get_api_key 函数，处理 相关参数。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_make_call_model_factory",
+      "type": "function",
+      "name": "_make_call_model_factory",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        238,
+        275
+      ],
+      "summary": " 中的 _make_call_model_factory 函数，处理 client。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_make_call_model",
+      "type": "function",
+      "name": "_make_call_model",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        278,
+        291
+      ],
+      "summary": " 中的 _make_call_model 函数，处理 client、model、max_tokens。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_build_system",
+      "type": "function",
+      "name": "_build_system",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        294,
+        333
+      ],
+      "summary": " 中的 _build_system 函数，处理 cwd、model、claude_md。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_build_engine",
+      "type": "function",
+      "name": "_build_engine",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        336,
+        481
+      ],
+      "summary": " 中的核心函数 _build_engine，实现关键业务逻辑（145 行）。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/main.py:_read_multiline_input",
+      "type": "function",
+      "name": "_read_multiline_input",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        484,
+        510
+      ],
+      "summary": " 中的 _read_multiline_input 函数，处理 相关参数。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_needs_continuation",
+      "type": "function",
+      "name": "_needs_continuation",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        513,
+        522
+      ],
+      "summary": " 中的 _needs_continuation 函数，处理 lines。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_run_print_mode",
+      "type": "function",
+      "name": "_run_print_mode",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        530,
+        555
+      ],
+      "summary": " 中的 _run_print_mode 函数，处理 prompt、model。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/main.py:_run_repl",
+      "type": "function",
+      "name": "_run_repl",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        563,
+        833
+      ],
+      "summary": " 中的核心函数 _run_repl，实现关键业务逻辑（270 行）。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:cc/main.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "cc/main.py",
+      "lineRange": [
+        846,
+        870
+      ],
+      "summary": " 中的 main 函数，处理 print_mode、model、verbose、resume_id、prompt。",
+      "tags": [
+        "entry-point",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/prompts/claudemd.py",
+      "type": "file",
+      "name": "claudemd.py",
+      "filePath": "cc/prompts/claudemd.py",
+      "summary": "System Prompt：多段动态拼装 + Coordinator/Teammate 提示词。核心函数：load_claude_md、_read_and_expand。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/prompts/claudemd.py:load_claude_md",
+      "type": "function",
+      "name": "load_claude_md",
+      "filePath": "cc/prompts/claudemd.py",
+      "lineRange": [
+        27,
+        97
+      ],
+      "summary": "System Prompt 中的 load_claude_md 函数，处理 cwd。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/prompts/claudemd.py:_read_and_expand",
+      "type": "function",
+      "name": "_read_and_expand",
+      "filePath": "cc/prompts/claudemd.py",
+      "lineRange": [
+        100,
+        155
+      ],
+      "summary": "System Prompt 中的 _read_and_expand 函数，处理 path、seen、max_depth。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/session/history.py",
+      "type": "file",
+      "name": "history.py",
+      "filePath": "cc/session/history.py",
+      "summary": "会话管理：持久化、TaskRegistry、transcript recovery。定义了 HistoryEntry 等类和 get_history_path、add_to_history、get_history 等函数。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/session/history.py:get_history_path",
+      "type": "function",
+      "name": "get_history_path",
+      "filePath": "cc/session/history.py",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "会话管理 中的 get_history_path 函数，处理 claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/history.py:add_to_history",
+      "type": "function",
+      "name": "add_to_history",
+      "filePath": "cc/session/history.py",
+      "lineRange": [
+        47,
+        69
+      ],
+      "summary": "会话管理 中的 add_to_history 函数，处理 entry、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/session/history.py:get_history",
+      "type": "function",
+      "name": "get_history",
+      "filePath": "cc/session/history.py",
+      "lineRange": [
+        72,
+        127
+      ],
+      "summary": "会话管理 中的 get_history 函数，处理 project、session_id、limit、claude_dir。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/session/history.py:HistoryEntry",
+      "type": "class",
+      "name": "HistoryEntry",
+      "filePath": "cc/session/history.py",
+      "lineRange": [
+        23,
+        35
+      ],
+      "summary": "会话管理 中的 HistoryEntry 类。",
+      "tags": [
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/skills/loader.py",
+      "type": "file",
+      "name": "loader.py",
+      "filePath": "cc/skills/loader.py",
+      "summary": "Skills 系统：定义加载、slash 命令触发、prompt 注入。定义了 Skill 等类和 load_skills、_parse_skill_file、get_skill_by_name 等函数。",
+      "tags": [
+        "hook",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/skills/loader.py:load_skills",
+      "type": "function",
+      "name": "load_skills",
+      "filePath": "cc/skills/loader.py",
+      "lineRange": [
+        38,
+        66
+      ],
+      "summary": "Skills 系统 中的 load_skills 函数，处理 cwd、claude_dir。",
+      "tags": [
+        "hook",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/skills/loader.py:_parse_skill_file",
+      "type": "function",
+      "name": "_parse_skill_file",
+      "filePath": "cc/skills/loader.py",
+      "lineRange": [
+        69,
+        117
+      ],
+      "summary": "Skills 系统 中的 _parse_skill_file 函数，处理 path。",
+      "tags": [
+        "hook",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/skills/loader.py:get_skill_by_name",
+      "type": "function",
+      "name": "get_skill_by_name",
+      "filePath": "cc/skills/loader.py",
+      "lineRange": [
+        120,
+        127
+      ],
+      "summary": "Skills 系统 中的 get_skill_by_name 函数，处理 skills、name。",
+      "tags": [
+        "hook",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/skills/loader.py:Skill",
+      "type": "class",
+      "name": "Skill",
+      "filePath": "cc/skills/loader.py",
+      "lineRange": [
+        23,
+        35
+      ],
+      "summary": "Skills 系统 中的 Skill 类。",
+      "tags": [
+        "hook",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/tools/bash/bash_tool.py",
+      "type": "file",
+      "name": "bash_tool.py",
+      "filePath": "cc/tools/bash/bash_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：BashTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/bash/bash_tool.py:BashTool",
+      "type": "class",
+      "name": "BashTool",
+      "filePath": "cc/tools/bash/bash_tool.py",
+      "lineRange": [
+        39,
+        156
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 BashTool 类，包含 __init__、get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/file_edit/file_edit_tool.py",
+      "type": "file",
+      "name": "file_edit_tool.py",
+      "filePath": "cc/tools/file_edit/file_edit_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：FileEditTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/file_edit/file_edit_tool.py:FileEditTool",
+      "type": "class",
+      "name": "FileEditTool",
+      "filePath": "cc/tools/file_edit/file_edit_tool.py",
+      "lineRange": [
+        30,
+        134
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 FileEditTool 类，包含 get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/file_read/file_read_tool.py",
+      "type": "file",
+      "name": "file_read_tool.py",
+      "filePath": "cc/tools/file_read/file_read_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：FileReadTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/file_read/file_read_tool.py:FileReadTool",
+      "type": "class",
+      "name": "FileReadTool",
+      "filePath": "cc/tools/file_read/file_read_tool.py",
+      "lineRange": [
+        33,
+        143
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 FileReadTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/file_write/file_write_tool.py",
+      "type": "file",
+      "name": "file_write_tool.py",
+      "filePath": "cc/tools/file_write/file_write_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：FileWriteTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/file_write/file_write_tool.py:FileWriteTool",
+      "type": "class",
+      "name": "FileWriteTool",
+      "filePath": "cc/tools/file_write/file_write_tool.py",
+      "lineRange": [
+        29,
+        104
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 FileWriteTool 类，包含 get_name、get_schema、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/glob_tool/glob_tool.py",
+      "type": "file",
+      "name": "glob_tool.py",
+      "filePath": "cc/tools/glob_tool/glob_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：GlobTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/glob_tool/glob_tool.py:GlobTool",
+      "type": "class",
+      "name": "GlobTool",
+      "filePath": "cc/tools/glob_tool/glob_tool.py",
+      "lineRange": [
+        18,
+        84
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 GlobTool 类，包含 get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/grep_tool/grep_tool.py",
+      "type": "file",
+      "name": "grep_tool.py",
+      "filePath": "cc/tools/grep_tool/grep_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：GrepTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/grep_tool/grep_tool.py:GrepTool",
+      "type": "class",
+      "name": "GrepTool",
+      "filePath": "cc/tools/grep_tool/grep_tool.py",
+      "lineRange": [
+        21,
+        207
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 GrepTool 类，提供 6 个方法：get_name、get_schema、is_concurrency_safe、execute、_run_ripgrep 等。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/tools/skill/skill_tool.py",
+      "type": "file",
+      "name": "skill_tool.py",
+      "filePath": "cc/tools/skill/skill_tool.py",
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。核心类：SkillTool。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/tools/skill/skill_tool.py:SkillTool",
+      "type": "class",
+      "name": "SkillTool",
+      "filePath": "cc/tools/skill/skill_tool.py",
+      "lineRange": [
+        23,
+        85
+      ],
+      "summary": "22 个内置工具实现 + StreamingToolExecutor + 权限门控 中的 SkillTool 类，包含 __init__、get_name、get_schema、is_concurrency_safe、execute 方法。",
+      "tags": [
+        "utility",
+        "tool",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/ui/renderer.py",
+      "type": "file",
+      "name": "renderer.py",
+      "filePath": "cc/ui/renderer.py",
+      "summary": "终端渲染：Rich 流式输出。核心函数：_shorten_paths、render_event、print_welcome、print_prompt。",
+      "tags": [
+        "component",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/ui/renderer.py:_shorten_paths",
+      "type": "function",
+      "name": "_shorten_paths",
+      "filePath": "cc/ui/renderer.py",
+      "lineRange": [
+        32,
+        39
+      ],
+      "summary": "终端渲染 中的 _shorten_paths 函数，处理 text。",
+      "tags": [
+        "component",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/ui/renderer.py:render_event",
+      "type": "function",
+      "name": "render_event",
+      "filePath": "cc/ui/renderer.py",
+      "lineRange": [
+        42,
+        122
+      ],
+      "summary": "终端渲染 中的 render_event 函数，处理 event。",
+      "tags": [
+        "component",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/ui/renderer.py:print_welcome",
+      "type": "function",
+      "name": "print_welcome",
+      "filePath": "cc/ui/renderer.py",
+      "lineRange": [
+        125,
+        131
+      ],
+      "summary": "终端渲染 中的 print_welcome 函数，处理 相关参数。",
+      "tags": [
+        "component",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/ui/renderer.py:print_prompt",
+      "type": "function",
+      "name": "print_prompt",
+      "filePath": "cc/ui/renderer.py",
+      "lineRange": [
+        134,
+        145
+      ],
+      "summary": "终端渲染 中的 print_prompt 函数，处理 相关参数。",
+      "tags": [
+        "component",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/core/test_multiline.py",
+      "type": "file",
+      "name": "test_multiline.py",
+      "filePath": "tests/unit/core/test_multiline.py",
+      "summary": "单元测试文件，测试 multiline 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_multiline.py:TestNeedsContinuation",
+      "type": "class",
+      "name": "TestNeedsContinuation",
+      "filePath": "tests/unit/core/test_multiline.py",
+      "lineRange": [
+        9,
+        40
+      ],
+      "summary": " 中的 TestNeedsContinuation 类，提供 9 个方法：test_normal_line、test_trailing_backslash、test_unclosed_paren、test_closed_paren、test_unclosed_bracket 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/prompts/test_claudemd.py",
+      "type": "file",
+      "name": "test_claudemd.py",
+      "filePath": "tests/unit/prompts/test_claudemd.py",
+      "summary": "单元测试文件，测试 claudemd 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/prompts/test_claudemd.py:TestLoadClaudeMd",
+      "type": "class",
+      "name": "TestLoadClaudeMd",
+      "filePath": "tests/unit/prompts/test_claudemd.py",
+      "lineRange": [
+        11,
+        72
+      ],
+      "summary": " 中的 TestLoadClaudeMd 类，提供 8 个方法：test_loads_from_cwd、test_loads_from_dot_claude_dir、test_returns_none_when_missing、test_include_directive、test_circular_include_no_infinite_loop 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/session/test_history.py",
+      "type": "file",
+      "name": "test_history.py",
+      "filePath": "tests/unit/session/test_history.py",
+      "summary": "单元测试文件，测试 history 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/session/test_history.py:TestHistory",
+      "type": "class",
+      "name": "TestHistory",
+      "filePath": "tests/unit/session/test_history.py",
+      "lineRange": [
+        12,
+        50
+      ],
+      "summary": " 中的 TestHistory 类，包含 test_add_and_get、test_limit、test_session_priority、test_empty_history 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_bash_tool.py",
+      "type": "file",
+      "name": "test_bash_tool.py",
+      "filePath": "tests/unit/tools/test_bash_tool.py",
+      "summary": "单元测试文件，测试 bash_tool 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_bash_tool.py:TestBashTool",
+      "type": "class",
+      "name": "TestBashTool",
+      "filePath": "tests/unit/tools/test_bash_tool.py",
+      "lineRange": [
+        10,
+        68
+      ],
+      "summary": " 中的 TestBashTool 类，提供 11 个方法：test_echo_hello、test_exit_code、test_utf8、test_timeout、test_empty_command 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_file_tools.py",
+      "type": "file",
+      "name": "test_file_tools.py",
+      "filePath": "tests/unit/tools/test_file_tools.py",
+      "summary": "单元测试文件，测试 file_tools 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_file_tools.py:TestFileReadTool",
+      "type": "class",
+      "name": "TestFileReadTool",
+      "filePath": "tests/unit/tools/test_file_tools.py",
+      "lineRange": [
+        13,
+        53
+      ],
+      "summary": " 中的 TestFileReadTool 类，提供 6 个方法：test_read_small_file、test_read_with_offset_limit、test_nonexistent_file、test_empty_file、test_large_file_truncated 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_file_tools.py:TestFileEditTool",
+      "type": "class",
+      "name": "TestFileEditTool",
+      "filePath": "tests/unit/tools/test_file_tools.py",
+      "lineRange": [
+        56,
+        127
+      ],
+      "summary": " 中的 TestFileEditTool 类，提供 6 个方法：test_replace_unique、test_not_unique_error、test_replace_all、test_not_found、test_same_string_error 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_file_tools.py:TestFileWriteTool",
+      "type": "class",
+      "name": "TestFileWriteTool",
+      "filePath": "tests/unit/tools/test_file_tools.py",
+      "lineRange": [
+        130,
+        151
+      ],
+      "summary": " 中的 TestFileWriteTool 类，包含 test_write_new_file、test_overwrite_existing、test_creates_parent_dirs 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_glob_grep.py",
+      "type": "file",
+      "name": "test_glob_grep.py",
+      "filePath": "tests/unit/tools/test_glob_grep.py",
+      "summary": "单元测试文件，测试 glob_grep 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_glob_grep.py:TestGlobTool",
+      "type": "class",
+      "name": "TestGlobTool",
+      "filePath": "tests/unit/tools/test_glob_grep.py",
+      "lineRange": [
+        12,
+        30
+      ],
+      "summary": " 中的 TestGlobTool 类，包含 test_find_py_files、test_empty_dir、test_is_concurrency_safe 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_glob_grep.py:TestGrepTool",
+      "type": "class",
+      "name": "TestGrepTool",
+      "filePath": "tests/unit/tools/test_glob_grep.py",
+      "lineRange": [
+        33,
+        67
+      ],
+      "summary": " 中的 TestGrepTool 类，包含 test_find_pattern、test_files_with_matches、test_no_matches、test_is_concurrency_safe 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_hooks.py",
+      "type": "file",
+      "name": "test_hooks.py",
+      "filePath": "tests/unit/tools/test_hooks.py",
+      "summary": "单元测试文件，测试 hooks 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_hooks.py:TestLoadHooks",
+      "type": "class",
+      "name": "TestLoadHooks",
+      "filePath": "tests/unit/tools/test_hooks.py",
+      "lineRange": [
+        12,
+        37
+      ],
+      "summary": " 中的 TestLoadHooks 类，包含 test_load_from_settings、test_empty_settings、test_no_settings_file 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_hooks.py:TestRunHook",
+      "type": "class",
+      "name": "TestRunHook",
+      "filePath": "tests/unit/tools/test_hooks.py",
+      "lineRange": [
+        40,
+        62
+      ],
+      "summary": " 中的 TestRunHook 类，包含 test_allow_hook、test_block_hook、test_timeout_hook 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_hooks.py:TestRunPreToolHooks",
+      "type": "class",
+      "name": "TestRunPreToolHooks",
+      "filePath": "tests/unit/tools/test_hooks.py",
+      "lineRange": [
+        65,
+        78
+      ],
+      "summary": " 中的 TestRunPreToolHooks 类，包含 test_matching_tool_blocks、test_non_matching_tool_passes、test_no_hooks 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_skill_tool.py",
+      "type": "file",
+      "name": "test_skill_tool.py",
+      "filePath": "tests/unit/tools/test_skill_tool.py",
+      "summary": "单元测试文件，测试 skill_tool 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/tools/test_skill_tool.py:sample_skills",
+      "type": "function",
+      "name": "sample_skills",
+      "filePath": "tests/unit/tools/test_skill_tool.py",
+      "lineRange": [
+        15,
+        19
+      ],
+      "summary": " 中的 sample_skills 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/test_skill_tool.py:TestSkillTool",
+      "type": "class",
+      "name": "TestSkillTool",
+      "filePath": "tests/unit/tools/test_skill_tool.py",
+      "lineRange": [
+        22,
+        81
+      ],
+      "summary": " 中的 TestSkillTool 类，提供 9 个方法：test_name、test_schema、test_concurrency_safe、test_execute_found、test_execute_case_insensitive 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/tools/test_skills.py",
+      "type": "file",
+      "name": "test_skills.py",
+      "filePath": "tests/unit/tools/test_skills.py",
+      "summary": "单元测试文件，测试 skills 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_skills.py:TestLoadSkills",
+      "type": "class",
+      "name": "TestLoadSkills",
+      "filePath": "tests/unit/tools/test_skills.py",
+      "lineRange": [
+        11,
+        61
+      ],
+      "summary": " 中的 TestLoadSkills 类，提供 7 个方法：test_load_skill_file、test_load_without_frontmatter、test_empty_skill_ignored、test_no_skills_dir、test_get_skill_by_name 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:load_hooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:load_hooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:run_hook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:run_hook",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:run_pre_tool_hooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:run_pre_tool_hooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:run_post_tool_hooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "function:cc/hooks/hook_runner.py:run_post_tool_hooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "class:cc/hooks/hook_runner.py:HookConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "class:cc/hooks/hook_runner.py:HookConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "class:cc/hooks/hook_runner.py:HookResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/hooks/hook_runner.py",
+      "target": "class:cc/hooks/hook_runner.py:HookResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_build_registry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_build_registry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_connect_mcp_servers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_connect_mcp_servers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_load_env",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_load_env",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_get_api_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_get_api_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_make_call_model_factory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_make_call_model_factory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_make_call_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_make_call_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_build_system",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_build_system",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_build_engine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_build_engine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_read_multiline_input",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_read_multiline_input",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_needs_continuation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_needs_continuation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_run_print_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_run_print_mode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_run_repl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:_run_repl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "function:cc/main.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/claudemd.py",
+      "target": "function:cc/prompts/claudemd.py:load_claude_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/claudemd.py",
+      "target": "function:cc/prompts/claudemd.py:load_claude_md",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/claudemd.py",
+      "target": "function:cc/prompts/claudemd.py:_read_and_expand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/claudemd.py",
+      "target": "function:cc/prompts/claudemd.py:_read_and_expand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "function:cc/session/history.py:get_history_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "function:cc/session/history.py:get_history_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "function:cc/session/history.py:add_to_history",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "function:cc/session/history.py:add_to_history",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "function:cc/session/history.py:get_history",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "function:cc/session/history.py:get_history",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "class:cc/session/history.py:HistoryEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "class:cc/session/history.py:HistoryEntry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "function:cc/skills/loader.py:load_skills",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "function:cc/skills/loader.py:load_skills",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "function:cc/skills/loader.py:_parse_skill_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "function:cc/skills/loader.py:_parse_skill_file",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "function:cc/skills/loader.py:get_skill_by_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "function:cc/skills/loader.py:get_skill_by_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "class:cc/skills/loader.py:Skill",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/skills/loader.py",
+      "target": "class:cc/skills/loader.py:Skill",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/bash/bash_tool.py",
+      "target": "class:cc/tools/bash/bash_tool.py:BashTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/bash/bash_tool.py",
+      "target": "class:cc/tools/bash/bash_tool.py:BashTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/file_edit/file_edit_tool.py",
+      "target": "class:cc/tools/file_edit/file_edit_tool.py:FileEditTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/file_edit/file_edit_tool.py",
+      "target": "class:cc/tools/file_edit/file_edit_tool.py:FileEditTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/file_read/file_read_tool.py",
+      "target": "class:cc/tools/file_read/file_read_tool.py:FileReadTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/file_read/file_read_tool.py",
+      "target": "class:cc/tools/file_read/file_read_tool.py:FileReadTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/file_write/file_write_tool.py",
+      "target": "class:cc/tools/file_write/file_write_tool.py:FileWriteTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/file_write/file_write_tool.py",
+      "target": "class:cc/tools/file_write/file_write_tool.py:FileWriteTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/glob_tool/glob_tool.py",
+      "target": "class:cc/tools/glob_tool/glob_tool.py:GlobTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/glob_tool/glob_tool.py",
+      "target": "class:cc/tools/glob_tool/glob_tool.py:GlobTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/grep_tool/grep_tool.py",
+      "target": "class:cc/tools/grep_tool/grep_tool.py:GrepTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/grep_tool/grep_tool.py",
+      "target": "class:cc/tools/grep_tool/grep_tool.py:GrepTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/tools/skill/skill_tool.py",
+      "target": "class:cc/tools/skill/skill_tool.py:SkillTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/tools/skill/skill_tool.py",
+      "target": "class:cc/tools/skill/skill_tool.py:SkillTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:_shorten_paths",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:_shorten_paths",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:render_event",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:render_event",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:print_welcome",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:print_welcome",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:print_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/ui/renderer.py",
+      "target": "function:cc/ui/renderer.py:print_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_multiline.py",
+      "target": "class:tests/unit/core/test_multiline.py:TestNeedsContinuation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_multiline.py",
+      "target": "class:tests/unit/core/test_multiline.py:TestNeedsContinuation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_claudemd.py",
+      "target": "class:tests/unit/prompts/test_claudemd.py:TestLoadClaudeMd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/prompts/test_claudemd.py",
+      "target": "class:tests/unit/prompts/test_claudemd.py:TestLoadClaudeMd",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/session/test_history.py",
+      "target": "class:tests/unit/session/test_history.py:TestHistory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/session/test_history.py",
+      "target": "class:tests/unit/session/test_history.py:TestHistory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_bash_tool.py",
+      "target": "class:tests/unit/tools/test_bash_tool.py:TestBashTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_bash_tool.py",
+      "target": "class:tests/unit/tools/test_bash_tool.py:TestBashTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "class:tests/unit/tools/test_file_tools.py:TestFileReadTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "class:tests/unit/tools/test_file_tools.py:TestFileReadTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "class:tests/unit/tools/test_file_tools.py:TestFileEditTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "class:tests/unit/tools/test_file_tools.py:TestFileEditTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "class:tests/unit/tools/test_file_tools.py:TestFileWriteTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "class:tests/unit/tools/test_file_tools.py:TestFileWriteTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_glob_grep.py",
+      "target": "class:tests/unit/tools/test_glob_grep.py:TestGlobTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_glob_grep.py",
+      "target": "class:tests/unit/tools/test_glob_grep.py:TestGlobTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_glob_grep.py",
+      "target": "class:tests/unit/tools/test_glob_grep.py:TestGrepTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_glob_grep.py",
+      "target": "class:tests/unit/tools/test_glob_grep.py:TestGrepTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "class:tests/unit/tools/test_hooks.py:TestLoadHooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "class:tests/unit/tools/test_hooks.py:TestLoadHooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "class:tests/unit/tools/test_hooks.py:TestRunHook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "class:tests/unit/tools/test_hooks.py:TestRunHook",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "class:tests/unit/tools/test_hooks.py:TestRunPreToolHooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "class:tests/unit/tools/test_hooks.py:TestRunPreToolHooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_skill_tool.py",
+      "target": "function:tests/unit/tools/test_skill_tool.py:sample_skills",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_skill_tool.py",
+      "target": "function:tests/unit/tools/test_skill_tool.py:sample_skills",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_skill_tool.py",
+      "target": "class:tests/unit/tools/test_skill_tool.py:TestSkillTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_skill_tool.py",
+      "target": "class:tests/unit/tools/test_skill_tool.py:TestSkillTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_skills.py",
+      "target": "class:tests/unit/tools/test_skills.py:TestLoadSkills",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_skills.py",
+      "target": "class:tests/unit/tools/test_skills.py:TestLoadSkills",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/__main__.py",
+      "target": "file:cc/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/api/claude.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/core/query_engine.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/hooks/hook_runner.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/prompts/builder.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/prompts/claudemd.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/session/history.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/session/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/skills/loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/bash/bash_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/file_edit/file_edit_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/file_read/file_read_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/file_write/file_write_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/glob_tool/glob_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/tools/grep_tool/grep_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/main.py",
+      "target": "file:cc/ui/renderer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/bash/bash_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/file_edit/file_edit_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/file_read/file_read_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/file_write/file_write_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/glob_tool/glob_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/grep_tool/grep_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/skill/skill_tool.py",
+      "target": "file:cc/skills/loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/tools/skill/skill_tool.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_multiline.py",
+      "target": "file:cc/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/prompts/test_claudemd.py",
+      "target": "file:cc/prompts/claudemd.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/session/test_history.py",
+      "target": "file:cc/session/history.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_bash_tool.py",
+      "target": "file:cc/tools/bash/bash_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "file:cc/tools/file_edit/file_edit_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "file:cc/tools/file_read/file_read_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_file_tools.py",
+      "target": "file:cc/tools/file_write/file_write_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_glob_grep.py",
+      "target": "file:cc/tools/glob_tool/glob_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_glob_grep.py",
+      "target": "file:cc/tools/grep_tool/grep_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_hooks.py",
+      "target": "file:cc/hooks/hook_runner.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_skill_tool.py",
+      "target": "file:cc/skills/loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_skill_tool.py",
+      "target": "file:cc/tools/skill/skill_tool.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_skills.py",
+      "target": "file:cc/skills/loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/prompts/claudemd.py",
+      "target": "file:tests/unit/prompts/test_claudemd.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/session/history.py",
+      "target": "file:tests/unit/session/test_history.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

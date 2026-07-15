@@ -1,0 +1,310 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/api/client.py",
+      "type": "file",
+      "name": "client.py",
+      "filePath": "cc/api/client.py",
+      "summary": "Anthropic API 客户端：流式调用、客户端管理、token 统计。核心函数：create_client。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/api/client.py:create_client",
+      "type": "function",
+      "name": "create_client",
+      "filePath": "cc/api/client.py",
+      "lineRange": [
+        26,
+        58
+      ],
+      "summary": "Anthropic API 客户端 中的 create_client 函数，处理 api_key、base_url。",
+      "tags": [
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/utils/errors.py",
+      "type": "file",
+      "name": "errors.py",
+      "filePath": "cc/utils/errors.py",
+      "summary": "通用工具函数：错误处理等。核心类：CCError、ConfigError、APIError、ToolExecutionError、CompactError、AbortError。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/utils/errors.py:CCError",
+      "type": "class",
+      "name": "CCError",
+      "filePath": "cc/utils/errors.py",
+      "lineRange": [
+        14,
+        20
+      ],
+      "summary": "通用工具函数 中的 CCError 类。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/utils/errors.py:ConfigError",
+      "type": "class",
+      "name": "ConfigError",
+      "filePath": "cc/utils/errors.py",
+      "lineRange": [
+        23,
+        28
+      ],
+      "summary": "通用工具函数 中的 ConfigError 类。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/utils/errors.py:APIError",
+      "type": "class",
+      "name": "APIError",
+      "filePath": "cc/utils/errors.py",
+      "lineRange": [
+        31,
+        43
+      ],
+      "summary": "通用工具函数 中的 APIError 类，包含 __init__ 方法。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/utils/errors.py:ToolExecutionError",
+      "type": "class",
+      "name": "ToolExecutionError",
+      "filePath": "cc/utils/errors.py",
+      "lineRange": [
+        46,
+        58
+      ],
+      "summary": "通用工具函数 中的 ToolExecutionError 类，包含 __init__ 方法。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/utils/errors.py:CompactError",
+      "type": "class",
+      "name": "CompactError",
+      "filePath": "cc/utils/errors.py",
+      "lineRange": [
+        61,
+        66
+      ],
+      "summary": "通用工具函数 中的 CompactError 类。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/utils/errors.py:AbortError",
+      "type": "class",
+      "name": "AbortError",
+      "filePath": "cc/utils/errors.py",
+      "lineRange": [
+        69,
+        74
+      ],
+      "summary": "通用工具函数 中的 AbortError 类。",
+      "tags": [
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/api/test_client.py",
+      "type": "file",
+      "name": "test_client.py",
+      "filePath": "tests/unit/api/test_client.py",
+      "summary": "单元测试文件，测试 client 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/api/test_client.py:TestCreateClient",
+      "type": "class",
+      "name": "TestCreateClient",
+      "filePath": "tests/unit/api/test_client.py",
+      "lineRange": [
+        15,
+        39
+      ],
+      "summary": " 中的 TestCreateClient 类，包含 test_with_explicit_key、test_with_env_var、test_missing_key_raises_config_error、test_custom_base_url、test_explicit_key_overrides_env 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/api/client.py",
+      "target": "function:cc/api/client.py:create_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/api/client.py",
+      "target": "function:cc/api/client.py:create_client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:CCError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:CCError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:ConfigError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:ConfigError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:APIError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:APIError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:ToolExecutionError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:ToolExecutionError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:CompactError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:CompactError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:AbortError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/utils/errors.py",
+      "target": "class:cc/utils/errors.py:AbortError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/api/test_client.py",
+      "target": "class:tests/unit/api/test_client.py:TestCreateClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/api/test_client.py",
+      "target": "class:tests/unit/api/test_client.py:TestCreateClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/api/client.py",
+      "target": "file:cc/utils/errors.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_client.py",
+      "target": "file:cc/api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/api/test_client.py",
+      "target": "file:cc/utils/errors.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/api/client.py",
+      "target": "file:tests/unit/api/test_client.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 195,
+    "filesWithImports": 109,
+    "totalEdges": 216
+  },
+  "importMap": {
+    ".DS_Store": [],
+    ".ua/.understandignore": [],
+    ".ua/config.json": [],
+    "cc/__init__.py": [],
+    "cc/__main__.py": [
+      "cc/main.py"
+    ],
+    "cc/api/__init__.py": [],
+    "cc/api/claude.py": [
+      "cc/core/events.py",
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py"
+    ],
+    "cc/api/client.py": [
+      "cc/utils/errors.py"
+    ],
+    "cc/api/token_estimation.py": [],
+    "cc/commands/__init__.py": [],
+    "cc/commands/registry.py": [],
+    "cc/compact/__init__.py": [],
+    "cc/compact/compact.py": [
+      "cc/models/messages.py"
+    ],
+    "cc/core/__init__.py": [],
+    "cc/core/events.py": [],
+    "cc/core/query_engine.py": [
+      "cc/api/claude.py",
+      "cc/core/query_loop.py",
+      "cc/models/messages.py"
+    ],
+    "cc/core/query_loop.py": [
+      "cc/api/token_estimation.py",
+      "cc/compact/compact.py",
+      "cc/core/events.py",
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py"
+    ],
+    "cc/hooks/__init__.py": [],
+    "cc/hooks/hook_runner.py": [],
+    "cc/main.py": [
+      "cc/api/claude.py",
+      "cc/api/client.py",
+      "cc/core/events.py",
+      "cc/core/query_engine.py",
+      "cc/hooks/hook_runner.py",
+      "cc/models/messages.py",
+      "cc/prompts/builder.py",
+      "cc/prompts/claudemd.py",
+      "cc/session/history.py",
+      "cc/session/storage.py",
+      "cc/skills/loader.py",
+      "cc/tools/base.py",
+      "cc/tools/bash/bash_tool.py",
+      "cc/tools/file_edit/file_edit_tool.py",
+      "cc/tools/file_read/file_read_tool.py",
+      "cc/tools/file_write/file_write_tool.py",
+      "cc/tools/glob_tool/glob_tool.py",
+      "cc/tools/grep_tool/grep_tool.py",
+      "cc/ui/renderer.py"
+    ],
+    "cc/mcp/__init__.py": [],
+    "cc/mcp/client.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/mcp/config.py": [],
+    "cc/memory/__init__.py": [],
+    "cc/memory/extractor.py": [
+      "cc/memory/session_memory.py"
+    ],
+    "cc/memory/session_memory.py": [],
+    "cc/models/__init__.py": [],
+    "cc/models/content_blocks.py": [],
+    "cc/models/messages.py": [
+      "cc/models/content_blocks.py"
+    ],
+    "cc/models/state.py": [],
+    "cc/permissions/__init__.py": [],
+    "cc/permissions/gate.py": [],
+    "cc/permissions/rules.py": [
+      "cc/permissions/gate.py"
+    ],
+    "cc/prompts/__init__.py": [],
+    "cc/prompts/builder.py": [
+      "cc/prompts/sections.py"
+    ],
+    "cc/prompts/claudemd.py": [],
+    "cc/prompts/coordinator_prompt.py": [],
+    "cc/prompts/sections.py": [],
+    "cc/prompts/teammate_prompt.py": [],
+    "cc/session/__init__.py": [],
+    "cc/session/history.py": [],
+    "cc/session/recovery.py": [
+      "cc/models/messages.py"
+    ],
+    "cc/session/storage.py": [
+      "cc/models/messages.py"
+    ],
+    "cc/session/task_registry.py": [],
+    "cc/skills/__init__.py": [],
+    "cc/skills/bundled/__init__.py": [],
+    "cc/skills/loader.py": [],
+    "cc/swarm/__init__.py": [],
+    "cc/swarm/coordinator.py": [],
+    "cc/swarm/identity.py": [],
+    "cc/swarm/in_process_runner.py": [],
+    "cc/swarm/mailbox.py": [
+      "cc/swarm/identity.py"
+    ],
+    "cc/swarm/spawn.py": [
+      "cc/swarm/identity.py",
+      "cc/swarm/in_process_runner.py",
+      "cc/swarm/team_file.py"
+    ],
+    "cc/swarm/team_context.py": [],
+    "cc/swarm/team_file.py": [
+      "cc/swarm/identity.py"
+    ],
+    "cc/tools/__init__.py": [],
+    "cc/tools/agent/__init__.py": [],
+    "cc/tools/agent/agent_tool.py": [
+      "cc/core/events.py",
+      "cc/models/messages.py",
+      "cc/prompts/sections.py",
+      "cc/tools/base.py"
+    ],
+    "cc/tools/agent/background.py": [],
+    "cc/tools/agent/worktree.py": [],
+    "cc/tools/ask_user/__init__.py": [],
+    "cc/tools/ask_user/ask_user_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/base.py": [],
+    "cc/tools/bash/__init__.py": [],
+    "cc/tools/bash/bash_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/brief/__init__.py": [],
+    "cc/tools/brief/brief_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/file_edit/__init__.py": [],
+    "cc/tools/file_edit/file_edit_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/file_read/__init__.py": [],
+    "cc/tools/file_read/file_read_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/file_write/__init__.py": [],
+    "cc/tools/file_write/file_write_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/glob_tool/__init__.py": [],
+    "cc/tools/glob_tool/glob_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/grep_tool/__init__.py": [],
+    "cc/tools/grep_tool/grep_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/lsp/__init__.py": [],
+    "cc/tools/lsp/lsp_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/mcp_tool/__init__.py": [],
+    "cc/tools/notebook/__init__.py": [],
+    "cc/tools/notebook/notebook_edit_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/orchestration.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/plan_mode/__init__.py": [],
+    "cc/tools/plan_mode/plan_mode_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/send_message/__init__.py": [],
+    "cc/tools/send_message/send_message_tool.py": [
+      "cc/swarm/identity.py",
+      "cc/swarm/mailbox.py",
+      "cc/swarm/team_file.py",
+      "cc/tools/base.py"
+    ],
+    "cc/tools/skill/__init__.py": [],
+    "cc/tools/skill/skill_tool.py": [
+      "cc/skills/loader.py",
+      "cc/tools/base.py"
+    ],
+    "cc/tools/streaming_executor.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/task_tools/__init__.py": [],
+    "cc/tools/task_tools/task_tools.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/team/__init__.py": [],
+    "cc/tools/team/team_create_tool.py": [
+      "cc/swarm/identity.py",
+      "cc/swarm/team_file.py",
+      "cc/tools/base.py"
+    ],
+    "cc/tools/team/team_delete_tool.py": [
+      "cc/swarm/team_file.py",
+      "cc/tools/base.py"
+    ],
+    "cc/tools/todo/__init__.py": [],
+    "cc/tools/todo/todo_write_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/tool_search/__init__.py": [],
+    "cc/tools/tool_search/tool_search_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/web_fetch/__init__.py": [],
+    "cc/tools/web_fetch/web_fetch_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/tools/web_search/__init__.py": [],
+    "cc/tools/web_search/web_search_tool.py": [
+      "cc/tools/base.py"
+    ],
+    "cc/ui/__init__.py": [],
+    "cc/ui/renderer.py": [],
+    "cc/utils/__init__.py": [],
+    "cc/utils/errors.py": [],
+    "Makefile": [],
+    "pyproject.toml": [],
+    "README.md": [],
+    "tests/__init__.py": [],
+    "tests/e2e/__init__.py": [],
+    "tests/e2e/test_cli.py": [],
+    "tests/integration/__init__.py": [],
+    "tests/integration/test_query_loop.py": [
+      "cc/api/claude.py",
+      "cc/core/events.py",
+      "cc/core/query_loop.py",
+      "cc/models/messages.py",
+      "cc/prompts/builder.py",
+      "cc/tools/base.py",
+      "cc/tools/bash/bash_tool.py"
+    ],
+    "tests/unit/__init__.py": [],
+    "tests/unit/api/__init__.py": [],
+    "tests/unit/api/test_claude.py": [
+      "cc/api/claude.py",
+      "cc/core/events.py"
+    ],
+    "tests/unit/api/test_client.py": [
+      "cc/api/client.py",
+      "cc/utils/errors.py"
+    ],
+    "tests/unit/api/test_stop_reason.py": [
+      "cc/api/claude.py",
+      "cc/core/events.py"
+    ],
+    "tests/unit/api/test_token_estimation.py": [
+      "cc/api/token_estimation.py"
+    ],
+    "tests/unit/api/test_tool_input_parse.py": [
+      "cc/api/claude.py",
+      "cc/core/events.py"
+    ],
+    "tests/unit/api/test_unknown_block_type.py": [
+      "cc/api/claude.py",
+      "cc/core/events.py"
+    ],
+    "tests/unit/api/test_usage_tracking.py": [
+      "cc/api/claude.py",
+      "cc/core/events.py"
+    ],
+    "tests/unit/compact/__init__.py": [],
+    "tests/unit/compact/test_compact.py": [
+      "cc/compact/compact.py"
+    ],
+    "tests/unit/core/__init__.py": [],
+    "tests/unit/core/test_events.py": [
+      "cc/core/events.py",
+      "cc/models/messages.py"
+    ],
+    "tests/unit/core/test_multiline.py": [
+      "cc/main.py"
+    ],
+    "tests/unit/core/test_query_engine_unified.py": [
+      "cc/core/events.py",
+      "cc/core/query_engine.py",
+      "cc/models/messages.py",
+      "cc/permissions/gate.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/core/test_query_engine.py": [
+      "cc/core/events.py",
+      "cc/core/query_engine.py",
+      "cc/models/messages.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/core/test_query_loop.py": [
+      "cc/core/events.py",
+      "cc/core/query_loop.py",
+      "cc/models/messages.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/mcp/__init__.py": [],
+    "tests/unit/memory/test_extraction_coalescing.py": [
+      "cc/core/events.py",
+      "cc/memory/extractor.py",
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py"
+    ],
+    "tests/unit/memory/test_memory_index_update.py": [
+      "cc/memory/extractor.py",
+      "cc/memory/session_memory.py"
+    ],
+    "tests/unit/models/__init__.py": [],
+    "tests/unit/models/test_content_blocks.py": [
+      "cc/models/content_blocks.py"
+    ],
+    "tests/unit/models/test_message_normalization.py": [
+      "cc/models/messages.py"
+    ],
+    "tests/unit/models/test_messages.py": [
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py"
+    ],
+    "tests/unit/models/test_tool_result_serialization.py": [
+      "cc/models/content_blocks.py"
+    ],
+    "tests/unit/permissions/__init__.py": [],
+    "tests/unit/permissions/test_gate.py": [
+      "cc/permissions/gate.py"
+    ],
+    "tests/unit/permissions/test_non_interactive.py": [
+      "cc/permissions/gate.py"
+    ],
+    "tests/unit/permissions/test_rules.py": [
+      "cc/permissions/gate.py",
+      "cc/permissions/rules.py"
+    ],
+    "tests/unit/prompts/__init__.py": [],
+    "tests/unit/prompts/test_builder.py": [
+      "cc/prompts/builder.py"
+    ],
+    "tests/unit/prompts/test_claudemd.py": [
+      "cc/prompts/claudemd.py"
+    ],
+    "tests/unit/prompts/test_sections.py": [
+      "cc/prompts/sections.py"
+    ],
+    "tests/unit/prompts/test_teammate_prompt.py": [
+      "cc/prompts/teammate_prompt.py"
+    ],
+    "tests/unit/session/__init__.py": [],
+    "tests/unit/session/test_history.py": [
+      "cc/session/history.py"
+    ],
+    "tests/unit/session/test_recovery.py": [
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py",
+      "cc/session/recovery.py"
+    ],
+    "tests/unit/session/test_storage.py": [
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py",
+      "cc/session/storage.py"
+    ],
+    "tests/unit/session/test_task_persistence.py": [
+      "cc/models/messages.py",
+      "cc/session/storage.py",
+      "cc/session/task_registry.py"
+    ],
+    "tests/unit/session/test_task_registry.py": [
+      "cc/session/task_registry.py"
+    ],
+    "tests/unit/swarm/__init__.py": [],
+    "tests/unit/swarm/test_coordinator.py": [
+      "cc/swarm/coordinator.py"
+    ],
+    "tests/unit/swarm/test_identity.py": [
+      "cc/swarm/identity.py"
+    ],
+    "tests/unit/swarm/test_in_process_runner.py": [
+      "cc/core/events.py",
+      "cc/models/messages.py",
+      "cc/swarm/in_process_runner.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/swarm/test_mailbox.py": [
+      "cc/swarm/mailbox.py"
+    ],
+    "tests/unit/swarm/test_spawn.py": [
+      "cc/core/events.py",
+      "cc/models/messages.py",
+      "cc/swarm/identity.py",
+      "cc/swarm/spawn.py",
+      "cc/swarm/team_file.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/swarm/test_team_file.py": [
+      "cc/swarm/identity.py",
+      "cc/swarm/team_file.py"
+    ],
+    "tests/unit/tools/__init__.py": [],
+    "tests/unit/tools/agent/__init__.py": [],
+    "tests/unit/tools/agent/test_agent_permission_wiring.py": [
+      "cc/tools/agent/agent_tool.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/tools/agent/test_background_agent.py": [
+      "cc/session/task_registry.py",
+      "cc/tools/agent/background.py"
+    ],
+    "tests/unit/tools/agent/test_worktree.py": [
+      "cc/tools/agent/worktree.py"
+    ],
+    "tests/unit/tools/test_agent_tool.py": [
+      "cc/core/events.py",
+      "cc/models/messages.py",
+      "cc/tools/agent/agent_tool.py",
+      "cc/tools/base.py"
+    ],
+    "tests/unit/tools/test_ask_user.py": [
+      "cc/tools/ask_user/ask_user_tool.py"
+    ],
+    "tests/unit/tools/test_base.py": [
+      "cc/tools/base.py"
+    ],
+    "tests/unit/tools/test_bash_tool.py": [
+      "cc/tools/bash/bash_tool.py"
+    ],
+    "tests/unit/tools/test_brief_tool.py": [
+      "cc/tools/brief/brief_tool.py"
+    ],
+    "tests/unit/tools/test_extractor.py": [
+      "cc/core/events.py",
+      "cc/memory/extractor.py",
+      "cc/memory/session_memory.py",
+      "cc/models/content_blocks.py",
+      "cc/models/messages.py"
+    ],
+    "tests/unit/tools/test_file_tools.py": [
+      "cc/tools/file_edit/file_edit_tool.py",
+      "cc/tools/file_read/file_read_tool.py",
+      "cc/tools/file_write/file_write_tool.py"
+    ],
+    "tests/unit/tools/test_glob_grep.py": [
+      "cc/tools/glob_tool/glob_tool.py",
+      "cc/tools/grep_tool/grep_tool.py"
+    ],
+    "tests/unit/tools/test_hooks.py": [
+      "cc/hooks/hook_runner.py"
+    ],
+    "tests/unit/tools/test_lsp.py": [
+      "cc/tools/lsp/lsp_tool.py"
+    ],
+    "tests/unit/tools/test_mcp_config.py": [
+      "cc/mcp/config.py"
+    ],
+    "tests/unit/tools/test_memory.py": [
+      "cc/memory/session_memory.py"
+    ],
+    "tests/unit/tools/test_notebook_edit.py": [
+      "cc/tools/notebook/notebook_edit_tool.py"
+    ],
+    "tests/unit/tools/test_orchestration.py": [
+      "cc/models/content_blocks.py",
+      "cc/tools/base.py",
+      "cc/tools/orchestration.py"
+    ],
+    "tests/unit/tools/test_plan_mode_tool.py": [
+      "cc/tools/plan_mode/plan_mode_tool.py"
+    ],
+    "tests/unit/tools/test_send_message.py": [
+      "cc/swarm/identity.py",
+      "cc/swarm/mailbox.py",
+      "cc/swarm/team_file.py",
+      "cc/tools/send_message/send_message_tool.py"
+    ],
+    "tests/unit/tools/test_skill_tool.py": [
+      "cc/skills/loader.py",
+      "cc/tools/skill/skill_tool.py"
+    ],
+    "tests/unit/tools/test_skills.py": [
+      "cc/skills/loader.py"
+    ],
+    "tests/unit/tools/test_streaming_executor_enhanced.py": [
+      "cc/models/content_blocks.py",
+      "cc/tools/base.py",
+      "cc/tools/streaming_executor.py"
+    ],
+    "tests/unit/tools/test_streaming_executor.py": [
+      "cc/models/content_blocks.py",
+      "cc/tools/base.py",
+      "cc/tools/streaming_executor.py"
+    ],
+    "tests/unit/tools/test_task_stop.py": [
+      "cc/tools/task_tools/task_tools.py"
+    ],
+    "tests/unit/tools/test_task_tools.py": [
+      "cc/tools/task_tools/task_tools.py"
+    ],
+    "tests/unit/tools/test_team_create.py": [
+      "cc/tools/team/team_create_tool.py"
+    ],
+    "tests/unit/tools/test_team_delete.py": [
+      "cc/swarm/identity.py",
+      "cc/swarm/team_file.py",
+      "cc/tools/team/team_delete_tool.py"
+    ],
+    "tests/unit/tools/test_todo_write.py": [
+      "cc/tools/todo/todo_write_tool.py"
+    ],
+    "tests/unit/tools/test_tool_search.py": [
+      "cc/tools/base.py",
+      "cc/tools/tool_search/tool_search_tool.py"
+    ],
+    "tests/unit/tools/test_web_fetch.py": [
+      "cc/tools/web_fetch/web_fetch_tool.py"
+    ],
+    "tests/unit/tools/test_web_search.py": [
+      "cc/tools/web_search/web_search_tool.py"
+    ]
+  }
+}

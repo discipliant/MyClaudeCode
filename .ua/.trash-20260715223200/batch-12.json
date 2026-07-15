@@ -1,0 +1,604 @@
+{
+  "nodes": [
+    {
+      "id": "file:tests/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/__init__.py",
+      "summary": "Python 包文件，标记 tests 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/e2e/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/e2e/__init__.py",
+      "summary": "Python 包文件，标记 tests/e2e 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/e2e/test_cli.py",
+      "type": "file",
+      "name": "test_cli.py",
+      "filePath": "tests/e2e/test_cli.py",
+      "summary": "单元测试文件，测试 cli 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/e2e/test_cli.py:get_api_key",
+      "type": "function",
+      "name": "get_api_key",
+      "filePath": "tests/e2e/test_cli.py",
+      "lineRange": [
+        20,
+        32
+      ],
+      "summary": " 中的 get_api_key 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/e2e/test_cli.py:TestCLIHelp",
+      "type": "class",
+      "name": "TestCLIHelp",
+      "filePath": "tests/e2e/test_cli.py",
+      "lineRange": [
+        35,
+        46
+      ],
+      "summary": " 中的 TestCLIHelp 类，包含 test_help 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/e2e/test_cli.py:TestCLIPrintMode",
+      "type": "class",
+      "name": "TestCLIPrintMode",
+      "filePath": "tests/e2e/test_cli.py",
+      "lineRange": [
+        53,
+        86
+      ],
+      "summary": " 中的 TestCLIPrintMode 类，包含 test_print_mode 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/integration/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/integration/__init__.py",
+      "summary": "Python 包文件，标记 tests/integration 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/api/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/api/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/api 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/compact/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/compact/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/compact 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/core/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/core/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/core 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/mcp/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/mcp/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/mcp 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/models/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/models/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/models 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/permissions/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/permissions/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/permissions 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/prompts/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/prompts/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/prompts 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "type": "file",
+      "name": "test_teammate_prompt.py",
+      "filePath": "tests/unit/prompts/test_teammate_prompt.py",
+      "summary": "单元测试文件，测试 teammate_prompt 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/prompts/test_teammate_prompt.py:TestTeammateSystemPromptAddendum",
+      "type": "class",
+      "name": "TestTeammateSystemPromptAddendum",
+      "filePath": "tests/unit/prompts/test_teammate_prompt.py",
+      "lineRange": [
+        11,
+        21
+      ],
+      "summary": " 中的 TestTeammateSystemPromptAddendum 类，包含 test_contains_send_message、test_contains_broadcast、test_contains_team_lead 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/prompts/test_teammate_prompt.py:TestBuildTeammatePromptAddendum",
+      "type": "class",
+      "name": "TestBuildTeammatePromptAddendum",
+      "filePath": "tests/unit/prompts/test_teammate_prompt.py",
+      "lineRange": [
+        24,
+        46
+      ],
+      "summary": " 中的 TestBuildTeammatePromptAddendum 类，包含 test_includes_identity、test_includes_team_config_path、test_includes_base_addendum、test_includes_task_lifecycle、test_includes_idle_note 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/session/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/session/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/session 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/swarm/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/swarm/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/swarm 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/swarm/test_coordinator.py",
+      "type": "file",
+      "name": "test_coordinator.py",
+      "filePath": "tests/unit/swarm/test_coordinator.py",
+      "summary": "单元测试文件，测试 coordinator 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_coordinator.py:TestIsCoordinatorMode",
+      "type": "class",
+      "name": "TestIsCoordinatorMode",
+      "filePath": "tests/unit/swarm/test_coordinator.py",
+      "lineRange": [
+        13,
+        36
+      ],
+      "summary": " 中的 TestIsCoordinatorMode 类，提供 6 个方法：test_default_is_false、test_set_to_1、test_set_to_true、test_set_to_yes、test_set_to_0 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/swarm/test_coordinator.py:TestGetCoordinatorConfig",
+      "type": "class",
+      "name": "TestGetCoordinatorConfig",
+      "filePath": "tests/unit/swarm/test_coordinator.py",
+      "lineRange": [
+        39,
+        49
+      ],
+      "summary": " 中的 TestGetCoordinatorConfig 类，包含 test_returns_dict、test_enabled 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/tools/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/tools 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/agent/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "tests/unit/tools/agent/__init__.py",
+      "summary": "Python 包文件，标记 tests/unit/tools/agent 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/agent/test_worktree.py",
+      "type": "file",
+      "name": "test_worktree.py",
+      "filePath": "tests/unit/tools/agent/test_worktree.py",
+      "summary": "单元测试文件，测试 worktree 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/agent/test_worktree.py:TestCreateAgentWorktree",
+      "type": "class",
+      "name": "TestCreateAgentWorktree",
+      "filePath": "tests/unit/tools/agent/test_worktree.py",
+      "lineRange": [
+        15,
+        44
+      ],
+      "summary": " 中的 TestCreateAgentWorktree 类，包含 test_creates_worktree_successfully、test_raises_on_git_failure 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/tools/agent/test_worktree.py:TestCleanupAgentWorktree",
+      "type": "class",
+      "name": "TestCleanupAgentWorktree",
+      "filePath": "tests/unit/tools/agent/test_worktree.py",
+      "lineRange": [
+        47,
+        107
+      ],
+      "summary": " 中的 TestCleanupAgentWorktree 类，包含 test_removes_clean_worktree、test_keeps_dirty_worktree、test_handles_remove_failure_gracefully 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/agent/test_worktree.py:TestAgentToolWorktreeSchema",
+      "type": "class",
+      "name": "TestAgentToolWorktreeSchema",
+      "filePath": "tests/unit/tools/agent/test_worktree.py",
+      "lineRange": [
+        110,
+        122
+      ],
+      "summary": " 中的 TestAgentToolWorktreeSchema 类，包含 test_schema_has_isolation_param 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/tools/test_mcp_config.py",
+      "type": "file",
+      "name": "test_mcp_config.py",
+      "filePath": "tests/unit/tools/test_mcp_config.py",
+      "summary": "单元测试文件，测试 mcp_config 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/tools/test_mcp_config.py:TestMcpConfig",
+      "type": "class",
+      "name": "TestMcpConfig",
+      "filePath": "tests/unit/tools/test_mcp_config.py",
+      "lineRange": [
+        12,
+        78
+      ],
+      "summary": " 中的 TestMcpConfig 类，提供 6 个方法：test_load_from_mcp_json、test_load_from_settings、test_skip_unknown_transport、test_missing_command_for_stdio、test_no_config_files 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:tests/e2e/test_cli.py",
+      "target": "function:tests/e2e/test_cli.py:get_api_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/e2e/test_cli.py",
+      "target": "function:tests/e2e/test_cli.py:get_api_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/e2e/test_cli.py",
+      "target": "class:tests/e2e/test_cli.py:TestCLIHelp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/e2e/test_cli.py",
+      "target": "class:tests/e2e/test_cli.py:TestCLIHelp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/e2e/test_cli.py",
+      "target": "class:tests/e2e/test_cli.py:TestCLIPrintMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/e2e/test_cli.py",
+      "target": "class:tests/e2e/test_cli.py:TestCLIPrintMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "target": "class:tests/unit/prompts/test_teammate_prompt.py:TestTeammateSystemPromptAddendum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "target": "class:tests/unit/prompts/test_teammate_prompt.py:TestTeammateSystemPromptAddendum",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "target": "class:tests/unit/prompts/test_teammate_prompt.py:TestBuildTeammatePromptAddendum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "target": "class:tests/unit/prompts/test_teammate_prompt.py:TestBuildTeammatePromptAddendum",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_coordinator.py",
+      "target": "class:tests/unit/swarm/test_coordinator.py:TestIsCoordinatorMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_coordinator.py",
+      "target": "class:tests/unit/swarm/test_coordinator.py:TestIsCoordinatorMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/swarm/test_coordinator.py",
+      "target": "class:tests/unit/swarm/test_coordinator.py:TestGetCoordinatorConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/swarm/test_coordinator.py",
+      "target": "class:tests/unit/swarm/test_coordinator.py:TestGetCoordinatorConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "class:tests/unit/tools/agent/test_worktree.py:TestCreateAgentWorktree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "class:tests/unit/tools/agent/test_worktree.py:TestCreateAgentWorktree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "class:tests/unit/tools/agent/test_worktree.py:TestCleanupAgentWorktree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "class:tests/unit/tools/agent/test_worktree.py:TestCleanupAgentWorktree",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "class:tests/unit/tools/agent/test_worktree.py:TestAgentToolWorktreeSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "class:tests/unit/tools/agent/test_worktree.py:TestAgentToolWorktreeSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/tools/test_mcp_config.py",
+      "target": "class:tests/unit/tools/test_mcp_config.py:TestMcpConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/tools/test_mcp_config.py",
+      "target": "class:tests/unit/tools/test_mcp_config.py:TestMcpConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "target": "file:cc/prompts/teammate_prompt.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/swarm/test_coordinator.py",
+      "target": "file:cc/swarm/coordinator.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/agent/test_worktree.py",
+      "target": "file:cc/tools/agent/worktree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/tools/test_mcp_config.py",
+      "target": "file:cc/mcp/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

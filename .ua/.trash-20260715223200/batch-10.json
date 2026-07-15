@@ -1,0 +1,1097 @@
+{
+  "nodes": [
+    {
+      "id": "file:.DS_Store",
+      "type": "file",
+      "name": ".DS_Store",
+      "filePath": ".DS_Store",
+      "summary": "项目源文件。",
+      "tags": [
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".ua/.understandignore",
+      "summary": "项目源文件。",
+      "tags": [
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".ua/config.json",
+      "summary": "JSON 配置文件。",
+      "tags": [
+        "configuration",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/__init__.py",
+      "summary": "Python 包文件，标记 cc 为 Python 包。",
+      "tags": [
+        "barrel",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/api/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/api/__init__.py",
+      "summary": "Python 包文件，标记 cc/api 为 Python 包。",
+      "tags": [
+        "barrel",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/commands/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/commands/__init__.py",
+      "summary": "Python 包文件，标记 cc/commands 为 Python 包。",
+      "tags": [
+        "barrel",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/commands/registry.py",
+      "type": "file",
+      "name": "registry.py",
+      "filePath": "cc/commands/registry.py",
+      "summary": "Slash 命令：/clear /compact /model /help /cost。定义了 SlashCommand 等类和 register_command、get_command、list_commands 等函数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/commands/registry.py:register_command",
+      "type": "function",
+      "name": "register_command",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        35,
+        41
+      ],
+      "summary": "Slash 命令 中的 register_command 函数，处理 name、description、handler。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:get_command",
+      "type": "function",
+      "name": "get_command",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        44,
+        46
+      ],
+      "summary": "Slash 命令 中的 get_command 函数，处理 name。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:list_commands",
+      "type": "function",
+      "name": "list_commands",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        49,
+        51
+      ],
+      "summary": "Slash 命令 中的 list_commands 函数，处理 相关参数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:is_slash_command",
+      "type": "function",
+      "name": "is_slash_command",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        54,
+        60
+      ],
+      "summary": "Slash 命令 中的 is_slash_command 函数，处理 text。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:parse_slash_command",
+      "type": "function",
+      "name": "parse_slash_command",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        63,
+        78
+      ],
+      "summary": "Slash 命令 中的 parse_slash_command 函数，处理 text。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:_help_handler",
+      "type": "function",
+      "name": "_help_handler",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        86,
+        94
+      ],
+      "summary": "Slash 命令 中的 _help_handler 函数，处理 相关参数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:_clear_handler",
+      "type": "function",
+      "name": "_clear_handler",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        97,
+        99
+      ],
+      "summary": "Slash 命令 中的 _clear_handler 函数，处理 相关参数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:_compact_handler",
+      "type": "function",
+      "name": "_compact_handler",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        102,
+        104
+      ],
+      "summary": "Slash 命令 中的 _compact_handler 函数，处理 相关参数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:_cost_handler",
+      "type": "function",
+      "name": "_cost_handler",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        107,
+        114
+      ],
+      "summary": "Slash 命令 中的 _cost_handler 函数，处理 相关参数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:is_dashscope_model",
+      "type": "function",
+      "name": "is_dashscope_model",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        123,
+        125
+      ],
+      "summary": "Slash 命令 中的 is_dashscope_model 函数，处理 model。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/commands/registry.py:_model_handler",
+      "type": "function",
+      "name": "_model_handler",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        141,
+        165
+      ],
+      "summary": "Slash 命令 中的 _model_handler 函数，处理 相关参数。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/commands/registry.py:SlashCommand",
+      "type": "class",
+      "name": "SlashCommand",
+      "filePath": "cc/commands/registry.py",
+      "lineRange": [
+        17,
+        27
+      ],
+      "summary": "Slash 命令 中的 SlashCommand 类。",
+      "tags": [
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/compact/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/compact/__init__.py",
+      "summary": "Python 包文件，标记 cc/compact 为 Python 包。",
+      "tags": [
+        "barrel",
+        "utility",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/core/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/core/__init__.py",
+      "summary": "Python 包文件，标记 cc/core 为 Python 包。",
+      "tags": [
+        "barrel",
+        "service",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/hooks/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/hooks/__init__.py",
+      "summary": "Python 包文件，标记 cc/hooks 为 Python 包。",
+      "tags": [
+        "barrel",
+        "hook",
+        "middleware"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/mcp/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/mcp/__init__.py",
+      "summary": "Python 包文件，标记 cc/mcp 为 Python 包。",
+      "tags": [
+        "barrel",
+        "middleware",
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/mcp/config.py",
+      "type": "file",
+      "name": "config.py",
+      "filePath": "cc/mcp/config.py",
+      "summary": "MCP 协议：stdio 客户端、工具桥接。定义了 McpServerConfig 等类和 load_mcp_configs、_parse_server_config 等函数。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/mcp/config.py:load_mcp_configs",
+      "type": "function",
+      "name": "load_mcp_configs",
+      "filePath": "cc/mcp/config.py",
+      "lineRange": [
+        42,
+        84
+      ],
+      "summary": "MCP 协议 中的 load_mcp_configs 函数，处理 cwd、claude_dir。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/mcp/config.py:_parse_server_config",
+      "type": "function",
+      "name": "_parse_server_config",
+      "filePath": "cc/mcp/config.py",
+      "lineRange": [
+        87,
+        120
+      ],
+      "summary": "MCP 协议 中的 _parse_server_config 函数，处理 name、raw。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/mcp/config.py:McpServerConfig",
+      "type": "class",
+      "name": "McpServerConfig",
+      "filePath": "cc/mcp/config.py",
+      "lineRange": [
+        25,
+        39
+      ],
+      "summary": "MCP 协议 中的 McpServerConfig 类。",
+      "tags": [
+        "middleware",
+        "api-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/memory/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/memory/__init__.py",
+      "summary": "Python 包文件，标记 cc/memory 为 Python 包。",
+      "tags": [
+        "barrel",
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/models/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/models/__init__.py",
+      "summary": "Python 包文件，标记 cc/models 为 Python 包。",
+      "tags": [
+        "barrel",
+        "data-model",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/models/state.py",
+      "type": "file",
+      "name": "state.py",
+      "filePath": "cc/models/state.py",
+      "summary": "数据模型：消息类型、content blocks、API 规范化。核心类：AutoCompactTracking、QueryState、ThinkingConfig、AppConfig。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:cc/models/state.py:AutoCompactTracking",
+      "type": "class",
+      "name": "AutoCompactTracking",
+      "filePath": "cc/models/state.py",
+      "lineRange": [
+        25,
+        37
+      ],
+      "summary": "数据模型 中的 AutoCompactTracking 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/state.py:QueryState",
+      "type": "class",
+      "name": "QueryState",
+      "filePath": "cc/models/state.py",
+      "lineRange": [
+        41,
+        61
+      ],
+      "summary": "数据模型 中的 QueryState 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/state.py:ThinkingConfig",
+      "type": "class",
+      "name": "ThinkingConfig",
+      "filePath": "cc/models/state.py",
+      "lineRange": [
+        65,
+        76
+      ],
+      "summary": "数据模型 中的 ThinkingConfig 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/models/state.py:AppConfig",
+      "type": "class",
+      "name": "AppConfig",
+      "filePath": "cc/models/state.py",
+      "lineRange": [
+        80,
+        112
+      ],
+      "summary": "数据模型 中的 AppConfig 类。",
+      "tags": [
+        "data-model",
+        "type-definition",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/permissions/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/permissions/__init__.py",
+      "summary": "Python 包文件，标记 cc/permissions 为 Python 包。",
+      "tags": [
+        "barrel",
+        "validation",
+        "security"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/prompts/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/prompts/__init__.py",
+      "summary": "Python 包文件，标记 cc/prompts 为 Python 包。",
+      "tags": [
+        "barrel",
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/prompts/coordinator_prompt.py",
+      "type": "file",
+      "name": "coordinator_prompt.py",
+      "filePath": "cc/prompts/coordinator_prompt.py",
+      "summary": "System Prompt：多段动态拼装 + Coordinator/Teammate 提示词。核心函数：get_coordinator_prompt。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/prompts/coordinator_prompt.py:get_coordinator_prompt",
+      "type": "function",
+      "name": "get_coordinator_prompt",
+      "filePath": "cc/prompts/coordinator_prompt.py",
+      "lineRange": [
+        184,
+        192
+      ],
+      "summary": "System Prompt 中的 get_coordinator_prompt 函数，处理 相关参数。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/prompts/teammate_prompt.py",
+      "type": "file",
+      "name": "teammate_prompt.py",
+      "filePath": "cc/prompts/teammate_prompt.py",
+      "summary": "System Prompt：多段动态拼装 + Coordinator/Teammate 提示词。核心函数：build_teammate_prompt_addendum。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/prompts/teammate_prompt.py:build_teammate_prompt_addendum",
+      "type": "function",
+      "name": "build_teammate_prompt_addendum",
+      "filePath": "cc/prompts/teammate_prompt.py",
+      "lineRange": [
+        36,
+        81
+      ],
+      "summary": "System Prompt 中的 build_teammate_prompt_addendum 函数，处理 team_name、agent_name。",
+      "tags": [
+        "factory",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/session/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/session/__init__.py",
+      "summary": "Python 包文件，标记 cc/session 为 Python 包。",
+      "tags": [
+        "barrel",
+        "serialization",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/skills/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/skills/__init__.py",
+      "summary": "Python 包文件，标记 cc/skills 为 Python 包。",
+      "tags": [
+        "barrel",
+        "hook",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/skills/bundled/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/skills/bundled/__init__.py",
+      "summary": "Python 包文件，标记 cc/skills/bundled 为 Python 包。",
+      "tags": [
+        "barrel",
+        "hook",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/swarm/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "cc/swarm/__init__.py",
+      "summary": "Python 包文件，标记 cc/swarm 为 Python 包。",
+      "tags": [
+        "barrel",
+        "service",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/swarm/coordinator.py",
+      "type": "file",
+      "name": "coordinator.py",
+      "filePath": "cc/swarm/coordinator.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。核心函数：is_coordinator_mode、get_coordinator_config、maybe_inject_coordinator_prompt。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/coordinator.py:is_coordinator_mode",
+      "type": "function",
+      "name": "is_coordinator_mode",
+      "filePath": "cc/swarm/coordinator.py",
+      "lineRange": [
+        18,
+        23
+      ],
+      "summary": "Agent Teams 中的 is_coordinator_mode 函数，处理 相关参数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/coordinator.py:get_coordinator_config",
+      "type": "function",
+      "name": "get_coordinator_config",
+      "filePath": "cc/swarm/coordinator.py",
+      "lineRange": [
+        26,
+        33
+      ],
+      "summary": "Agent Teams 中的 get_coordinator_config 函数，处理 相关参数。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/swarm/coordinator.py:maybe_inject_coordinator_prompt",
+      "type": "function",
+      "name": "maybe_inject_coordinator_prompt",
+      "filePath": "cc/swarm/coordinator.py",
+      "lineRange": [
+        36,
+        56
+      ],
+      "summary": "Agent Teams 中的 maybe_inject_coordinator_prompt 函数，处理 base_prompt。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:cc/swarm/team_context.py",
+      "type": "file",
+      "name": "team_context.py",
+      "filePath": "cc/swarm/team_context.py",
+      "summary": "Agent Teams：身份、Mailbox、TeamFile、InProcessTeammate、Coordinator。核心类：TeamContext。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/swarm/team_context.py:TeamContext",
+      "type": "class",
+      "name": "TeamContext",
+      "filePath": "cc/swarm/team_context.py",
+      "lineRange": [
+        19,
+        58
+      ],
+      "summary": "Agent Teams 中的 TeamContext 类，提供 6 个方法：__init__、team_name、is_active、leader_name、enter_team 等。",
+      "tags": [
+        "service",
+        "event-handler",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:register_command",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:register_command",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:get_command",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:get_command",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:list_commands",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:list_commands",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:is_slash_command",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:is_slash_command",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:parse_slash_command",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:parse_slash_command",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_help_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_help_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_clear_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_clear_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_compact_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_compact_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_cost_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_cost_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:is_dashscope_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:is_dashscope_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_model_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "function:cc/commands/registry.py:_model_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "class:cc/commands/registry.py:SlashCommand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/commands/registry.py",
+      "target": "class:cc/commands/registry.py:SlashCommand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/mcp/config.py",
+      "target": "function:cc/mcp/config.py:load_mcp_configs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/mcp/config.py",
+      "target": "function:cc/mcp/config.py:load_mcp_configs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/mcp/config.py",
+      "target": "function:cc/mcp/config.py:_parse_server_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/mcp/config.py",
+      "target": "function:cc/mcp/config.py:_parse_server_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/mcp/config.py",
+      "target": "class:cc/mcp/config.py:McpServerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/mcp/config.py",
+      "target": "class:cc/mcp/config.py:McpServerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:AutoCompactTracking",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:AutoCompactTracking",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:QueryState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:QueryState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:ThinkingConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:ThinkingConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:AppConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/models/state.py",
+      "target": "class:cc/models/state.py:AppConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/coordinator_prompt.py",
+      "target": "function:cc/prompts/coordinator_prompt.py:get_coordinator_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/coordinator_prompt.py",
+      "target": "function:cc/prompts/coordinator_prompt.py:get_coordinator_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/teammate_prompt.py",
+      "target": "function:cc/prompts/teammate_prompt.py:build_teammate_prompt_addendum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/prompts/teammate_prompt.py",
+      "target": "function:cc/prompts/teammate_prompt.py:build_teammate_prompt_addendum",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "function:cc/swarm/coordinator.py:is_coordinator_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "function:cc/swarm/coordinator.py:is_coordinator_mode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "function:cc/swarm/coordinator.py:get_coordinator_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "function:cc/swarm/coordinator.py:get_coordinator_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "function:cc/swarm/coordinator.py:maybe_inject_coordinator_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "function:cc/swarm/coordinator.py:maybe_inject_coordinator_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/swarm/team_context.py",
+      "target": "class:cc/swarm/team_context.py:TeamContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/swarm/team_context.py",
+      "target": "class:cc/swarm/team_context.py:TeamContext",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/prompts/teammate_prompt.py",
+      "target": "file:tests/unit/prompts/test_teammate_prompt.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/swarm/coordinator.py",
+      "target": "file:tests/unit/swarm/test_coordinator.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

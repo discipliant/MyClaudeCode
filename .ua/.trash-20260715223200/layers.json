@@ -1,0 +1,330 @@
+[
+  {
+    "id": "layer:core-runtime",
+    "name": "核心运行时层",
+    "description": "QueryEngine 统一入口、query_loop 状态机、事件流定义。Agent Loop 的核心驱动力。",
+    "nodeIds": [
+      "file:cc/core/events.py",
+      "file:cc/core/query_engine.py",
+      "file:cc/core/query_loop.py",
+      "file:cc/core/__init__.py",
+      "file:cc/main.py",
+      "file:cc/__main__.py",
+      "file:cc/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:api-client",
+    "name": "API 客户端层",
+    "description": "Anthropic API 流式调用、客户端管理、token 统计。负责与 Claude 模型的底层通信。",
+    "nodeIds": [
+      "file:cc/api/claude.py",
+      "file:cc/api/token_estimation.py",
+      "file:cc/api/client.py",
+      "file:cc/api/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:data-models",
+    "name": "数据模型层",
+    "description": "消息类型、content blocks、API 规范化数据结构。定义 agent 交互的核心数据契约。",
+    "nodeIds": [
+      "file:cc/models/content_blocks.py",
+      "file:cc/models/messages.py",
+      "file:cc/models/__init__.py",
+      "file:cc/models/state.py"
+    ]
+  },
+  {
+    "id": "layer:prompts",
+    "name": "系统提示词层",
+    "description": "System Prompt 多段动态拼装，含 Memory 行为指导 + Coordinator/Teammate 提示词。CLAUDE.md 加载与递归展开。",
+    "nodeIds": [
+      "file:cc/prompts/claudemd.py",
+      "file:cc/prompts/builder.py",
+      "file:cc/prompts/sections.py",
+      "file:cc/prompts/__init__.py",
+      "file:cc/prompts/coordinator_prompt.py",
+      "file:cc/prompts/teammate_prompt.py"
+    ]
+  },
+  {
+    "id": "layer:tools",
+    "name": "工具层",
+    "description": "22 个内置工具实现 + StreamingToolExecutor + 权限门控。涵盖 Bash、Read、Edit、Write、Glob、Grep、Agent、WebFetch 等全部工具。",
+    "nodeIds": [
+      "file:cc/tools/ask_user/ask_user_tool.py",
+      "file:cc/tools/base.py",
+      "file:cc/tools/brief/brief_tool.py",
+      "file:cc/tools/lsp/lsp_tool.py",
+      "file:cc/tools/notebook/notebook_edit_tool.py",
+      "file:cc/tools/orchestration.py",
+      "file:cc/tools/plan_mode/plan_mode_tool.py",
+      "file:cc/tools/streaming_executor.py",
+      "file:cc/tools/task_tools/task_tools.py",
+      "file:cc/tools/todo/todo_write_tool.py",
+      "file:cc/tools/tool_search/tool_search_tool.py",
+      "file:cc/tools/web_fetch/web_fetch_tool.py",
+      "file:cc/tools/web_search/web_search_tool.py",
+      "file:cc/tools/bash/bash_tool.py",
+      "file:cc/tools/file_edit/file_edit_tool.py",
+      "file:cc/tools/file_read/file_read_tool.py",
+      "file:cc/tools/file_write/file_write_tool.py",
+      "file:cc/tools/glob_tool/glob_tool.py",
+      "file:cc/tools/grep_tool/grep_tool.py",
+      "file:cc/tools/skill/skill_tool.py",
+      "file:cc/tools/agent/background.py",
+      "file:cc/tools/send_message/send_message_tool.py",
+      "file:cc/tools/team/team_create_tool.py",
+      "file:cc/tools/team/team_delete_tool.py",
+      "file:cc/tools/agent/agent_tool.py",
+      "file:cc/tools/__init__.py",
+      "file:cc/tools/agent/__init__.py",
+      "file:cc/tools/agent/worktree.py",
+      "file:cc/tools/ask_user/__init__.py",
+      "file:cc/tools/bash/__init__.py",
+      "file:cc/tools/brief/__init__.py",
+      "file:cc/tools/file_edit/__init__.py",
+      "file:cc/tools/file_read/__init__.py",
+      "file:cc/tools/file_write/__init__.py",
+      "file:cc/tools/glob_tool/__init__.py",
+      "file:cc/tools/grep_tool/__init__.py",
+      "file:cc/tools/lsp/__init__.py",
+      "file:cc/tools/mcp_tool/__init__.py",
+      "file:cc/tools/notebook/__init__.py",
+      "file:cc/tools/plan_mode/__init__.py",
+      "file:cc/tools/send_message/__init__.py",
+      "file:cc/tools/skill/__init__.py",
+      "file:cc/tools/task_tools/__init__.py",
+      "file:cc/tools/team/__init__.py",
+      "file:cc/tools/todo/__init__.py",
+      "file:cc/tools/tool_search/__init__.py",
+      "file:cc/tools/web_fetch/__init__.py",
+      "file:cc/tools/web_search/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:permissions",
+    "name": "权限系统层",
+    "description": "PermissionMode（bypass/acceptEdits/default）+ 规则引擎 + 非交互 fail-fast 语义。控制工具执行的安全边界。",
+    "nodeIds": [
+      "file:cc/permissions/gate.py",
+      "file:cc/permissions/rules.py",
+      "file:cc/permissions/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:agent-teams",
+    "name": "Agent Teams 层",
+    "description": "多 Agent 协调：Teammate 执行引擎、Mailbox 通信、Coordinator 编排、Team 生命周期管理。",
+    "nodeIds": [
+      "file:cc/swarm/identity.py",
+      "file:cc/swarm/in_process_runner.py",
+      "file:cc/swarm/mailbox.py",
+      "file:cc/swarm/spawn.py",
+      "file:cc/swarm/team_file.py",
+      "file:cc/swarm/__init__.py",
+      "file:cc/swarm/coordinator.py",
+      "file:cc/swarm/team_context.py"
+    ]
+  },
+  {
+    "id": "layer:context-compression",
+    "name": "上下文压缩层",
+    "description": "Token 预算监控、超限自动 compact、摘要生成。确保长对话不超出上下文窗口。",
+    "nodeIds": [
+      "file:cc/compact/compact.py",
+      "file:cc/compact/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:memory",
+    "name": "记忆系统层",
+    "description": "四类记忆分类、MEMORY.md 索引自动更新、后台 coalescing 提取。让 agent 跨会话保持上下文。",
+    "nodeIds": [
+      "file:cc/memory/extractor.py",
+      "file:cc/memory/session_memory.py",
+      "file:cc/memory/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:mcp-protocol",
+    "name": "MCP 协议层",
+    "description": "stdio 传输、动态工具注册、多 server 并行。支持通过 MCP 协议接入外部工具服务。",
+    "nodeIds": [
+      "file:cc/mcp/client.py",
+      "file:cc/mcp/__init__.py",
+      "file:cc/mcp/config.py"
+    ]
+  },
+  {
+    "id": "layer:hooks",
+    "name": "Hooks 层",
+    "description": "PreToolUse/PostToolUse 拦截器，shell 命令执行。允许在工具执行前后注入自定义逻辑。",
+    "nodeIds": [
+      "file:cc/hooks/hook_runner.py",
+      "file:cc/hooks/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:skills",
+    "name": "Skills 层",
+    "description": "frontmatter 定义、slash 命令触发、prompt 注入。支持通过 skill 文件扩展 agent 能力。",
+    "nodeIds": [
+      "file:cc/skills/loader.py",
+      "file:cc/skills/__init__.py",
+      "file:cc/skills/bundled/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:session",
+    "name": "会话持久化层",
+    "description": "会话保存/恢复、Task 状态快照、transcript 校验修复。确保 agent 状态可持久化和恢复。",
+    "nodeIds": [
+      "file:cc/session/history.py",
+      "file:cc/session/recovery.py",
+      "file:cc/session/storage.py",
+      "file:cc/session/task_registry.py",
+      "file:cc/session/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:commands",
+    "name": "命令层",
+    "description": "Slash 命令注册和处理：/clear /compact /model /help /cost。用户交互的快捷入口。",
+    "nodeIds": [
+      "file:cc/commands/__init__.py",
+      "file:cc/commands/registry.py"
+    ]
+  },
+  {
+    "id": "layer:ui",
+    "name": "UI 渲染层",
+    "description": "Rich 流式终端输出。负责将 agent 响应实时渲染到终端。",
+    "nodeIds": [
+      "file:cc/ui/renderer.py",
+      "file:cc/ui/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:utils",
+    "name": "工具函数层",
+    "description": "通用工具函数和错误处理。为其他模块提供基础支撑。",
+    "nodeIds": [
+      "file:cc/utils/errors.py",
+      "file:cc/utils/__init__.py"
+    ]
+  },
+  {
+    "id": "layer:tests",
+    "name": "测试层",
+    "description": "498 个单元测试 + 集成测试 + E2E 测试。覆盖所有核心模块的功能验证。",
+    "nodeIds": [
+      "file:tests/unit/tools/test_ask_user.py",
+      "file:tests/unit/tools/test_base.py",
+      "file:tests/unit/tools/test_brief_tool.py",
+      "file:tests/unit/tools/test_lsp.py",
+      "file:tests/unit/tools/test_notebook_edit.py",
+      "file:tests/unit/tools/test_orchestration.py",
+      "file:tests/unit/tools/test_plan_mode_tool.py",
+      "file:tests/unit/tools/test_streaming_executor.py",
+      "file:tests/unit/tools/test_streaming_executor_enhanced.py",
+      "file:tests/unit/tools/test_task_stop.py",
+      "file:tests/unit/tools/test_task_tools.py",
+      "file:tests/unit/tools/test_todo_write.py",
+      "file:tests/unit/tools/test_tool_search.py",
+      "file:tests/unit/tools/test_web_fetch.py",
+      "file:tests/unit/tools/test_web_search.py",
+      "file:tests/unit/core/test_multiline.py",
+      "file:tests/unit/prompts/test_claudemd.py",
+      "file:tests/unit/session/test_history.py",
+      "file:tests/unit/tools/test_bash_tool.py",
+      "file:tests/unit/tools/test_file_tools.py",
+      "file:tests/unit/tools/test_glob_grep.py",
+      "file:tests/unit/tools/test_hooks.py",
+      "file:tests/unit/tools/test_skill_tool.py",
+      "file:tests/unit/tools/test_skills.py",
+      "file:tests/unit/core/test_events.py",
+      "file:tests/unit/memory/test_extraction_coalescing.py",
+      "file:tests/unit/memory/test_memory_index_update.py",
+      "file:tests/unit/models/test_content_blocks.py",
+      "file:tests/unit/models/test_message_normalization.py",
+      "file:tests/unit/models/test_messages.py",
+      "file:tests/unit/models/test_tool_result_serialization.py",
+      "file:tests/unit/session/test_recovery.py",
+      "file:tests/unit/session/test_storage.py",
+      "file:tests/unit/session/test_task_persistence.py",
+      "file:tests/unit/session/test_task_registry.py",
+      "file:tests/unit/tools/agent/test_background_agent.py",
+      "file:tests/unit/tools/test_extractor.py",
+      "file:tests/unit/tools/test_memory.py",
+      "file:tests/integration/test_query_loop.py",
+      "file:tests/unit/api/test_claude.py",
+      "file:tests/unit/api/test_stop_reason.py",
+      "file:tests/unit/api/test_token_estimation.py",
+      "file:tests/unit/api/test_tool_input_parse.py",
+      "file:tests/unit/api/test_unknown_block_type.py",
+      "file:tests/unit/api/test_usage_tracking.py",
+      "file:tests/unit/compact/test_compact.py",
+      "file:tests/unit/core/test_query_engine.py",
+      "file:tests/unit/core/test_query_loop.py",
+      "file:tests/unit/swarm/test_identity.py",
+      "file:tests/unit/swarm/test_in_process_runner.py",
+      "file:tests/unit/swarm/test_mailbox.py",
+      "file:tests/unit/swarm/test_spawn.py",
+      "file:tests/unit/swarm/test_team_file.py",
+      "file:tests/unit/tools/test_send_message.py",
+      "file:tests/unit/tools/test_team_create.py",
+      "file:tests/unit/tools/test_team_delete.py",
+      "file:tests/unit/prompts/test_builder.py",
+      "file:tests/unit/prompts/test_sections.py",
+      "file:tests/unit/tools/agent/test_agent_permission_wiring.py",
+      "file:tests/unit/tools/test_agent_tool.py",
+      "file:tests/unit/core/test_query_engine_unified.py",
+      "file:tests/unit/permissions/test_gate.py",
+      "file:tests/unit/permissions/test_non_interactive.py",
+      "file:tests/unit/permissions/test_rules.py",
+      "file:tests/unit/api/test_client.py",
+      "file:tests/__init__.py",
+      "file:tests/e2e/__init__.py",
+      "file:tests/e2e/test_cli.py",
+      "file:tests/integration/__init__.py",
+      "file:tests/unit/__init__.py",
+      "file:tests/unit/api/__init__.py",
+      "file:tests/unit/compact/__init__.py",
+      "file:tests/unit/core/__init__.py",
+      "file:tests/unit/mcp/__init__.py",
+      "file:tests/unit/models/__init__.py",
+      "file:tests/unit/permissions/__init__.py",
+      "file:tests/unit/prompts/__init__.py",
+      "file:tests/unit/prompts/test_teammate_prompt.py",
+      "file:tests/unit/session/__init__.py",
+      "file:tests/unit/swarm/__init__.py",
+      "file:tests/unit/swarm/test_coordinator.py",
+      "file:tests/unit/tools/__init__.py",
+      "file:tests/unit/tools/agent/__init__.py",
+      "file:tests/unit/tools/agent/test_worktree.py",
+      "file:tests/unit/tools/test_mcp_config.py"
+    ]
+  },
+  {
+    "id": "layer:config-docs",
+    "name": "配置与文档层",
+    "description": "项目配置文件（pyproject.toml、Makefile）和文档（README.md）。定义项目元数据和构建流程。",
+    "nodeIds": [
+      "config:pyproject.toml",
+      "service:Makefile",
+      "document:README.md"
+    ]
+  },
+  {
+    "id": "layer:misc",
+    "name": "其他文件",
+    "description": "未归入特定架构层的文件。",
+    "nodeIds": [
+      "file:.DS_Store",
+      "file:.ua/.understandignore",
+      "config:.ua/config.json"
+    ]
+  }
+]

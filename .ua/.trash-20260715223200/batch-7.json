@@ -1,0 +1,652 @@
+{
+  "nodes": [
+    {
+      "id": "file:cc/permissions/gate.py",
+      "type": "file",
+      "name": "gate.py",
+      "filePath": "cc/permissions/gate.py",
+      "summary": "权限系统：PermissionMode + 规则引擎 + 非交互语义。定义了 PermissionMode、PermissionDecision、PermissionContext 等类和 check_permission 等函数。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/permissions/gate.py:check_permission",
+      "type": "function",
+      "name": "check_permission",
+      "filePath": "cc/permissions/gate.py",
+      "lineRange": [
+        64,
+        94
+      ],
+      "summary": "权限系统 中的 check_permission 函数，处理 mode、tool_name、tool_input。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/permissions/gate.py:PermissionMode",
+      "type": "class",
+      "name": "PermissionMode",
+      "filePath": "cc/permissions/gate.py",
+      "lineRange": [
+        39,
+        49
+      ],
+      "summary": "权限系统 中的 PermissionMode 类。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/permissions/gate.py:PermissionDecision",
+      "type": "class",
+      "name": "PermissionDecision",
+      "filePath": "cc/permissions/gate.py",
+      "lineRange": [
+        52,
+        61
+      ],
+      "summary": "权限系统 中的 PermissionDecision 类。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/permissions/gate.py:PermissionContext",
+      "type": "class",
+      "name": "PermissionContext",
+      "filePath": "cc/permissions/gate.py",
+      "lineRange": [
+        97,
+        208
+      ],
+      "summary": "权限系统 中的 PermissionContext 类，包含 __init__、check、_prompt_user 方法。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:cc/permissions/rules.py",
+      "type": "file",
+      "name": "rules.py",
+      "filePath": "cc/permissions/rules.py",
+      "summary": "权限系统：PermissionMode + 规则引擎 + 非交互语义。定义了 PermissionRules 等类和 load_permission_rules、_matches_rule、apply_rules 等函数。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:cc/permissions/rules.py:load_permission_rules",
+      "type": "function",
+      "name": "load_permission_rules",
+      "filePath": "cc/permissions/rules.py",
+      "lineRange": [
+        45,
+        81
+      ],
+      "summary": "权限系统 中的 load_permission_rules 函数，处理 claude_dir。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/permissions/rules.py:_matches_rule",
+      "type": "function",
+      "name": "_matches_rule",
+      "filePath": "cc/permissions/rules.py",
+      "lineRange": [
+        84,
+        107
+      ],
+      "summary": "权限系统 中的 _matches_rule 函数，处理 rule、tool_name、tool_input。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:cc/permissions/rules.py:apply_rules",
+      "type": "function",
+      "name": "apply_rules",
+      "filePath": "cc/permissions/rules.py",
+      "lineRange": [
+        110,
+        141
+      ],
+      "summary": "权限系统 中的 apply_rules 函数，处理 rules、tool_name、tool_input。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:cc/permissions/rules.py:PermissionRules",
+      "type": "class",
+      "name": "PermissionRules",
+      "filePath": "cc/permissions/rules.py",
+      "lineRange": [
+        34,
+        42
+      ],
+      "summary": "权限系统 中的 PermissionRules 类。",
+      "tags": [
+        "validation",
+        "security",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/core/test_query_engine_unified.py",
+      "type": "file",
+      "name": "test_query_engine_unified.py",
+      "filePath": "tests/unit/core/test_query_engine_unified.py",
+      "summary": "单元测试文件，测试 query_engine_unified 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/unit/core/test_query_engine_unified.py:_mock_query_loop_capturing_kwargs",
+      "type": "function",
+      "name": "_mock_query_loop_capturing_kwargs",
+      "filePath": "tests/unit/core/test_query_engine_unified.py",
+      "lineRange": [
+        21,
+        29
+      ],
+      "summary": " 中的 _mock_query_loop_capturing_kwargs 函数，处理 相关参数。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/core/test_query_engine_unified.py:TestQueryEngineUnifiedPermissions",
+      "type": "class",
+      "name": "TestQueryEngineUnifiedPermissions",
+      "filePath": "tests/unit/core/test_query_engine_unified.py",
+      "lineRange": [
+        32,
+        123
+      ],
+      "summary": " 中的 TestQueryEngineUnifiedPermissions 类，包含 test_submit_passes_permission_checker、test_submit_messages_passes_permission_checker、test_run_turn_passes_permission_checker、test_no_permission_ctx_passes_none 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/unit/permissions/test_gate.py",
+      "type": "file",
+      "name": "test_gate.py",
+      "filePath": "tests/unit/permissions/test_gate.py",
+      "summary": "单元测试文件，测试 gate 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/permissions/test_gate.py:TestCheckPermission",
+      "type": "class",
+      "name": "TestCheckPermission",
+      "filePath": "tests/unit/permissions/test_gate.py",
+      "lineRange": [
+        15,
+        44
+      ],
+      "summary": " 中的 TestCheckPermission 类，提供 7 个方法：test_bypass_allows_everything、test_read_only_always_allowed、test_edit_tools_allowed_in_accept_edits、test_edit_tools_ask_in_default、test_bash_always_asks 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/permissions/test_gate.py:TestPermissionContextNonInteractive",
+      "type": "class",
+      "name": "TestPermissionContextNonInteractive",
+      "filePath": "tests/unit/permissions/test_gate.py",
+      "lineRange": [
+        47,
+        79
+      ],
+      "summary": " 中的 TestPermissionContextNonInteractive 类，包含 test_non_interactive_denies_ask_tools、test_non_interactive_allows_read_tools、test_non_interactive_allows_edit_in_accept_mode、test_bypass_mode_allows_all_non_interactive、test_always_allow_cached 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/permissions/test_non_interactive.py",
+      "type": "file",
+      "name": "test_non_interactive.py",
+      "filePath": "tests/unit/permissions/test_non_interactive.py",
+      "summary": "单元测试文件，测试 non_interactive 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/permissions/test_non_interactive.py:TestNonInteractiveSemantics",
+      "type": "class",
+      "name": "TestNonInteractiveSemantics",
+      "filePath": "tests/unit/permissions/test_non_interactive.py",
+      "lineRange": [
+        14,
+        50
+      ],
+      "summary": " 中的 TestNonInteractiveSemantics 类，包含 test_print_mode_denies_bash、test_print_mode_allows_read、test_background_agent_denies_interactive_tools、test_teammate_denies_interactive_tools、test_bypass_mode_overrides_non_interactive 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/unit/permissions/test_rules.py",
+      "type": "file",
+      "name": "test_rules.py",
+      "filePath": "tests/unit/permissions/test_rules.py",
+      "summary": "单元测试文件，测试 rules 相关功能。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/unit/permissions/test_rules.py:TestLoadPermissionRules",
+      "type": "class",
+      "name": "TestLoadPermissionRules",
+      "filePath": "tests/unit/permissions/test_rules.py",
+      "lineRange": [
+        21,
+        62
+      ],
+      "summary": " 中的 TestLoadPermissionRules 类，提供 6 个方法：test_load_from_settings、test_missing_file_returns_empty、test_malformed_json_returns_empty、test_no_permissions_key、test_invalid_permissions_type 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/permissions/test_rules.py:TestApplyRules",
+      "type": "class",
+      "name": "TestApplyRules",
+      "filePath": "tests/unit/permissions/test_rules.py",
+      "lineRange": [
+        65,
+        109
+      ],
+      "summary": " 中的 TestApplyRules 类，提供 9 个方法：test_allow_rule_exact_match、test_deny_rule_exact_match、test_no_match_returns_none、test_deny_takes_precedence_over_allow、test_bash_glob_allow 等。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/unit/permissions/test_rules.py:TestPermissionContextWithRules",
+      "type": "class",
+      "name": "TestPermissionContextWithRules",
+      "filePath": "tests/unit/permissions/test_rules.py",
+      "lineRange": [
+        112,
+        158
+      ],
+      "summary": " 中的 TestPermissionContextWithRules 类，包含 test_rules_allow_overrides_mode_ask、test_rules_deny_overrides_mode_allow、test_rules_none_falls_through、test_rules_no_match_falls_through_to_mode 方法。",
+      "tags": [
+        "test",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "function:cc/permissions/gate.py:check_permission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "function:cc/permissions/gate.py:check_permission",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "class:cc/permissions/gate.py:PermissionMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "class:cc/permissions/gate.py:PermissionMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "class:cc/permissions/gate.py:PermissionDecision",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "class:cc/permissions/gate.py:PermissionDecision",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "class:cc/permissions/gate.py:PermissionContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "class:cc/permissions/gate.py:PermissionContext",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "function:cc/permissions/rules.py:load_permission_rules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "function:cc/permissions/rules.py:load_permission_rules",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "function:cc/permissions/rules.py:_matches_rule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "function:cc/permissions/rules.py:_matches_rule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "function:cc/permissions/rules.py:apply_rules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "function:cc/permissions/rules.py:apply_rules",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "class:cc/permissions/rules.py:PermissionRules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "class:cc/permissions/rules.py:PermissionRules",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "function:tests/unit/core/test_query_engine_unified.py:_mock_query_loop_capturing_kwargs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "function:tests/unit/core/test_query_engine_unified.py:_mock_query_loop_capturing_kwargs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "class:tests/unit/core/test_query_engine_unified.py:TestQueryEngineUnifiedPermissions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "class:tests/unit/core/test_query_engine_unified.py:TestQueryEngineUnifiedPermissions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/permissions/test_gate.py",
+      "target": "class:tests/unit/permissions/test_gate.py:TestCheckPermission",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/permissions/test_gate.py",
+      "target": "class:tests/unit/permissions/test_gate.py:TestCheckPermission",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/permissions/test_gate.py",
+      "target": "class:tests/unit/permissions/test_gate.py:TestPermissionContextNonInteractive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/permissions/test_gate.py",
+      "target": "class:tests/unit/permissions/test_gate.py:TestPermissionContextNonInteractive",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/permissions/test_non_interactive.py",
+      "target": "class:tests/unit/permissions/test_non_interactive.py:TestNonInteractiveSemantics",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/permissions/test_non_interactive.py",
+      "target": "class:tests/unit/permissions/test_non_interactive.py:TestNonInteractiveSemantics",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "class:tests/unit/permissions/test_rules.py:TestLoadPermissionRules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "class:tests/unit/permissions/test_rules.py:TestLoadPermissionRules",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "class:tests/unit/permissions/test_rules.py:TestApplyRules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "class:tests/unit/permissions/test_rules.py:TestApplyRules",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "class:tests/unit/permissions/test_rules.py:TestPermissionContextWithRules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "class:tests/unit/permissions/test_rules.py:TestPermissionContextWithRules",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "file:cc/permissions/gate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "file:cc/core/events.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "file:cc/core/query_engine.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "file:cc/models/messages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "file:cc/permissions/gate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/core/test_query_engine_unified.py",
+      "target": "file:cc/tools/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/permissions/test_gate.py",
+      "target": "file:cc/permissions/gate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/permissions/test_non_interactive.py",
+      "target": "file:cc/permissions/gate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "file:cc/permissions/gate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/unit/permissions/test_rules.py",
+      "target": "file:cc/permissions/rules.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:cc/permissions/gate.py",
+      "target": "file:tests/unit/permissions/test_gate.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:cc/permissions/rules.py",
+      "target": "file:tests/unit/permissions/test_rules.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}
